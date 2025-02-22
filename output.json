@@ -1,0 +1,873 @@
+{
+    "html_attributions": [],
+    "next_page_token": "AVzFdbkShHbdxiHwiwqWq_YyrhdfXDQoutbz56hqb4dZu6atL_FdgCWIj9dCLwJf6MX0l1iMAy1C7YOfMpgSnyrZxiHnM_sqPJ6W99Ap6o-ngsp7kfJjFAS39XCTgbws5v8eGpinuLvjZ27SxedexO9HOhmuwtwPzZliDNl4KhjqL2YOlcxKxZ_FM5LaUDtdQbZyuKNvI3x3gn5sqdYxiZo1pfgS3YbVBEuaXfkEy756w3e1LIFZynqCsqiIHtrUsxU4PHLrXXQzoQG2J7zEJhi2giWumbS3spC7Fyuezhalfuhn7dXB5CUMu18YGIrMnBTM_SThtZ5a8GlhaFAQHKSnura0j9hrgYh9XaoefjiWVdjTJfCFwW72h35Jlqn_5SkJHULO7vTt_0Z2phvGwZHnfAeYZJDwDPYlJTjOMg6GHt8fl2NC4wncsyfKG4c6NQWvn8DL2Cg",
+    "results": [
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6296562,
+                    "lng": 85.3021253
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6310047302915,
+                        "lng": 85.3034659802915
+                    },
+                    "southwest": {
+                        "lat": 27.62830676970849,
+                        "lng": 85.3007680197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_dharma-71.png",
+            "icon_background_color": "#7B9EB0",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Bungadyo/Rato Machhendranath Temple",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 446,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/103102470958832842957\">Ganesh Ranjeet</a>"
+                    ],
+                    "photo_reference": "AVzFdblvbqSyz3o26ULltKEAVO1TRr8BGjYrBhT8NGAqyTVdphG5otUbqIhYbb0dlCwf-bRt5VDzbrfxslKpDBhUrA7UtU7K2ceSOJxvncy0P-9AhoDoJLC0UDFi1MTNTC6qe6sxa5PYq71WXUJL_v1ep9_BGVM7ek8EophCPljS4Fzmm0RNPBLR-1EY",
+                    "width": 670
+                }
+            ],
+            "place_id": "ChIJbW5nvLwX6zkRWMXF4DBLu3E",
+            "rating": 4.5,
+            "reference": "ChIJbW5nvLwX6zkRWMXF4DBLu3E",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "place_of_worship",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 373,
+            "vicinity": "J8H2+VV6, Karyabinayak"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6288518,
+                    "lng": 85.302477
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6301553302915,
+                        "lng": 85.3038049802915
+                    },
+                    "southwest": {
+                        "lat": 27.6274573697085,
+                        "lng": 85.3011070197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+            "name": "Bungamati Museum",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3264,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/108908545168996492550\">Max as Nabin khadka</a>"
+                    ],
+                    "photo_reference": "AVzFdbmj0WrRp64u2N0z4BmLbhbz9ko2BrfsTalagGGXwtWBQTJVSjIK6-B-8EaNVGM_6xYNVWFw_L7efgXxTi-u8y2dH5X9sMLw7oxcp4caqVL8-UxhoubYoi59TZGa3dmHbWrRzbTAGMhjqdZqmx3IoNv2G-BL3p2C7ODwsTqE2H6OVoJIZdRkO9_J",
+                    "width": 2448
+                }
+            ],
+            "place_id": "ChIJJ9sjp7wX6zkRCF-TmQb7utQ",
+            "rating": 4.5,
+            "reference": "ChIJJ9sjp7wX6zkRCF-TmQb7utQ",
+            "scope": "GOOGLE",
+            "types": [
+                "museum",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 24,
+            "vicinity": "J8H2+GXX, Karyabinayak"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6726981,
+                    "lng": 85.3253211
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.67387684999999,
+                        "lng": 85.3268666
+                    },
+                    "southwest": {
+                        "lat": 27.67072905000001,
+                        "lng": 85.3234826
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Patan Darbar Square",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 934,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/111428824511099804989\">bhupesh dawadi</a>"
+                    ],
+                    "photo_reference": "AVzFdbnVX1LbbIulvApcT-VqA-8siLAe9Qc0UrSS8cxDYxK79OnOSTax-fijSFQmlgHcqpDKLsuqcg8vPcrMQvNbkgALw98BizhvpwIGUcVvrkv1AqSimK2M3yamVX3dGyT567ryPlOrDWS-h7c3GcJL_kpAitrY8VT36vxmtKRSR4j6Y_rdL_qqt-5T",
+                    "width": 1558
+                }
+            ],
+            "place_id": "ChIJsS-qDcUZ6zkRMLWXgKN_GW8",
+            "plus_code": {
+                "compound_code": "M8FG+34 Lalitpur, Nepal",
+                "global_code": "7MV7M8FG+34"
+            },
+            "rating": 4.6,
+            "reference": "ChIJsS-qDcUZ6zkRMLWXgKN_GW8",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 30341,
+            "vicinity": "Lalitpur"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6358088,
+                    "lng": 85.33490130000001
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6372236802915,
+                        "lng": 85.33628883029152
+                    },
+                    "southwest": {
+                        "lat": 27.6345257197085,
+                        "lng": 85.33359086970852
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Karmanasa River Harisiddhi",
+            "photos": [
+                {
+                    "height": 2556,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/101226760353336573109\">Jaya Maharjan</a>"
+                    ],
+                    "photo_reference": "AVzFdbkbIluC0rIocATy0MeUYzSGeQfHp13TmVtitarFPc-8t3Ae7z7sk5xA_AjPaErNm7lJM3HhEZl3TC99j57xc5Njm-ag2Nba-HrONO7XOMSvOxyQT88UEWHlxSmt9gg0LsxDh-XHqb1gwtCNDU4Bs6TAzqEOiHWe7L-2OCB8WU42wztFd_UEvFax",
+                    "width": 3408
+                }
+            ],
+            "place_id": "ChIJOSL4BgAX6zkRYPSre7Z8yxg",
+            "reference": "ChIJOSL4BgAX6zkRYPSre7Z8yxg",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "J8PM+8XC, Sichakwo Marg, Lalitpur"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.63576779999999,
+                    "lng": 85.3404896
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6371494302915,
+                        "lng": 85.3418382302915
+                    },
+                    "southwest": {
+                        "lat": 27.63445146970849,
+                        "lng": 85.33914026970848
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Pukhusi Well Inaar",
+            "place_id": "ChIJo3fkHwAX6zkRq5PMBqfXDS0",
+            "reference": "ChIJo3fkHwAX6zkRq5PMBqfXDS0",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "J8PR+855, Pukhushi Marg Paschim, Lalitpur"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.624472,
+                    "lng": 85.33399059999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6258103302915,
+                        "lng": 85.3353869302915
+                    },
+                    "southwest": {
+                        "lat": 27.62311236970849,
+                        "lng": 85.3326889697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Nagdaha",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3025,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/111882028615479618930\">Kushal Gautam</a>"
+                    ],
+                    "photo_reference": "AVzFdbnGiVDZwywO8vuQE1VUzcKkVtQRsW1PqNHF1ieokefxewiK4Dcz-4CKnIoadbbxMI91xT4dENWdfgwV_RoDcrz-90cYCKtXRogXGc206kQDaTXwH7Vj_ZILvu6cl9XSuPcaoGycvSDUruUEXwl0Sfv_4Lzc6LP4PN6aHighnhDqlV6kNPJ4R2eJ",
+                    "width": 2884
+                }
+            ],
+            "place_id": "ChIJ-4t-_BcX6zkRlLWK9Qpcbd0",
+            "plus_code": {
+                "compound_code": "J8FM+QH Lalitpur, Nepal",
+                "global_code": "7MV7J8FM+QH"
+            },
+            "rating": 4.1,
+            "reference": "ChIJ-4t-_BcX6zkRlLWK9Qpcbd0",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 190,
+            "vicinity": "Nag Daha, Nagdaha Road 24, Lalitpur"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6324155,
+                    "lng": 85.32462369999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6336457302915,
+                        "lng": 85.32612318029149
+                    },
+                    "southwest": {
+                        "lat": 27.6309477697085,
+                        "lng": 85.32342521970848
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Balkumari View Point",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3468,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/103595500359141666173\">Dp Meteo</a>"
+                    ],
+                    "photo_reference": "AVzFdbkxba9T1V3HyJ6D03VaE9_NhElFMOn_3OfGQFjzNwcXtbzcdLXX-ECPwVyfMsHylBfejkgZ3XA9jOreSPUpkT2QuCx1ItOh7_sylO1Fa-LJAs1HVA2L-KAfxgODBoY41HKtCLK8FsjY54VxgsyS-0ObC_vOAs1QpzyDG8H1NhXNLw11lexM1nJq",
+                    "width": 4624
+                }
+            ],
+            "place_id": "ChIJG7OdbAAX6zkR11pBa9R4OL4",
+            "rating": 4,
+            "reference": "ChIJG7OdbAAX6zkR11pBa9R4OL4",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1,
+            "vicinity": "J8JF+XR9, Lalitpur"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.636443,
+                    "lng": 85.3247605
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6377923302915,
+                        "lng": 85.3261085802915
+                    },
+                    "southwest": {
+                        "lat": 27.6350943697085,
+                        "lng": 85.3234106197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Jainkhel View Point",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/103595500359141666173\">Dp Meteo</a>"
+                    ],
+                    "photo_reference": "AVzFdbmZ2w04TYINTPeLxx9BPp4QALXZCzumUW3HhaLpAVSGt4MjJ7fb61WmBqlfJ5rAMz26mfKtaFNzRpCoymrxx17vQWIfdVVVedSvnM-bDRTIvEoWrdUr-1V3Dzfg85RQNC-C1irjjV4FjX28aBCQTNjmXO6FIUeUcoM4sAB08sFZY-4EbZtvMCHa",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJfVeV_y4X6zkRoaf3q2nSupY",
+            "rating": 3.9,
+            "reference": "ChIJfVeV_y4X6zkRoaf3q2nSupY",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 43,
+            "vicinity": "J8PF+HWC, Jainkhel Road, Lalitpur"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6292254,
+                    "lng": 85.3520194
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6306074802915,
+                        "lng": 85.3532978802915
+                    },
+                    "southwest": {
+                        "lat": 27.6279095197085,
+                        "lng": 85.35059991970849
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Prem Valley Farm Stay",
+            "photos": [
+                {
+                    "height": 4160,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/105015718788663249527\">Prem Valley Farm Stay</a>"
+                    ],
+                    "photo_reference": "AVzFdbmjPW8Sm0GU6DXc4A2j-KZkQCP5Qr9G4AwmmsxkMb_a91WR5WNNGHXUpAy5as8sUQcDV3loGImk-R1ifX4wPKGnV2OuGMjCGt_nwZiCR538z5SiseTi80MRl9eZyFnw6YkBz7Q8cWvLs95Rz10lDZpT-Y2ZRr5Qba3UnRTT3BIRQ0O1jEixrN8s",
+                    "width": 3120
+                }
+            ],
+            "place_id": "ChIJ1ef7cgAX6zkRF0Kqm87irUo",
+            "plus_code": {
+                "compound_code": "J9H2+MR Godawari, Nepal",
+                "global_code": "7MV7J9H2+MR"
+            },
+            "rating": 5,
+            "reference": "ChIJ1ef7cgAX6zkRF0Kqm87irUo",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 3,
+            "vicinity": ""
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6388016,
+                    "lng": 85.3225695
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.64015123029151,
+                        "lng": 85.3238884302915
+                    },
+                    "southwest": {
+                        "lat": 27.6374532697085,
+                        "lng": 85.3211904697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Malifat View Point",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/103595500359141666173\">Dp Meteo</a>"
+                    ],
+                    "photo_reference": "AVzFdbmpAVUvlJZSG_x-TL3tEjUdb-XY_cmmWo0GeI9BNhq9y_9BynPZ32iT12uib6G1qIHW_ZH3x-IaT8k5fmT7DKrINnpbIk3KusR79XK2o1EfhQlIqrjh8iU3CkQnIfP9dh7C2pxwmRGJrKLeKxgEcZtfvIl80_f3k5zCI6IZZlcX0-w4YDvu3myB",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJNyu-ZQEX6zkRP6iUAVtsWTs",
+            "rating": 4.3,
+            "reference": "ChIJNyu-ZQEX6zkRP6iUAVtsWTs",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 29,
+            "vicinity": "J8QF+G2G, Dhapakhel - Sunnakothi - Dholahity Road, Lalitpur"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6510992,
+                    "lng": 85.3411605
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6523995802915,
+                        "lng": 85.34254898029151
+                    },
+                    "southwest": {
+                        "lat": 27.64970161970849,
+                        "lng": 85.3398510197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Benco Retreat and Fitness",
+            "opening_hours": {
+                "open_now": true
+            },
+            "place_id": "ChIJIxgyEAAX6zkRkr16kZiWzFs",
+            "rating": 5,
+            "reference": "ChIJIxgyEAAX6zkRkr16kZiWzFs",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1,
+            "vicinity": "M82R+CFM, Mahalaxmi"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6170189,
+                    "lng": 85.3489316
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6183878802915,
+                        "lng": 85.3501536302915
+                    },
+                    "southwest": {
+                        "lat": 27.6156899197085,
+                        "lng": 85.3474556697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "THE HEAVEN FALLS",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 2695,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/114755387769496344186\">Shreejohn Maharjan</a>"
+                    ],
+                    "photo_reference": "AVzFdbnrxRpX7nIkGWEdcB6Hn6ifpGgfO5i0SagQSj6DevQk2EIKKS1Oshv_yr14-XBFbuM9UAcdlDsY1piVNVole_VNL1ujH5GfbHkUA6ZRR3Np8QEsuGx6loDncK2J0S7eFTLeLoTjn8o3l1Yje4lsj5g20uzas0JW1X4T1pbdOruf5SzXINts7dS3",
+                    "width": 2268
+                }
+            ],
+            "place_id": "ChIJ_byA8oMX6zkRvaknp3ZsOqs",
+            "plus_code": {
+                "compound_code": "J88X+RH Jharuwarasi, Nepal",
+                "global_code": "7MV7J88X+RH"
+            },
+            "rating": 3.7,
+            "reference": "ChIJ_byA8oMX6zkRvaknp3ZsOqs",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 23,
+            "vicinity": "Santaneswar Mahadev Marga, Jharuwarasi"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6179811,
+                    "lng": 85.35061429999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6193134302915,
+                        "lng": 85.35196723029149
+                    },
+                    "southwest": {
+                        "lat": 27.6166154697085,
+                        "lng": 85.34926926970849
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Byaangaa nani",
+            "opening_hours": {
+                "open_now": true
+            },
+            "place_id": "ChIJjyyc_5wX6zkRRN7-Ui58vYY",
+            "rating": 5,
+            "reference": "ChIJjyyc_5wX6zkRRN7-Ui58vYY",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 2,
+            "vicinity": "J992+56X, Godawari"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6452134,
+                    "lng": 85.3575479
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.64639063029151,
+                        "lng": 85.35864938029151
+                    },
+                    "southwest": {
+                        "lat": 27.6436926697085,
+                        "lng": 85.35595141970849
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Phongaa Falcha (\u092b\u094b\u0919\u094d\u0917\u093e \u092b\u0932\u094d\u091a\u093e)",
+            "place_id": "ChIJ4S01IAAR6zkR5wQlwkBYIzs",
+            "reference": "ChIJ4S01IAAR6zkR5wQlwkBYIzs",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "J9W5+32M, Mahalaxmi"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6576288,
+                    "lng": 85.3353897
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6589533802915,
+                        "lng": 85.3366986302915
+                    },
+                    "southwest": {
+                        "lat": 27.6562554197085,
+                        "lng": 85.33400066970849
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Gautam RS House",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 4608,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/101796688833929945479\">Sunny Shakya</a>"
+                    ],
+                    "photo_reference": "AVzFdbmu0ewETrl18A6pBZNjLcnQW8MKU-Gi_SBeOq5OiKLmSPgVjZmG7phDeJJradSRAHgzc0Co1R58Uo132-AlcMqgdHwJD_6bqyhMy-ggN3ac4nD_V_i8ckULF7XZ3u-TK_-ug8LiEr0DBB-tLpJSMU0rMqmqWex7rorFVOY5ziVJQUaELd4fNnKX",
+                    "width": 3456
+                }
+            ],
+            "place_id": "ChIJwTp9G-UX6zkR8Qvmahs5_a8",
+            "rating": 4.5,
+            "reference": "ChIJwTp9G-UX6zkR8Qvmahs5_a8",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 4,
+            "vicinity": "M85P+354, Lalitpur"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6556982,
+                    "lng": 85.3490616
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.65709478029151,
+                        "lng": 85.35049053029151
+                    },
+                    "southwest": {
+                        "lat": 27.6543968197085,
+                        "lng": 85.34779256970849
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Kamal Pokhari",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/107819678280422450650\">Aatriya Production</a>"
+                    ],
+                    "photo_reference": "AVzFdbkSfwkuKVgu8YJJUtUAfgPy-TYK_NtwM0L3opFzdvAspEfH7dvBWWs6tCFilB1U6xzdrwTV91dcIVSRrgjw7nORdhfUkBbLNdpW9w5wIfFlDaj8Mt8ycsK8umFqoFm3xYA4KmL-udAq-wUMxozuH0v6_-gQeFa--g_DhFtBkpuLqWlAygGsnN5G",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJZ8NGVz0X6zkRRcNFnKX_AgU",
+            "rating": 4,
+            "reference": "ChIJZ8NGVz0X6zkRRcNFnKX_AgU",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 119,
+            "vicinity": "M84X+7JF, Mahalaxmi"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6397479,
+                    "lng": 85.3084775
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6411246802915,
+                        "lng": 85.30977238029149
+                    },
+                    "southwest": {
+                        "lat": 27.6384267197085,
+                        "lng": 85.30707441970848
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Khadka Gaun Pipalbot \u0916\u0921\u093c\u0915\u093e \u0917\u093e\u090a\u0901 \u092a\u0940\u092a\u0932\u092c\u094b\u091f",
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/102829925659669273830\">Sadaath (sAd)</a>"
+                    ],
+                    "photo_reference": "AVzFdbkgW4ZN6vUJuN5vf64pyWqEG_-UWMFpXqR94L217vP2Wi87e4A6bJC6zgTrRBTNLf6lWNFPzjygmEI0osISKI_g3iDjObhoRurUQzjVrojekNCdmEyjgXjd-LXUDY5_LgqfRqG8aF3CW8YHROGpz0eCCKK0YlJEhMutyDd4iqrs3vgm55Wgvi-k",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJl5Cm1J8X6zkRm6BLpTeWlIc",
+            "rating": 4.2,
+            "reference": "ChIJl5Cm1J8X6zkRm6BLpTeWlIc",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 9,
+            "vicinity": "J8R5+257, Karyabinayak"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6587525,
+                    "lng": 85.3247183
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6601312302915,
+                        "lng": 85.3260453802915
+                    },
+                    "southwest": {
+                        "lat": 27.65743326970849,
+                        "lng": 85.3233474197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Gharthok",
+            "photos": [
+                {
+                    "height": 1080,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/103310980879778374158\">messi smith</a>"
+                    ],
+                    "photo_reference": "AVzFdbnoQcjIspAmBThNQyR7HfIhLiVhv7bTtcudb6-rThaY18Ufzn_PHDzL0-rdMLoZ0clYdm859TWMKjJaPBe0OGrLHsXzOMVi3iXOHeIxlHmrTDIIm7atBZKk-w-ccypYltfwbdsT-TzwurUK0QUWUiYHReJvGLWRCWnQ9tjD4EHeq3SoDvqf2wh6",
+                    "width": 1920
+                }
+            ],
+            "place_id": "ChIJk577SQAZ6zkReGfhW5C9CZA",
+            "rating": 5,
+            "reference": "ChIJk577SQAZ6zkReGfhW5C9CZA",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1,
+            "vicinity": "M85F+GV4, Lalitpur"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6587525,
+                    "lng": 85.3247183
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6601312302915,
+                        "lng": 85.3260453802915
+                    },
+                    "southwest": {
+                        "lat": 27.65743326970849,
+                        "lng": 85.3233474197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Kathmandu",
+            "place_id": "ChIJsa--gDIZ6zkRQxbJH_ThVcQ",
+            "rating": 4.6,
+            "reference": "ChIJsa--gDIZ6zkRQxbJH_ThVcQ",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 7,
+            "vicinity": "M85F+GV4, Lalitpur"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 27.6598986,
+                    "lng": 85.3467898
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 27.6612598302915,
+                        "lng": 85.3483030802915
+                    },
+                    "southwest": {
+                        "lat": 27.6585618697085,
+                        "lng": 85.3456051197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Luxurysthan",
+            "place_id": "ChIJffpDHgAZ6zkR0xUfKDeJhlU",
+            "reference": "ChIJffpDHgAZ6zkR0xUfKDeJhlU",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "M85W+WPR, Mahalaxmi"
+        }
+    ],
+    "status": "OK"
+}

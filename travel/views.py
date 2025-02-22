@@ -14,4 +14,5 @@ class UserRegistration_view(APIView):
             user = serializer.save() #calls create() in UserSerializer
             print(f"User created: {user}. ID: {user.id}")
             return Response({'msg': 'User created successfully.'})
+        print("User not created")
         return Response({'msg': serializer.errors})

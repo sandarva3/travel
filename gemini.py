@@ -11,12 +11,10 @@ client = genai.Client(api_key=googleKey)
 with open('output.json', 'rb') as f:
     json_data = f.read()
 
-print("Printing JSON DATA: ")
-time.sleep(2)
-print(json_data)
 prompt = "Analyze this JSON data. Tell me what it's about. Also: Give me the names of places there, keep in mind only name, nothing else. \
-Like name1: 'name of place 1, name2:'name of place2' etc.  Important: EVen if places are duplicated, keep printing, all place's name."
-
+Like name1: 'name of place 1, name2:'name of place2' etc.  Important: EVen if places are duplicated, keep printing, all place's name. \
+EXTREMELY IMPORTANT: after doing it, search the internet about 'Pashupatinath Temple, Kathmandu' and give me its summary in 7 sentences. \
+Also tell me did you searched the web? how much websites? and did you read things about it from those websites and generated me the compact summary?"
 print("Sending to Gemini...")
 response = client.models.generate_content(
     model="gemini-2.0-flash",
@@ -36,8 +34,6 @@ if response:
         time.sleep(0.01)
 else:
     print("NO response from gemini")
-
-
 
 
 '''

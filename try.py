@@ -201,23 +201,20 @@ def get_nearby_places(latitude: float, longitude: float, min_ratings: int = 200,
                             distance_info["driving"] = matrix_result
                     
                     place_info = {
-                        "placeNo": len(filtered_places) + 1,
+#                        "placeNo": len(filtered_places) + 1,
                         "name": details.get("name"),
-                        "place_id": place_id,
+#                        "place_id": place_id,
                         "address": details.get("formatted_address"),
-                        "description": details.get("editorial_summary", {}).get("overview", "No description available"),
-                        "ratings": {
-                            "rating": details.get("rating", 0),
-                            "total_ratings": details.get("user_ratings_total", 0)
-                        },
-                        "types": details.get("types", []),
-                        "location": {
-                            "lat": dest_lat,
-                            "lng": dest_lng
-                        },
-                        "distance": distance_info,
-                        "website": details.get("website", "Not available"),
-                        "opening_hours": details.get("opening_hours", {}).get("weekday_text", [])
+#                        "description": details.get("editorial_summary", {}).get("overview", "No description available"),
+#                        "ratings": {
+#                            "rating": details.get("rating", 0),
+#                            "total_ratings": details.get("user_ratings_total", 0)
+#                        },
+#                        "types": details.get("types", []),
+#                        "distance": distance_info,
+#                        "website": details.get("website", "Not available"),
+#                        "opening_hours": details.get("opening_hours", {}).get("weekday_text", [])
+
                     }
                     filtered_places.append(place_info)
                     
@@ -255,14 +252,14 @@ def main():
     places = get_nearby_places(
         latitude=user_data["latitude"],
         longitude=user_data["longitude"],
-        min_ratings=200,  # Minimum ratings threshold
+        min_ratings=500,  # Minimum ratings threshold
         max_results=60,  # Maximum places to return
         use_distance_matrix=False,
     )
     
     if places:
         # Sort places by straight-line distance
-        places.sort(key=lambda x: x["distance"]["straight_line_km"])
+#        places.sort(key=lambda x: x["distance"]["straight_line_km"])
         
         try:
             with open("output.json", "w", encoding="utf-8") as file:

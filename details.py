@@ -2,7 +2,26 @@ import requests
 import time
 import json
 
-def get_wikipedia_summary(place_name, address):
+
+def search_wikipedia(place_name):
+    """Search Wikipedia for the best-matching page title."""
+    search_url = "https://en.wikipedia.org/w/api.php"
+    params = {
+        "action": "query",
+        "list": "search",
+        "srsearch": place_name,
+        "format": "json"
+    }
+    
+    response = requests.get(search_url, params=params)
+    if response.status_code == 200:
+        data = response.json()
+        search_results = data.get("query", {}).get("search", [])
+        if search_results:
+            return search_results[0]["title"]  # Return the best-matching title
+    return None
+
+def get_wikipedia_summary(place_name):
     """Fetches the summary (3-5 sentences) from Wikipedia API for a given place name."""
     url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{place_name.replace(' ', '_')}"
     response = requests.get(url)

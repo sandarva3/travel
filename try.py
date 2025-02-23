@@ -49,7 +49,7 @@ def get_nearby_places(latitude: float, longitude: float, min_ratings: int = 200,
     Returns:
         Optional[List[Dict]]: List of filtered place details or None if request fails
     """
-    radius = 50000  # maximum allowed radius in meters
+    radius = 25000  # maximum allowed radius in meters
     place_type = "tourist_attraction"
     filtered_places = []
     next_page_token = None
@@ -85,7 +85,7 @@ def get_nearby_places(latitude: float, longitude: float, min_ratings: int = 200,
                 
                 if details:
                     place_info = {
-                        "placeNo": len(filtered_places) + 1,
+                        "place_no": len(filtered_places) + 1,
                         "name": details.get("name"),
                         "place_id": place_id,
                         "address": details.get("formatted_address"),
@@ -95,10 +95,6 @@ def get_nearby_places(latitude: float, longitude: float, min_ratings: int = 200,
                             "total_ratings": details.get("user_ratings_total", 0)
                         },
                         "types": details.get("types", []),
-                        "location": {
-                            "lat": place.get("geometry", {}).get("location", {}).get("lat"),
-                            "lng": place.get("geometry", {}).get("location", {}).get("lng")
-                        },
                         "website": details.get("website", "Not available"),
                         "opening_hours": details.get("opening_hours", {}).get("weekday_text", [])
                     }

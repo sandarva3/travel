@@ -1,1211 +1,847 @@
 [
-   {
-      "placeNo": 1,
-      "place_id": "ChIJw3uqaBsZ6zkRjS-DDyXqWyk",
-      "name": "Hotel Shanker - Palatial Heritage Kathmandu",
-      "address": "Kathmandu",
-      "ratings": {
-         "rating": 4.3,
-         "total_ratings": 3063
-      },
-      "types": [
-         "tourist_attraction",
-         "lodging",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7188945,
-         "lng": 85.31946839999999
-      }
-   },
-   {
-      "placeNo": 2,
-      "place_id": "ChIJsciVgCoJ6zkRsjUON7SWYKw",
-      "name": "Dhaneshwor Mahadev Temple",
-      "address": "",
-      "ratings": {
-         "rating": 4.5,
-         "total_ratings": 270
-      },
-      "types": [
-         "hindu_temple",
-         "tourist_attraction",
-         "place_of_worship",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6181534,
-         "lng": 85.5225348
-      }
-   },
-   {
-      "placeNo": 3,
-      "place_id": "ChIJbW5nvLwX6zkRWMXF4DBLu3E",
-      "name": "Bungadyo/Rato Machhendranath Temple",
-      "address": "J8H2+VV6, Karyabinayak",
-      "ratings": {
-         "rating": 4.5,
-         "total_ratings": 373
-      },
-      "types": [
-         "tourist_attraction",
-         "place_of_worship",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6296562,
-         "lng": 85.3021253
-      }
-   },
-   {
-      "placeNo": 4,
-      "place_id": "ChIJkTIYyfob6zkRS61ZD-CX16A",
-      "name": "Kopan Monastery",
-      "address": "Ward 11, Budhanilkantha",
-      "ratings": {
-         "rating": 4.3,
-         "total_ratings": 1231
-      },
-      "types": [
-         "tourist_attraction",
-         "place_of_worship",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7426594,
-         "lng": 85.3649135
-      }
-   },
-   {
-      "placeNo": 5,
-      "place_id": "ChIJ1RTzuskZ6zkRo9jXsJsBGbw",
-      "name": "Patan Community Homestay",
-      "address": "Nyakha Chowk, Lalitpur",
-      "ratings": {
-         "rating": 3.7,
-         "total_ratings": 19
-      },
-      "types": [
-         "tourist_attraction",
-         "lodging",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6763327,
-         "lng": 85.32297249999999
-      }
-   },
-   {
-      "placeNo": 6,
-      "place_id": "ChIJx6qtVgoZ6zkRRPaCPt25aww",
-      "name": "Gyaneshwor Community Park",
-      "address": "P85J+8H5, ज्ञानेश्वर मार्ग, Kathmandu",
-      "ratings": {
-         "rating": 4.1,
-         "total_ratings": 188
-      },
-      "types": [
-         "park",
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.708264,
-         "lng": 85.3314999
-      }
-   },
-   {
-      "placeNo": 7,
-      "place_id": "ChIJi___P3UP6zkRtGAZ1TNjBqc",
-      "name": "Kailashnath Mahadev Statue",
-      "address": "Sanga, सुर्यविनायक",
-      "ratings": {
-         "rating": 4.5,
-         "total_ratings": 2071
-      },
-      "types": [
-         "hindu_temple",
-         "tourist_attraction",
-         "place_of_worship",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6460946,
-         "lng": 85.4741963
-      }
-   },
-   {
-      "placeNo": 8,
-      "place_id": "ChIJ58lAH1YY6zkR-2rzN2hCUwY",
-      "name": "Jagannath Temple",
-      "address": "P834+VWC, Hanuman Dhoka Road, Kathmandu",
-      "ratings": {
-         "rating": 4.7,
-         "total_ratings": 91
-      },
-      "types": [
-         "hindu_temple",
-         "tourist_attraction",
-         "place_of_worship",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7046884,
-         "lng": 85.3072686
-      }
-   },
-   {
-      "placeNo": 9,
-      "place_id": "ChIJDZDTYm0Z6zkRjHsQdLKntJQ",
-      "name": "Handigaun",
-      "address": "Handigaun Marg, Kathmandu",
-      "ratings": {
-         "rating": 4.3,
-         "total_ratings": 601
-      },
-      "types": [
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.716585,
-         "lng": 85.3357285
-      }
-   },
-   {
-      "placeNo": 10,
-      "place_id": "ChIJrciCm40Y6zkR93t5EOS9Ma4",
-      "name": "Swoyambhu Mahachaitya",
-      "address": "P77R+X52, BHAGANPAU",
-      "ratings": {
-         "rating": 4.6,
-         "total_ratings": 18371
-      },
-      "types": [
-         "tourist_attraction",
-         "place_of_worship",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7148996,
-         "lng": 85.29039569999999
-      }
-   },
-   {
-      "placeNo": 11,
-      "place_id": "ChIJ8z1bqAYZ6zkRrFv87UH1OU8",
-      "name": "Nepal Holiday Makers Tours and Travels Pvt. Ltd",
-      "address": "Yak and Yeti Lane, Durbarmarg, Kathmandu, Nepal., काठमाडौँ",
-      "ratings": {
-         "rating": 4,
-         "total_ratings": 28
-      },
-      "types": [
-         "travel_agency",
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7110276,
-         "lng": 85.3194496
-      }
-   },
-   {
-      "placeNo": 12,
-      "place_id": "ChIJM_bgbq0a6zkR-flmS7CU1Y0",
-      "name": "The Peacock Shop",
-      "address": "Behind Dattatraya Temple Near the Peacock Window, भक्तपुर",
-      "ratings": {
-         "rating": 4.9,
-         "total_ratings": 34
-      },
-      "types": [
-         "tourist_attraction",
-         "museum",
-         "place_of_worship",
-         "point_of_interest",
-         "store",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.673221,
-         "lng": 85.435858
-      }
-   },
-   {
-      "placeNo": 13,
-      "place_id": "ChIJtz-p6AgZ6zkRPaBTRygyUjI",
-      "name": "Russian House",
-      "address": "Kamal Pokhari Street, Kathmandu",
-      "ratings": {
-         "rating": 4.2,
-         "total_ratings": 371
-      },
-      "types": [
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7095833,
-         "lng": 85.3259132
-      }
-   },
-   {
-      "placeNo": 14,
-      "place_id": "ChIJcy5iv5AP6zkRdS-eLyrmnTE",
-      "name": "Kathmandu Fun Valley",
-      "address": "अरनिको राजमार्ग Bhaktapur, Araniko Highway Bhaktapur, Suryabinayak",
-      "ratings": {
-         "rating": 3.9,
-         "total_ratings": 792
-      },
-      "types": [
-         "tourist_attraction",
-         "amusement_park",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6467707,
-         "lng": 85.4670261
-      }
-   },
-   {
-      "placeNo": 15,
-      "place_id": "ChIJhYoGBPwY6zkRHlLYiF-hzNM",
-      "name": "Narba Treks & Expeditions(p)Ltd.",
-      "address": "Chhetrapati, काठमाडौँ",
-      "ratings": {
-         "rating": 4.9,
-         "total_ratings": 39
-      },
-      "types": [
-         "travel_agency",
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7103752,
-         "lng": 85.30955829999999
-      }
-   },
-   {
-      "placeNo": 16,
-      "place_id": "ChIJJWlnhswZ6zkRGv7_6y9jo-0",
-      "name": "RN Joshi Museum / Park Gallery",
-      "address": "Opposite to Jhamsikhel Road, Pulchowk, Lalitpur",
-      "ratings": {
-         "rating": 3.5,
-         "total_ratings": 47
-      },
-      "types": [
-         "tourist_attraction",
-         "art_gallery",
-         "museum",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6754439,
-         "lng": 85.3159484
-      }
-   },
-   {
-      "placeNo": 17,
-      "place_id": "ChIJFeASEl8Z6zkR7Be85lgkKDI",
-      "name": "Shangri-la Nepal Trek P. Ltd",
-      "address": "10, Kapan, Panchakanya Chowk Bhudanilkantha, Kathmandu",
-      "ratings": {
-         "rating": 3.9,
-         "total_ratings": 39
-      },
-      "types": [
-         "travel_agency",
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.73357730000001,
-         "lng": 85.353388
-      }
-   },
-   {
-      "placeNo": 18,
-      "place_id": "ChIJtQvRxfwY6zkRuSkj8wCojwg",
-      "name": "Boundless Adventure (P) Ltd. | Best Trekking Company in Nepal | Guide to Trekking in Nepal",
-      "address": "Paknajol Marg, Kathmandu",
-      "ratings": {
-         "rating": 5,
-         "total_ratings": 26
-      },
-      "types": [
-         "travel_agency",
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7168179,
-         "lng": 85.3088934
-      }
-   },
-   {
-      "placeNo": 19,
-      "place_id": "ChIJY937crAZ6zkR45QAr1tReKs",
-      "name": "Nepal Art Council",
-      "address": "M8RF+WF2, Madan Bhandari Road, Kathmandu",
-      "ratings": {
-         "rating": 4.4,
-         "total_ratings": 1064
-      },
-      "types": [
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6922589,
-         "lng": 85.3236319
-      }
-   },
-   {
-      "placeNo": 20,
-      "place_id": "ChIJ55-yyvwY6zkRTGiROpIMiFY",
-      "name": "Magic Expedition and Tours",
-      "address": "Z Street, Kathmandu",
-      "ratings": {
-         "rating": 5,
-         "total_ratings": 114
-      },
-      "types": [
-         "travel_agency",
-         "tourist_attraction",
-         "park",
-         "school",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.716704,
-         "lng": 85.30983499999999
-      }
-   },
-   {
-      "placeNo": 21,
-      "place_id": "ChIJl-NWmh8K6zkRcLz40sc6rLY",
-      "name": "Namobuddha Monastery",
-      "address": "HHCM+F2R, Namobuddha Road, Simalchaur Syampati",
-      "ratings": {
-         "rating": 4.6,
-         "total_ratings": 2053
-      },
-      "types": [
-         "tourist_attraction",
-         "place_of_worship",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.5712337,
-         "lng": 85.5825272
-      }
-   },
-   {
-      "placeNo": 22,
-      "place_id": "ChIJQ8qU5QEZ6zkRp_gC5x9z8NU",
-      "name": "Joy Travels and Tours Pvt. Ltd.",
-      "address": "Jyatha Marg, Kathmandu",
-      "ratings": {
-         "rating": 5,
-         "total_ratings": 71
-      },
-      "types": [
-         "tourist_attraction",
-         "travel_agency",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7100359,
-         "lng": 85.3140346
-      }
-   },
-   {
-      "placeNo": 23,
-      "place_id": "ChIJlYz2OlYY6zkRlDqJ5_Fj9vA",
-      "name": "Gaddi Baithak",
-      "address": "P834+HMW, Kathmandu",
-      "ratings": {
-         "rating": 4.4,
-         "total_ratings": 190
-      },
-      "types": [
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7039986,
-         "lng": 85.3067169
-      }
-   },
-   {
-      "placeNo": 24,
-      "place_id": "ChIJw10uEqkZ6zkRdbidV_QksT4",
-      "name": "Kathmandu Fun Park",
-      "address": "Pradarshani Marg, Kathmandu",
-      "ratings": {
-         "rating": 4,
-         "total_ratings": 4234
-      },
-      "types": [
-         "amusement_park",
-         "tourist_attraction",
-         "park",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.701377,
-         "lng": 85.32039809999999
-      }
-   },
-   {
-      "placeNo": 25,
-      "place_id": "ChIJpUfhGVYY6zkRSRfU0WG-41s",
-      "name": "Hanuman Dhoka",
-      "address": "Hanuman Dhoka Sadak, Kathmandu",
-      "ratings": {
-         "rating": 4.5,
-         "total_ratings": 1191
-      },
-      "types": [
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.704272,
-         "lng": 85.307417
-      }
-   },
-   {
-      "placeNo": 26,
-      "place_id": "ChIJ6QvDKwIZ6zkRl-EMjXNfCQY",
-      "name": "Casino Anna",
-      "address": "Seto Dhoka Marg, Kathmandu",
-      "ratings": {
-         "rating": 3.9,
-         "total_ratings": 63
-      },
-      "types": [
-         "casino",
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7105504,
-         "lng": 85.31657009999999
-      }
-   },
-   {
-      "placeNo": 27,
-      "place_id": "ChIJi-BViAIZ6zkRaq6h8vq9K_U",
-      "name": "Garden of Dreams",
-      "address": "P877+MR2, Tridevi Sadak, Kathmandu",
-      "ratings": {
-         "rating": 4.2,
-         "total_ratings": 12614
-      },
-      "types": [
-         "tourist_attraction",
-         "park",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7141261,
-         "lng": 85.3145041
-      }
-   },
-   {
-      "placeNo": 28,
-      "place_id": "ChIJ29IAmgIZ6zkR_00aesGjBgI",
-      "name": "Himaland Adventure Treks Pvt. Ltd.",
-      "address": "Shanti Niketan Marg, Kathmandu",
-      "ratings": {
-         "rating": 5,
-         "total_ratings": 7
-      },
-      "types": [
-         "travel_agency",
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7185657,
-         "lng": 85.3290349
-      }
-   },
-   {
-      "placeNo": 29,
-      "place_id": "ChIJoyVFdf0Y6zkRJc5Z7Qhkij8",
-      "name": "Nepal Tour Guide Team Trek & Expedition Pvt Ltd.",
-      "address": "P887+837, Kathmandu",
-      "ratings": {
-         "rating": 4.9,
-         "total_ratings": 30
-      },
-      "types": [
-         "tourist_attraction",
-         "travel_agency",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.71580759999999,
-         "lng": 85.31269979999999
-      }
-   },
-   {
-      "placeNo": 30,
-      "place_id": "ChIJoS-AO-MY6zkR88MID8gZCt0",
-      "name": "Scenic Nepal Treks & Expedition Pvt. Ltd.",
-      "address": "Bhagwati Marg, Kathmandu",
-      "ratings": {
-         "rating": 4.8,
-         "total_ratings": 63
-      },
-      "types": [
-         "tourist_attraction",
-         "travel_agency",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7153431,
-         "lng": 85.3113965
-      }
-   },
-   {
-      "placeNo": 31,
-      "place_id": "ChIJX3fTwPwY6zkRq3cnXvyGT_I",
-      "name": "Adventure Great Himalaya Treks & Expedition",
-      "address": "सात घुम्ती मार्ग, Kathmandu",
-      "ratings": {
-         "rating": 4.9,
-         "total_ratings": 91
-      },
-      "types": [
-         "tourist_attraction",
-         "park",
-         "travel_agency",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.71564990000001,
-         "lng": 85.3098571
-      }
-   },
-   {
-      "placeNo": 32,
-      "place_id": "ChIJAQi3AP0Y6zkRZmtXnfsofik",
-      "name": "Leaf Holidays Treks and Expedition",
-      "address": "Thamel Marg, Kathmandu",
-      "ratings": {
-         "rating": 4.5,
-         "total_ratings": 11
-      },
-      "types": [
-         "tourist_attraction",
-         "park",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7169915,
-         "lng": 85.3117133
-      }
-   },
-   {
-      "placeNo": 33,
-      "place_id": "ChIJR6uG6dgb6zkReO3NxkEGOc4",
-      "name": "Casino Pride Nepal",
-      "address": "Taragaon Boudha Box 19784, Taragaon 44601, Nepal, Kathmandu",
-      "ratings": {
-         "rating": 4.1,
-         "total_ratings": 399
-      },
-      "types": [
-         "casino",
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.722607,
-         "lng": 85.35647
-      }
-   },
-   {
-      "placeNo": 34,
-      "place_id": "ChIJJ9sjp7wX6zkRCF-TmQb7utQ",
-      "name": "Bungamati Museum",
-      "address": "J8H2+GXX, Karyabinayak",
-      "ratings": {
-         "rating": 4.5,
-         "total_ratings": 24
-      },
-      "types": [
-         "museum",
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6288518,
-         "lng": 85.302477
-      }
-   },
-   {
-      "placeNo": 35,
-      "place_id": "ChIJeckbpfoY6zkRR9FtukpQOPk",
-      "name": "Icicles Adventure Treks & Tours (P.) Ltd.",
-      "address": "Paknajol Marg, Kathmandu",
-      "ratings": {
-         "rating": 5,
-         "total_ratings": 45
-      },
-      "types": [
-         "travel_agency",
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7181353,
-         "lng": 85.3084872
-      }
-   },
-   {
-      "placeNo": 36,
-      "place_id": "ChIJter_HaIZ6zkRziuv42S7fNo",
-      "name": "Mountain Climbers Treks",
-      "address": "Pahikwo Sadak, Kathmandu",
-      "ratings": {
-         "rating": 4,
-         "total_ratings": 4
-      },
-      "types": [
-         "tourist_attraction",
-         "park",
-         "travel_agency",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.717493,
-         "lng": 85.30193349999999
-      }
-   },
-   {
-      "placeNo": 37,
-      "place_id": "ChIJAVbPnp0Z6zkRDHwPOk0G2FM",
-      "name": "OJHA HOLIDAYS Tours and Treks",
-      "address": "Bhirkuti chwok 6, Kathmandu",
-      "ratings": {
-         "rating": 3.9,
-         "total_ratings": 27
-      },
-      "types": [
-         "tourist_attraction",
-         "travel_agency",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7273078,
-         "lng": 85.3569653
-      }
-   },
-   {
-      "placeNo": 38,
-      "place_id": "ChIJGWl75-IY6zkRaTGSyuCJ3LM",
-      "name": "Kanchenjunga Trekking",
-      "address": "Kathmandu",
-      "ratings": {
-         "rating": 4,
-         "total_ratings": 9
-      },
-      "types": [
-         "tourist_attraction",
-         "travel_agency",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7260237,
-         "lng": 85.3135204
-      }
-   },
-   {
-      "placeNo": 39,
-      "place_id": "ChIJnRha5AEZ6zkR0zpnDM6OF_Y",
-      "name": "Red Carpet Journey | Nepal Tours and Travels",
-      "address": "Samakhusi Marg, Kathmandu",
-      "ratings": {
-         "rating": 4.5,
-         "total_ratings": 13
-      },
-      "types": [
-         "travel_agency",
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.728793,
-         "lng": 85.3145811
-      }
-   },
-   {
-      "placeNo": 40,
-      "place_id": "ChIJKd5mzt4Y6zkREbZLpC0hJFY",
-      "name": "Hotel Royal Kathmandu",
-      "address": "Mitranagar 26, Kathmandu",
-      "ratings": {
-         "rating": 4.4,
-         "total_ratings": 562
-      },
-      "types": [
-         "tourist_attraction",
-         "lodging",
-         "restaurant",
-         "food",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7335127,
-         "lng": 85.3103671
-      }
-   },
-   {
-      "placeNo": 41,
-      "place_id": "ChIJU_FBrxcQ6zkRucxxeMkC8KI",
-      "name": "Pilot Baba Ashram",
-      "address": "JCRF+333, Ghyampe Danda Sadak, Anantalingeshwar",
-      "ratings": {
-         "rating": 4.2,
-         "total_ratings": 1605
-      },
-      "types": [
-         "hindu_temple",
-         "tourist_attraction",
-         "place_of_worship",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6401489,
-         "lng": 85.42265909999999
-      }
-   },
-   {
-      "placeNo": 42,
-      "place_id": "ChIJF-KQD-4Y6zkRpFmfiBQ1LYs",
-      "name": "Annapurna Base Camp Trekking",
-      "address": "Lolang, Hariyali Samaj, Kathmandu NP, तारकेश्वर",
-      "ratings": {
-         "rating": 4.4,
-         "total_ratings": 161
-      },
-      "types": [
-         "tourist_attraction",
-         "park",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7500188,
-         "lng": 85.2935846
-      }
-   },
-   {
-      "placeNo": 43,
-      "place_id": "ChIJFUJaxh4j6zkRU0ZdTJZGihE",
-      "name": "Sri Aurobindo Yoga Mandir",
-      "address": "M6MG+H6J, H02, Chandragiri",
-      "ratings": {
-         "rating": 4.5,
-         "total_ratings": 97
-      },
-      "types": [
-         "tourist_attraction",
-         "place_of_worship",
-         "health",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6828059,
-         "lng": 85.2262538
-      }
-   },
-   {
-      "placeNo": 44,
-      "place_id": "ChIJPY_SgpkG6zkR3cV9XUdWKag",
-      "name": "Nagarkot Panoramic Hiking Trail",
-      "address": "PGJH+649, Nagarkot Dandagoan Highway, Baluwapati Deupur",
-      "ratings": {
-         "rating": 4.3,
-         "total_ratings": 137
-      },
-      "types": [
-         "landmark",
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7305368,
-         "lng": 85.52787239999999
-      }
-   },
-   {
-      "placeNo": 45,
-      "place_id": "ChIJDWiIXrIO6zkRRrFrTIeBrt8",
-      "name": "Panauti Museum",
-      "address": "HGP8+3R4, Indreshwor Temple Square, Panauti",
-      "ratings": {
-         "rating": 4.4,
-         "total_ratings": 200
-      },
-      "types": [
-         "museum",
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.5851355,
-         "lng": 85.51706879999999
-      }
-   },
-   {
-      "placeNo": 46,
-      "place_id": "ChIJsS-qDcUZ6zkRMLWXgKN_GW8",
-      "name": "Patan Darbar Square",
-      "address": "Lalitpur",
-      "ratings": {
-         "rating": 4.6,
-         "total_ratings": 30345
-      },
-      "types": [
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6726981,
-         "lng": 85.3253211
-      }
-   },
-   {
-      "placeNo": 47,
-      "place_id": "ChIJcXj30VcY6zkR_UGmBRA5sMU",
-      "name": "Kathmandu Durbar Square",
-      "address": "Kathmandu",
-      "ratings": {
-         "rating": 4.5,
-         "total_ratings": 36082
-      },
-      "types": [
-         "hindu_temple",
-         "tourist_attraction",
-         "place_of_worship",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7042737,
-         "lng": 85.307463
-      }
-   },
-   {
-      "placeNo": 48,
-      "place_id": "ChIJMd8y7K8a6zkR_ZuvMec5o90",
-      "name": "Bhaktapur Durbar Square",
-      "address": "Durbar square, Bhaktapur",
-      "ratings": {
-         "rating": 4.6,
-         "total_ratings": 21601
-      },
-      "types": [
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.67207,
-         "lng": 85.4282951
-      }
-   },
-   {
-      "placeNo": 49,
-      "place_id": "ChIJTSyVq94b6zkRgRbJHZMkRT0",
-      "name": "Shechen Monastery",
-      "address": "Tushal-Mahankal Road, Kathmandu",
-      "ratings": {
-         "rating": 4.6,
-         "total_ratings": 424
-      },
-      "types": [
-         "tourist_attraction",
-         "place_of_worship",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7237216,
-         "lng": 85.3607531
-      }
-   },
-   {
-      "placeNo": 50,
-      "place_id": "ChIJbSMZfDQc6zkRsS9kHIModWQ",
-      "name": "Shivapuri Nagarjun National Park",
-      "address": "",
-      "ratings": {
-         "rating": 4.4,
-         "total_ratings": 5774
-      },
-      "types": [
-         "tourist_attraction",
-         "park",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.8129232,
-         "lng": 85.38593399999999
-      }
-   },
-   {
-      "placeNo": 51,
-      "place_id": "ChIJOdE2v_0Y6zkREkUOB8aiIjg",
-      "name": "Nepal Tours Destination",
-      "address": "Jyatha, Kathmandu",
-      "ratings": {
-         "rating": 4.1,
-         "total_ratings": 28
-      },
-      "types": [
-         "tourist_attraction",
-         "travel_agency",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.712709,
-         "lng": 85.31210689999999
-      }
-   },
-   {
-      "placeNo": 52,
-      "place_id": "ChIJZyAmmPgY6zkRIQ3g113QWUY",
-      "name": "Bhandarkhal",
-      "address": "P844+7RF, Kathmandu",
-      "ratings": {
-         "rating": 4.2,
-         "total_ratings": 37
-      },
-      "types": [
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7056862,
-         "lng": 85.3070381
-      }
-   },
-   {
-      "placeNo": 53,
-      "place_id": "ChIJpftHp8UZ6zkRWyyTNiwsQgg",
-      "name": "Patan Museum",
-      "address": "M8FG+944, भिन्द्यो क्व - सौग: लँ, Lalitpur",
-      "ratings": {
-         "rating": 4.6,
-         "total_ratings": 1436
-      },
-      "types": [
-         "tourist_attraction",
-         "museum",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6733773,
-         "lng": 85.3253361
-      }
-   },
-   {
-      "placeNo": 54,
-      "place_id": "ChIJyaee3BUQ6zkREYm-r7QlPMQ",
-      "name": "Ghyampe Danda",
-      "address": "JCRC+FGW, Ghyampe Danda Sadak, Anantalingeshwar",
-      "ratings": {
-         "rating": 4.2,
-         "total_ratings": 1531
-      },
-      "types": [
-         "tourist_attraction",
-         "park",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6412309,
-         "lng": 85.4213408
-      }
-   },
-   {
-      "placeNo": 55,
-      "place_id": "ChIJPzxOv68a6zkRsdtkTxaZ0Qo",
-      "name": "Shilu Mahadev - Phasi Dega",
-      "address": "Bhaktapur",
-      "ratings": {
-         "rating": 4.6,
-         "total_ratings": 56
-      },
-      "types": [
-         "hindu_temple",
-         "tourist_attraction",
-         "place_of_worship",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6723271,
-         "lng": 85.42895790000001
-      }
-   },
-   {
-      "placeNo": 56,
-      "place_id": "ChIJTUM6SA0Z6zkR1RHPctRetTU",
-      "name": "Bhagwati Temple",
-      "address": "P88M+FG6, Kathmandu",
-      "ratings": {
-         "rating": 4.4,
-         "total_ratings": 64
-      },
-      "types": [
-         "hindu_temple",
-         "tourist_attraction",
-         "place_of_worship",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7161723,
-         "lng": 85.3337663
-      }
-   },
-   {
-      "placeNo": 57,
-      "place_id": "ChIJWZqbLwcZ6zkRCP2eRcXo5hI",
-      "name": "Shree Kamaladi Ganesh Temple",
-      "address": "P859+4P7, Kamaladi Marg, Kathmandu",
-      "ratings": {
-         "rating": 4.7,
-         "total_ratings": 1303
-      },
-      "types": [
-         "hindu_temple",
-         "tourist_attraction",
-         "place_of_worship",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7077936,
-         "lng": 85.31930729999999
-      }
-   },
-   {
-      "placeNo": 58,
-      "place_id": "ChIJu_Fi5WAY6zkRg8Hte-uvSxo",
-      "name": "Casino Mahjong",
-      "address": "Soaltee Crown Plaza, Tahachal Marg, Kathmandu",
-      "ratings": {
-         "rating": 4.2,
-         "total_ratings": 790
-      },
-      "types": [
-         "casino",
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7007362,
-         "lng": 85.2904477
-      }
-   },
-   {
-      "placeNo": 59,
-      "place_id": "ChIJrUqtEFYY6zkRo-kGXHp_wa8",
-      "name": "Nasal Chowk",
-      "address": "P834+MXP, Layaku Marg, Kathmandu",
-      "ratings": {
-         "rating": 4.5,
-         "total_ratings": 603
-      },
-      "types": [
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.7042077,
-         "lng": 85.30744179999999
-      }
-   },
-   {
-      "placeNo": 60,
-      "place_id": "ChIJgxRrn_EZ6zkR5xWBPA8jr9I",
-      "name": "ITOWN Pani Tanki",
-      "address": "M88R+2FJ, Mahalaxmi",
-      "ratings": {
-         "rating": 3,
-         "total_ratings": 1
-      },
-      "types": [
-         "tourist_attraction",
-         "point_of_interest",
-         "establishment"
-      ],
-      "location": {
-         "lat": 27.6651222,
-         "lng": 85.3410603
-      }
-   }
+    {
+        "placeNo": 1,
+        "name": "Hotel Shanker - Palatial Heritage Kathmandu",
+        "place_id": "ChIJw3uqaBsZ6zkRjS-DDyXqWyk",
+        "address": "Lazimpat, Kathmandu 44600, Nepal",
+        "description": "Posh hotel featuring an outdoor pool, 2 restaurants & a spa, plus 2 bars & complimentary Wi-Fi.",
+        "ratings": {
+            "rating": 4.3,
+            "total_ratings": 3063
+        },
+        "types": [
+            "tourist_attraction",
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.7188945,
+            "lng": 85.31946839999999
+        },
+        "website": "https://www.shankerhotel.com.np/",
+        "opening_hours": [
+            "Monday: Open 24 hours",
+            "Tuesday: Open 24 hours",
+            "Wednesday: Open 24 hours",
+            "Thursday: Open 24 hours",
+            "Friday: Open 24 hours",
+            "Saturday: Open 24 hours",
+            "Sunday: Open 24 hours"
+        ]
+    },
+    {
+        "placeNo": 2,
+        "name": "Dhaneshwor Mahadev Temple",
+        "place_id": "ChIJsciVgCoJ6zkRsjUON7SWYKw",
+        "address": "45209, Nepal",
+        "description": "No description available",
+        "ratings": {
+            "rating": 4.5,
+            "total_ratings": 270
+        },
+        "types": [
+            "hindu_temple",
+            "tourist_attraction",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.6181534,
+            "lng": 85.5225348
+        },
+        "website": "Not available",
+        "opening_hours": [
+            "Monday: Open 24 hours",
+            "Tuesday: Open 24 hours",
+            "Wednesday: Open 24 hours",
+            "Thursday: Open 24 hours",
+            "Friday: Open 24 hours",
+            "Saturday: Open 24 hours",
+            "Sunday: Open 24 hours"
+        ]
+    },
+    {
+        "placeNo": 3,
+        "name": "Bungadyo/Rato Machhendranath Temple",
+        "place_id": "ChIJbW5nvLwX6zkRWMXF4DBLu3E",
+        "address": "J8H2+VV6, Karyabinayak 44700, Nepal",
+        "description": "No description available",
+        "ratings": {
+            "rating": 4.5,
+            "total_ratings": 373
+        },
+        "types": [
+            "tourist_attraction",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.6296562,
+            "lng": 85.3021253
+        },
+        "website": "Not available",
+        "opening_hours": [
+            "Monday: Open 24 hours",
+            "Tuesday: Open 24 hours",
+            "Wednesday: Open 24 hours",
+            "Thursday: Open 24 hours",
+            "Friday: Open 24 hours",
+            "Saturday: Open 24 hours",
+            "Sunday: Open 24 hours"
+        ]
+    },
+    {
+        "placeNo": 4,
+        "name": "Kopan Monastery",
+        "place_id": "ChIJkTIYyfob6zkRS61ZD-CX16A",
+        "address": "P9V7+3X7 Ward 11, Budhanilkantha 44600, Nepal",
+        "description": "Large Tibetan Buddhist monastery providing courses & retreats in a picturesque hilltop setting.",
+        "ratings": {
+            "rating": 4.3,
+            "total_ratings": 1231
+        },
+        "types": [
+            "tourist_attraction",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.7426594,
+            "lng": 85.3649135
+        },
+        "website": "http://www.kopanmonastery.com/",
+        "opening_hours": [
+            "Monday: 10:00 AM – 4:00 PM",
+            "Tuesday: 10:00 AM – 4:00 PM",
+            "Wednesday: 10:00 AM – 4:00 PM",
+            "Thursday: 10:00 AM – 4:00 PM",
+            "Friday: 10:00 AM – 4:00 PM",
+            "Saturday: 10:00 AM – 4:00 PM",
+            "Sunday: 10:00 AM – 4:00 PM"
+        ]
+    },
+    {
+        "placeNo": 5,
+        "name": "Kailashnath Mahadev Statue",
+        "place_id": "ChIJi___P3UP6zkRtGAZ1TNjBqc",
+        "address": "Sanga, सुर्यविनायक 44800, Nepal",
+        "description": "Towering sculpture of the Hindu deity Shiva in copper, zinc & steel, next to a mountain temple.",
+        "ratings": {
+            "rating": 4.5,
+            "total_ratings": 2071
+        },
+        "types": [
+            "hindu_temple",
+            "tourist_attraction",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.6460946,
+            "lng": 85.4741963
+        },
+        "website": "http://kailashnathmahadevstatue.blogspot.com/p/history.html",
+        "opening_hours": [
+            "Monday: 7:30 AM – 6:00 PM",
+            "Tuesday: 7:30 AM – 6:00 PM",
+            "Wednesday: 7:30 AM – 6:00 PM",
+            "Thursday: 7:30 AM – 6:00 PM",
+            "Friday: 7:30 AM – 6:00 PM",
+            "Saturday: 7:30 AM – 6:00 PM",
+            "Sunday: 7:30 AM – 6:00 PM"
+        ]
+    },
+    {
+        "placeNo": 6,
+        "name": "Handigaun",
+        "place_id": "ChIJDZDTYm0Z6zkRjHsQdLKntJQ",
+        "address": "Handigaun Marg, Kathmandu 44600, Nepal",
+        "description": "No description available",
+        "ratings": {
+            "rating": 4.3,
+            "total_ratings": 601
+        },
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.716585,
+            "lng": 85.3357285
+        },
+        "website": "http://tiktok.com/@macha.choila.ghar",
+        "opening_hours": [
+            "Monday: Open 24 hours",
+            "Tuesday: Open 24 hours",
+            "Wednesday: Open 24 hours",
+            "Thursday: Open 24 hours",
+            "Friday: Open 24 hours",
+            "Saturday: Open 24 hours",
+            "Sunday: Open 24 hours"
+        ]
+    },
+    {
+        "placeNo": 7,
+        "name": "Swoyambhu Mahachaitya",
+        "place_id": "ChIJrciCm40Y6zkR93t5EOS9Ma4",
+        "address": "P77R+X52, BHAGANPAU 44600, Nepal",
+        "description": "A very old religious site, this Buddhist complex has an iconic stupa, temples & many shrines.",
+        "ratings": {
+            "rating": 4.6,
+            "total_ratings": 18371
+        },
+        "types": [
+            "tourist_attraction",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.7148996,
+            "lng": 85.29039569999999
+        },
+        "website": "Not available",
+        "opening_hours": [
+            "Monday: Open 24 hours",
+            "Tuesday: Open 24 hours",
+            "Wednesday: Open 24 hours",
+            "Thursday: Open 24 hours",
+            "Friday: Open 24 hours",
+            "Saturday: Open 24 hours",
+            "Sunday: Open 24 hours"
+        ]
+    },
+    {
+        "placeNo": 8,
+        "name": "Russian House",
+        "place_id": "ChIJtz-p6AgZ6zkRPaBTRygyUjI",
+        "address": "Kamal Pokhari St, Kathmandu 44600, Nepal",
+        "description": "No description available",
+        "ratings": {
+            "rating": 4.2,
+            "total_ratings": 371
+        },
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.7095833,
+            "lng": 85.3259132
+        },
+        "website": "http://www.russiancenter.org.np/",
+        "opening_hours": [
+            "Monday: 10:00 AM – 5:00 PM",
+            "Tuesday: 10:00 AM – 5:00 PM",
+            "Wednesday: 10:00 AM – 5:00 PM",
+            "Thursday: 10:00 AM – 5:00 PM",
+            "Friday: 10:00 AM – 5:00 PM",
+            "Saturday: 10:00 AM – 5:00 PM",
+            "Sunday: 10:00 AM – 5:00 PM"
+        ]
+    },
+    {
+        "placeNo": 9,
+        "name": "Kathmandu Fun Valley",
+        "place_id": "ChIJcy5iv5AP6zkRdS-eLyrmnTE",
+        "address": "अरनिको राजमार्ग Bhaktapur, Araniko Highway Bhaktapur, Suryabinayak 44805, Nepal",
+        "description": "No description available",
+        "ratings": {
+            "rating": 3.9,
+            "total_ratings": 792
+        },
+        "types": [
+            "tourist_attraction",
+            "amusement_park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.6467707,
+            "lng": 85.4670261
+        },
+        "website": "https://kathmandufunvalley.fun/",
+        "opening_hours": [
+            "Monday: 9:00 AM – 6:00 PM",
+            "Tuesday: 9:00 AM – 6:00 PM",
+            "Wednesday: 9:00 AM – 6:00 PM",
+            "Thursday: 9:00 AM – 6:00 PM",
+            "Friday: 9:00 AM – 6:00 PM",
+            "Saturday: 9:00 AM – 6:00 PM",
+            "Sunday: 9:00 AM – 6:00 PM"
+        ]
+    },
+    {
+        "placeNo": 10,
+        "name": "Nepal Art Council",
+        "place_id": "ChIJY937crAZ6zkR45QAr1tReKs",
+        "address": "M8RF+WF2, Madan Bhandari Road, Kathmandu 44600, Nepal",
+        "description": "Long-running nonprofit with a large gallery space featuring rotating exhibits by national artists.",
+        "ratings": {
+            "rating": 4.4,
+            "total_ratings": 1064
+        },
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.6922589,
+            "lng": 85.3236319
+        },
+        "website": "http://www.nepalartcouncil.org.np/",
+        "opening_hours": [
+            "Monday: 10:00 AM – 5:00 PM",
+            "Tuesday: 10:00 AM – 5:00 PM",
+            "Wednesday: 10:00 AM – 5:00 PM",
+            "Thursday: 10:00 AM – 5:00 PM",
+            "Friday: 10:00 AM – 4:00 PM",
+            "Saturday: Closed",
+            "Sunday: 10:00 AM – 5:00 PM"
+        ]
+    },
+    {
+        "placeNo": 11,
+        "name": "Namobuddha Monastery",
+        "place_id": "ChIJl-NWmh8K6zkRcLz40sc6rLY",
+        "address": "HHCM+F2R, Namobuddha Rd, Simalchaur Syampati 45200, Nepal",
+        "description": "Tranquil monastery, one of Nepal's holiest pilgrimage sites, with Himalayas views & a guesthouse.",
+        "ratings": {
+            "rating": 4.6,
+            "total_ratings": 2053
+        },
+        "types": [
+            "tourist_attraction",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.5712337,
+            "lng": 85.5825272
+        },
+        "website": "http://namobuddha.org/",
+        "opening_hours": [
+            "Monday: Open 24 hours",
+            "Tuesday: Open 24 hours",
+            "Wednesday: Open 24 hours",
+            "Thursday: Open 24 hours",
+            "Friday: Open 24 hours",
+            "Saturday: Open 24 hours",
+            "Sunday: Open 24 hours"
+        ]
+    },
+    {
+        "placeNo": 12,
+        "name": "Kathmandu Fun Park",
+        "place_id": "ChIJw10uEqkZ6zkRdbidV_QksT4",
+        "address": "Pradarshani Marg, Kathmandu 44600, Nepal",
+        "description": "No description available",
+        "ratings": {
+            "rating": 4,
+            "total_ratings": 4234
+        },
+        "types": [
+            "amusement_park",
+            "tourist_attraction",
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.701377,
+            "lng": 85.32039809999999
+        },
+        "website": "http://www.amyir.com/",
+        "opening_hours": [
+            "Monday: 10:00 AM – 5:30 PM",
+            "Tuesday: 10:00 AM – 5:30 PM",
+            "Wednesday: 10:00 AM – 5:30 PM",
+            "Thursday: 10:00 AM – 5:30 PM",
+            "Friday: 10:00 AM – 5:30 PM",
+            "Saturday: 1:00 – 6:30 PM",
+            "Sunday: 10:00 AM – 5:30 PM"
+        ]
+    },
+    {
+        "placeNo": 13,
+        "name": "Hanuman Dhoka",
+        "place_id": "ChIJpUfhGVYY6zkRSRfU0WG-41s",
+        "address": "Hanuman Dhoka Sadak, Kathmandu 44600, Nepal",
+        "description": "Palace museum named after the entryway's stone Hanuman, with exhibits on the Shah Dynasty.",
+        "ratings": {
+            "rating": 4.5,
+            "total_ratings": 1191
+        },
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.704272,
+            "lng": 85.307417
+        },
+        "website": "Not available",
+        "opening_hours": [
+            "Monday: 9:00 AM – 5:00 PM",
+            "Tuesday: 9:00 AM – 5:00 PM",
+            "Wednesday: 9:00 AM – 5:00 PM",
+            "Thursday: 9:00 AM – 5:00 PM",
+            "Friday: 9:00 AM – 5:00 PM",
+            "Saturday: 9:00 AM – 5:00 PM",
+            "Sunday: 9:00 AM – 5:00 PM"
+        ]
+    },
+    {
+        "placeNo": 14,
+        "name": "Garden of Dreams",
+        "place_id": "ChIJi-BViAIZ6zkRaq6h8vq9K_U",
+        "address": "P877+MR2, Tridevi Sadak, Kathmandu 44600, Nepal",
+        "description": "Elegant garden created in 1920, with 6 pavilions, fountains, landscaped grounds, urns & birdhouses.",
+        "ratings": {
+            "rating": 4.2,
+            "total_ratings": 12614
+        },
+        "types": [
+            "tourist_attraction",
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.7141261,
+            "lng": 85.3145041
+        },
+        "website": "http://www.gardenofdreams.org.np/",
+        "opening_hours": [
+            "Monday: 9:00 AM – 10:00 PM",
+            "Tuesday: 9:00 AM – 10:00 PM",
+            "Wednesday: 9:00 AM – 10:00 PM",
+            "Thursday: 9:00 AM – 10:00 PM",
+            "Friday: 9:00 AM – 10:00 PM",
+            "Saturday: 9:00 AM – 10:00 PM",
+            "Sunday: 9:00 AM – 10:00 PM"
+        ]
+    },
+    {
+        "placeNo": 15,
+        "name": "Casino Pride Nepal",
+        "place_id": "ChIJR6uG6dgb6zkReO3NxkEGOc4",
+        "address": "Taragaon Boudha Box 19784, Taragaon 44601, Nepal, Kathmandu 44601, Nepal",
+        "description": "No description available",
+        "ratings": {
+            "rating": 4.1,
+            "total_ratings": 399
+        },
+        "types": [
+            "casino",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.722607,
+            "lng": 85.35647
+        },
+        "website": "http://www.casinopridenepal.com/",
+        "opening_hours": [
+            "Monday: Open 24 hours",
+            "Tuesday: Open 24 hours",
+            "Wednesday: Open 24 hours",
+            "Thursday: Open 24 hours",
+            "Friday: Open 24 hours",
+            "Saturday: Open 24 hours",
+            "Sunday: Open 24 hours"
+        ]
+    },
+    {
+        "placeNo": 16,
+        "name": "Hotel Royal Kathmandu",
+        "place_id": "ChIJKd5mzt4Y6zkREbZLpC0hJFY",
+        "address": "Mitranagar 26, Kathmandu 44600, Nepal",
+        "description": "Streamlined rooms in a casual hotel offering a rooftop terrace with city views, plus a restaurant.",
+        "ratings": {
+            "rating": 4.4,
+            "total_ratings": 562
+        },
+        "types": [
+            "tourist_attraction",
+            "lodging",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.7335127,
+            "lng": 85.3103671
+        },
+        "website": "https://royalkathmandu.com/",
+        "opening_hours": [
+            "Monday: Open 24 hours",
+            "Tuesday: Open 24 hours",
+            "Wednesday: Open 24 hours",
+            "Thursday: Open 24 hours",
+            "Friday: Open 24 hours",
+            "Saturday: Open 24 hours",
+            "Sunday: Open 24 hours"
+        ]
+    },
+    {
+        "placeNo": 17,
+        "name": "Pilot Baba Ashram",
+        "place_id": "ChIJU_FBrxcQ6zkRucxxeMkC8KI",
+        "address": "JCRF+333, Ghyampe Danda Sadak, Anantalingeshwar, Nepal",
+        "description": "No description available",
+        "ratings": {
+            "rating": 4.2,
+            "total_ratings": 1605
+        },
+        "types": [
+            "hindu_temple",
+            "tourist_attraction",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.6401489,
+            "lng": 85.42265909999999
+        },
+        "website": "Not available",
+        "opening_hours": [
+            "Monday: 8:00 AM – 5:00 PM",
+            "Tuesday: 8:00 AM – 5:00 PM",
+            "Wednesday: 8:00 AM – 5:00 PM",
+            "Thursday: 8:00 AM – 5:00 PM",
+            "Friday: 8:00 AM – 5:00 PM",
+            "Saturday: 8:00 AM – 5:00 PM",
+            "Sunday: 8:00 AM – 5:00 PM"
+        ]
+    },
+    {
+        "placeNo": 18,
+        "name": "Panauti Museum",
+        "place_id": "ChIJDWiIXrIO6zkRRrFrTIeBrt8",
+        "address": "HGP8+3R4, Indreshwor Temple Square, Panauti 45209, Nepal",
+        "description": "No description available",
+        "ratings": {
+            "rating": 4.4,
+            "total_ratings": 200
+        },
+        "types": [
+            "museum",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.5851355,
+            "lng": 85.51706879999999
+        },
+        "website": "http://www.panautimuseum.org.np/",
+        "opening_hours": [
+            "Monday: 7:00 AM – 6:30 PM",
+            "Tuesday: 7:00 AM – 6:30 PM",
+            "Wednesday: 7:00 AM – 6:30 PM",
+            "Thursday: 7:00 AM – 6:30 PM",
+            "Friday: 7:00 AM – 6:30 PM",
+            "Saturday: 7:00 AM – 6:30 PM",
+            "Sunday: 7:00 AM – 6:30 PM"
+        ]
+    },
+    {
+        "placeNo": 19,
+        "name": "Patan Darbar Square",
+        "place_id": "ChIJsS-qDcUZ6zkRMLWXgKN_GW8",
+        "address": "Lalitpur 44600, Nepal",
+        "description": "Museum in a former royal palace housing Hindu & Buddhist sculptures & other cultural artifacts.",
+        "ratings": {
+            "rating": 4.6,
+            "total_ratings": 30345
+        },
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.6726981,
+            "lng": 85.3253211
+        },
+        "website": "http://www.patanmuseum.gov.np/",
+        "opening_hours": [
+            "Monday: 10:00 AM – 10:00 PM",
+            "Tuesday: 10:00 AM – 10:00 PM",
+            "Wednesday: 10:00 AM – 10:00 PM",
+            "Thursday: 10:00 AM – 10:00 PM",
+            "Friday: 10:00 AM – 10:00 PM",
+            "Saturday: 10:00 AM – 10:00 PM",
+            "Sunday: 10:00 AM – 10:00 PM"
+        ]
+    },
+    {
+        "placeNo": 20,
+        "name": "Kathmandu Durbar Square",
+        "place_id": "ChIJcXj30VcY6zkR_UGmBRA5sMU",
+        "address": "Kathmandu 44600, Nepal",
+        "description": "Landmark, ancient royal complex with various palaces, temples & courtyards, plus a museum.",
+        "ratings": {
+            "rating": 4.5,
+            "total_ratings": 36082
+        },
+        "types": [
+            "tourist_attraction",
+            "hindu_temple",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.7042737,
+            "lng": 85.307463
+        },
+        "website": "Not available",
+        "opening_hours": []
+    },
+    {
+        "placeNo": 21,
+        "name": "Bhaktapur Durbar Square",
+        "place_id": "ChIJMd8y7K8a6zkR_ZuvMec5o90",
+        "address": "Durbar square, Bhaktapur 44800, Nepal",
+        "description": "Time-tested city square with an 1427 CE palace, multiple temples, statues & intricate gates.",
+        "ratings": {
+            "rating": 4.6,
+            "total_ratings": 21601
+        },
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.67207,
+            "lng": 85.4282951
+        },
+        "website": "Not available",
+        "opening_hours": [
+            "Monday: 9:00 AM – 6:00 PM",
+            "Tuesday: 9:00 AM – 6:00 PM",
+            "Wednesday: 9:00 AM – 6:00 PM",
+            "Thursday: 9:00 AM – 6:00 PM",
+            "Friday: 9:00 AM – 6:00 PM",
+            "Saturday: 9:00 AM – 6:00 PM",
+            "Sunday: 9:00 AM – 6:00 PM"
+        ]
+    },
+    {
+        "placeNo": 22,
+        "name": "Shechen Monastery",
+        "place_id": "ChIJTSyVq94b6zkRgRbJHZMkRT0",
+        "address": "Tushal-Mahankal Rd, Kathmandu 44600, Nepal",
+        "description": "No description available",
+        "ratings": {
+            "rating": 4.6,
+            "total_ratings": 424
+        },
+        "types": [
+            "tourist_attraction",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.7237216,
+            "lng": 85.3607531
+        },
+        "website": "http://shechen.org/spiritual-development/monasteries/shechen-tennyi-dargyeling-monastery-kathmandu-nepal/",
+        "opening_hours": [
+            "Monday: 8:00 AM – 5:00 PM",
+            "Tuesday: 8:00 AM – 5:00 PM",
+            "Wednesday: 8:00 AM – 5:00 PM",
+            "Thursday: 8:00 AM – 5:00 PM",
+            "Friday: 8:00 AM – 5:00 PM",
+            "Saturday: Closed",
+            "Sunday: 8:00 AM – 5:00 PM"
+        ]
+    },
+    {
+        "placeNo": 23,
+        "name": "Shivapuri Nagarjun National Park",
+        "place_id": "ChIJbSMZfDQc6zkRsS9kHIModWQ",
+        "address": "44600, Nepal",
+        "description": "Established in 2002, this 159-sq-km national park features hiking trails & historical sites.",
+        "ratings": {
+            "rating": 4.4,
+            "total_ratings": 5774
+        },
+        "types": [
+            "tourist_attraction",
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.8129232,
+            "lng": 85.38593399999999
+        },
+        "website": "http://www.snnp.gov.np/",
+        "opening_hours": []
+    },
+    {
+        "placeNo": 24,
+        "name": "Patan Museum",
+        "place_id": "ChIJpftHp8UZ6zkRWyyTNiwsQgg",
+        "address": "M8FG+944, भिन्द्यो क्व - सौग: लँ, Lalitpur 44700, Nepal",
+        "description": "An extensive collection of traditional religious art on display in an 18th-century royal palace.",
+        "ratings": {
+            "rating": 4.6,
+            "total_ratings": 1436
+        },
+        "types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.6733773,
+            "lng": 85.3253361
+        },
+        "website": "http://www.patanmuseum.gov.np/",
+        "opening_hours": [
+            "Monday: 8:00 AM – 6:30 PM",
+            "Tuesday: 8:00 AM – 6:30 PM",
+            "Wednesday: 8:00 AM – 6:30 PM",
+            "Thursday: 8:00 AM – 6:30 PM",
+            "Friday: 8:00 AM – 6:30 PM",
+            "Saturday: 8:00 AM – 6:30 PM",
+            "Sunday: 8:00 AM – 6:30 PM"
+        ]
+    },
+    {
+        "placeNo": 25,
+        "name": "Ghyampe Danda",
+        "place_id": "ChIJyaee3BUQ6zkREYm-r7QlPMQ",
+        "address": "JCRC+FGW, Ghyampe Danda Sadak, Anantalingeshwar 44800, Nepal",
+        "description": "No description available",
+        "ratings": {
+            "rating": 4.2,
+            "total_ratings": 1531
+        },
+        "types": [
+            "tourist_attraction",
+            "park",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.6412309,
+            "lng": 85.4213408
+        },
+        "website": "Not available",
+        "opening_hours": []
+    },
+    {
+        "placeNo": 26,
+        "name": "Shree Kamaladi Ganesh Temple",
+        "place_id": "ChIJWZqbLwcZ6zkRCP2eRcXo5hI",
+        "address": "P859+4P7, Kamaladi Marg, Kathmandu 44605, Nepal",
+        "description": "No description available",
+        "ratings": {
+            "rating": 4.7,
+            "total_ratings": 1303
+        },
+        "types": [
+            "hindu_temple",
+            "tourist_attraction",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.7077936,
+            "lng": 85.31930729999999
+        },
+        "website": "Not available",
+        "opening_hours": [
+            "Monday: 6:00 AM – 11:30 PM",
+            "Tuesday: 6:00 AM – 11:30 PM",
+            "Wednesday: 6:00 AM – 11:30 PM",
+            "Thursday: 6:00 AM – 11:30 PM",
+            "Friday: 6:00 AM – 11:30 PM",
+            "Saturday: 6:00 AM – 11:30 PM",
+            "Sunday: 6:00 AM – 11:30 PM"
+        ]
+    },
+    {
+        "placeNo": 27,
+        "name": "Casino Mahjong",
+        "place_id": "ChIJu_Fi5WAY6zkRg8Hte-uvSxo",
+        "address": "Soaltee Crown Plaza, Tahachal Marg, Kathmandu 44600, Nepal",
+        "description": "No description available",
+        "ratings": {
+            "rating": 4.2,
+            "total_ratings": 790
+        },
+        "types": [
+            "casino",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.7007362,
+            "lng": 85.2904477
+        },
+        "website": "Not available",
+        "opening_hours": [
+            "Monday: Open 24 hours",
+            "Tuesday: Open 24 hours",
+            "Wednesday: Open 24 hours",
+            "Thursday: Open 24 hours",
+            "Friday: Open 24 hours",
+            "Saturday: Open 24 hours",
+            "Sunday: Open 24 hours"
+        ]
+    },
+    {
+        "placeNo": 28,
+        "name": "Nasal Chowk",
+        "place_id": "ChIJrUqtEFYY6zkRo-kGXHp_wa8",
+        "address": "P834+MXP, Layaku Marg, Kathmandu 44600, Nepal",
+        "description": "No description available",
+        "ratings": {
+            "rating": 4.5,
+            "total_ratings": 603
+        },
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ],
+        "location": {
+            "lat": 27.7042077,
+            "lng": 85.30744179999999
+        },
+        "website": "Not available",
+        "opening_hours": [
+            "Monday: Open 24 hours",
+            "Tuesday: Open 24 hours",
+            "Wednesday: Open 24 hours",
+            "Thursday: Open 24 hours",
+            "Friday: Open 24 hours",
+            "Saturday: Open 24 hours",
+            "Sunday: Open 24 hours"
+        ]
+    }
 ]

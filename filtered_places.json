@@ -1,0 +1,107 @@
+[
+    {
+        "name": "RN Joshi Museum / Park Gallery",
+        "address": "Opposite to Jhamsikhel Road, Pulchowk, Lalitpur",
+        "rating": 3.5,
+        "description": "Independent modern & contemporary Nepalese gallery established in 1970 plus an arty shop.",
+        "types": [
+            "tourist_attraction",
+            "art_gallery",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "name": "Patan Darbar Square",
+        "address": "Lalitpur",
+        "rating": 4.6,
+        "description": "Museum in a former royal palace housing Hindu & Buddhist sculptures & other cultural artifacts.",
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "name": "Nepal Art Council",
+        "address": "M8RF+WF2, Madan Bhandari Road, Kathmandu",
+        "rating": 4.4,
+        "description": "Long-running nonprofit with a large gallery space featuring rotating exhibits by national artists.",
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "name": "Patan Museum",
+        "address": "M8FG+944, \u092d\u093f\u0928\u094d\u0926\u094d\u092f\u094b \u0915\u094d\u0935 - \u0938\u094c\u0917: \u0932\u0901, Lalitpur",
+        "rating": 4.6,
+        "description": "An extensive collection of traditional religious art on display in an 18th-century royal palace.",
+        "types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "name": "Balkumari Printing Press",
+        "address": "Gwako Chowk, Lalitpur",
+        "rating": 3.3,
+        "description": "No description available",
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "name": "Jagat-Narayan Mandir",
+        "address": "M8HJ+G7G, Shankhamul Bridge, Lalitpur",
+        "rating": 4.3,
+        "description": "No description available",
+        "types": [
+            "hindu_temple",
+            "tourist_attraction",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "name": "Oku Bahal Rudra Varna Mahavihar",
+        "address": "Lalitpur",
+        "rating": 4.7,
+        "description": "No description available",
+        "types": [
+            "tourist_attraction",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "name": "Mul Chowk",
+        "address": "Mul Chowk, Lalitpur",
+        "rating": 4.8,
+        "description": "No description available",
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "name": "Tusha Hiti",
+        "address": "\u0938\u0941\u0928\u094d\u0926\u0930\u0940 \u091a\u094b\u0915, Lalitpur",
+        "rating": 4.8,
+        "description": "No description available",
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    }
+]

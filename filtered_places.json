@@ -1,107 +1,141 @@
 [
-    {
-        "name": "RN Joshi Museum / Park Gallery",
-        "address": "Opposite to Jhamsikhel Road, Pulchowk, Lalitpur",
-        "rating": 3.5,
-        "description": "Independent modern & contemporary Nepalese gallery established in 1970 plus an arty shop.",
-        "types": [
-            "tourist_attraction",
-            "art_gallery",
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ]
-    },
-    {
-        "name": "Patan Darbar Square",
-        "address": "Lalitpur",
-        "rating": 4.6,
-        "description": "Museum in a former royal palace housing Hindu & Buddhist sculptures & other cultural artifacts.",
-        "types": [
-            "tourist_attraction",
-            "point_of_interest",
-            "establishment"
-        ]
-    },
-    {
-        "name": "Nepal Art Council",
-        "address": "M8RF+WF2, Madan Bhandari Road, Kathmandu",
-        "rating": 4.4,
-        "description": "Long-running nonprofit with a large gallery space featuring rotating exhibits by national artists.",
-        "types": [
-            "tourist_attraction",
-            "point_of_interest",
-            "establishment"
-        ]
-    },
-    {
-        "name": "Patan Museum",
-        "address": "M8FG+944, \u092d\u093f\u0928\u094d\u0926\u094d\u092f\u094b \u0915\u094d\u0935 - \u0938\u094c\u0917: \u0932\u0901, Lalitpur",
-        "rating": 4.6,
-        "description": "An extensive collection of traditional religious art on display in an 18th-century royal palace.",
-        "types": [
-            "tourist_attraction",
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ]
-    },
-    {
-        "name": "Balkumari Printing Press",
-        "address": "Gwako Chowk, Lalitpur",
-        "rating": 3.3,
-        "description": "No description available",
-        "types": [
-            "tourist_attraction",
-            "point_of_interest",
-            "establishment"
-        ]
-    },
-    {
-        "name": "Jagat-Narayan Mandir",
-        "address": "M8HJ+G7G, Shankhamul Bridge, Lalitpur",
-        "rating": 4.3,
-        "description": "No description available",
-        "types": [
-            "hindu_temple",
-            "tourist_attraction",
-            "place_of_worship",
-            "point_of_interest",
-            "establishment"
-        ]
-    },
-    {
-        "name": "Oku Bahal Rudra Varna Mahavihar",
-        "address": "Lalitpur",
-        "rating": 4.7,
-        "description": "No description available",
-        "types": [
-            "tourist_attraction",
-            "place_of_worship",
-            "point_of_interest",
-            "establishment"
-        ]
-    },
-    {
-        "name": "Mul Chowk",
-        "address": "Mul Chowk, Lalitpur",
-        "rating": 4.8,
-        "description": "No description available",
-        "types": [
-            "tourist_attraction",
-            "point_of_interest",
-            "establishment"
-        ]
-    },
-    {
-        "name": "Tusha Hiti",
-        "address": "\u0938\u0941\u0928\u094d\u0926\u0930\u0940 \u091a\u094b\u0915, Lalitpur",
-        "rating": 4.8,
-        "description": "No description available",
-        "types": [
-            "tourist_attraction",
-            "point_of_interest",
-            "establishment"
-        ]
-    }
+   {
+      "placeNo": 1,
+      "place_id": "ChIJw3uqaBsZ6zkRjS-DDyXqWyk",
+      "address": "Kathmandu",
+      "name": "Hotel Shanker - Palatial Heritage Kathmandu",
+      "ratings": 3064,
+      "types": [
+         "tourist_attraction",
+         "lodging",
+         "point_of_interest",
+         "establishment"
+      ],
+      "description": null
+   },
+   {
+      "placeNo": 2,
+      "place_id": "ChIJsciVgCoJ6zkRsjUON7SWYKw",
+      "address": "",
+      "name": "Dhaneshwor Mahadev Temple",
+      "ratings": 270,
+      "types": [
+         "hindu_temple",
+         "tourist_attraction",
+         "place_of_worship",
+         "point_of_interest",
+         "establishment"
+      ],
+      "description": null
+   },
+   {
+      "placeNo": 3,
+      "place_id": "ChIJbW5nvLwX6zkRWMXF4DBLu3E",
+      "address": "J8H2+VV6, Karyabinayak",
+      "name": "Bungadyo/Rato Machhendranath Temple",
+      "ratings": 373,
+      "types": [
+         "tourist_attraction",
+         "place_of_worship",
+         "point_of_interest",
+         "establishment"
+      ],
+      "description": null
+   },
+   {
+      "placeNo": 4,
+      "place_id": "ChIJkTIYyfob6zkRS61ZD-CX16A",
+      "address": "Ward 11, Budhanilkantha",
+      "name": "Kopan Monastery",
+      "ratings": 1231,
+      "types": [
+         "tourist_attraction",
+         "place_of_worship",
+         "point_of_interest",
+         "establishment"
+      ],
+      "description": null
+   },
+   {
+      "placeNo": 5,
+      "place_id": "ChIJi___P3UP6zkRtGAZ1TNjBqc",
+      "address": "Sanga, \u0938\u0941\u0930\u094d\u092f\u0935\u093f\u0928\u093e\u092f\u0915",
+      "name": "Kailashnath Mahadev Statue",
+      "ratings": 2071,
+      "types": [
+         "hindu_temple",
+         "tourist_attraction",
+         "place_of_worship",
+         "point_of_interest",
+         "establishment"
+      ],
+      "description": null
+   },
+   {
+      "placeNo": 6,
+      "place_id": "ChIJDZDTYm0Z6zkRjHsQdLKntJQ",
+      "address": "Handigaun Marg, Kathmandu",
+      "name": "Handigaun",
+      "ratings": 602,
+      "types": [
+         "tourist_attraction",
+         "point_of_interest",
+         "establishment"
+      ],
+      "description": null
+   },
+   {
+      "placeNo": 7,
+      "place_id": "ChIJrciCm40Y6zkR93t5EOS9Ma4",
+      "address": "P77R+X52, BHAGANPAU",
+      "name": "Swoyambhu Mahachaitya",
+      "ratings": 18376,
+      "types": [
+         "tourist_attraction",
+         "place_of_worship",
+         "point_of_interest",
+         "establishment"
+      ],
+      "description": null
+   },
+   {
+      "placeNo": 8,
+      "place_id": "ChIJtz-p6AgZ6zkRPaBTRygyUjI",
+      "address": "Kamal Pokhari Street, Kathmandu",
+      "name": "Russian House",
+      "ratings": 373,
+      "types": [
+         "tourist_attraction",
+         "point_of_interest",
+         "establishment"
+      ],
+      "description": null
+   },
+   {
+      "placeNo": 9,
+      "place_id": "ChIJcy5iv5AP6zkRdS-eLyrmnTE",
+      "address": "\u0905\u0930\u0928\u093f\u0915\u094b \u0930\u093e\u091c\u092e\u093e\u0930\u094d\u0917 Bhaktapur, Araniko Highway Bhaktapur, Suryabinayak",
+      "name": "Kathmandu Fun Valley",
+      "ratings": 792,
+      "types": [
+         "tourist_attraction",
+         "amusement_park",
+         "point_of_interest",
+         "establishment"
+      ],
+      "description": null
+   },
+   {
+      "placeNo": 10,
+      "place_id": "ChIJY937crAZ6zkR45QAr1tReKs",
+      "address": "M8RF+WF2, Madan Bhandari Road, Kathmandu",
+      "name": "Nepal Art Council",
+      "ratings": 1065,
+      "types": [
+         "tourist_attraction",
+         "point_of_interest",
+         "establishment"
+      ],
+      "description": null
+   }
 ]

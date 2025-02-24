@@ -1,0 +1,295 @@
+{
+   "html_attributions": [],
+   "result": {
+      "address_components": [
+         {
+            "long_name": "P77R+X52",
+            "short_name": "P77R+X52",
+            "types": [
+               "plus_code"
+            ]
+         },
+         {
+            "long_name": "Swayambhu",
+            "short_name": "Swayambhu",
+            "types": [
+               "sublocality_level_1",
+               "sublocality",
+               "political"
+            ]
+         },
+         {
+            "long_name": "BHAGANPAU",
+            "short_name": "BHAGANPAU",
+            "types": [
+               "locality",
+               "political"
+            ]
+         },
+         {
+            "long_name": "Kathmandu",
+            "short_name": "Kathmandu",
+            "types": [
+               "administrative_area_level_2",
+               "political"
+            ]
+         },
+         {
+            "long_name": "Bagmati Province",
+            "short_name": "Bagmati Province",
+            "types": [
+               "administrative_area_level_1",
+               "political"
+            ]
+         },
+         {
+            "long_name": "Nepal",
+            "short_name": "NP",
+            "types": [
+               "country",
+               "political"
+            ]
+         },
+         {
+            "long_name": "44600",
+            "short_name": "44600",
+            "types": [
+               "postal_code"
+            ]
+         }
+      ],
+      "adr_address": "P77R+X52, <span class=\"locality\">BHAGANPAU</span> <span class=\"postal-code\">44600</span>, <span class=\"country-name\">Nepal</span>",
+      "business_status": "OPERATIONAL",
+      "current_opening_hours": {
+         "open_now": true,
+         "periods": [
+            {
+               "close": {
+                  "date": "2025-03-02",
+                  "day": 0,
+                  "time": "2359",
+                  "truncated": true
+               },
+               "open": {
+                  "date": "2025-02-24",
+                  "day": 1,
+                  "time": "0000",
+                  "truncated": true
+               }
+            }
+         ],
+         "weekday_text": [
+            "Monday: Open 24 hours",
+            "Tuesday: Open 24 hours",
+            "Wednesday: Open 24 hours",
+            "Thursday: Open 24 hours",
+            "Friday: Open 24 hours",
+            "Saturday: Open 24 hours",
+            "Sunday: Open 24 hours"
+         ]
+      },
+      "editorial_summary": {
+         "language": "en",
+         "overview": "A very old religious site, this Buddhist complex has an iconic stupa, temples & many shrines."
+      },
+      "formatted_address": "P77R+X52, BHAGANPAU 44600, Nepal",
+      "geometry": {
+         "location": {
+            "lat": 27.7148996,
+            "lng": 85.29039569999999
+         },
+         "viewport": {
+            "northeast": {
+               "lat": 27.7164149,
+               "lng": 85.29531215
+            },
+            "southwest": {
+               "lat": 27.7135069,
+               "lng": 85.28731755
+            }
+         }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_dharma-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Swoyambhu Mahachaitya",
+      "opening_hours": {
+         "open_now": true,
+         "periods": [
+            {
+               "open": {
+                  "day": 0,
+                  "time": "0000"
+               }
+            }
+         ],
+         "weekday_text": [
+            "Monday: Open 24 hours",
+            "Tuesday: Open 24 hours",
+            "Wednesday: Open 24 hours",
+            "Thursday: Open 24 hours",
+            "Friday: Open 24 hours",
+            "Saturday: Open 24 hours",
+            "Sunday: Open 24 hours"
+         ]
+      },
+      "photos": [
+         {
+            "height": 339,
+            "html_attributions": [
+               "<a href=\"https://maps.google.com/maps/contrib/103823857537622743737\">Bhairab Raj Aryal</a>"
+            ],
+            "photo_reference": "AVzFdbmPUJiKvsFpBRecprz2tkExJiS9JuUyUuBPzUMiaNc_XyzGI_HN45iaRhGtsEgJk8_sSWMJDQksAdOI9sFjWMKn-YCCrtg-6oVZo-PMYvNL05mqPPgkiBfiPiLegfc3QEHE9kEDuloboNEw2_kBqMAxumQseLY2Wz5MNIvgStARTaz9dhjlDJgu",
+            "width": 509
+         },
+         {
+            "height": 4000,
+            "html_attributions": [
+               "<a href=\"https://maps.google.com/maps/contrib/106597329038875671458\">Rahul Khanna</a>"
+            ],
+            "photo_reference": "AVzFdbm9PGtn_TTQL9tqKbH7452Y65f948zRuHfuqw5P3rOaZKhGfGh5aR8NuLwFEdTuDZEwQmBjM55ldUW8kGIBzUNSfETL_ey8B1jgMXPLpbvN--3sNTrB4qKLGFompBTbFYHpKfDf_dfMWzjwXtTXO68XBq6JYxi3Flt-eWkw1jR85S2hyq3mGLuR",
+            "width": 3008
+         },
+         {
+            "height": 3024,
+            "html_attributions": [
+               "<a href=\"https://maps.google.com/maps/contrib/101128779135151794124\">Bear Tzu Chun</a>"
+            ],
+            "photo_reference": "AVzFdbk9d1Acs6MfQXtrNDi8GglHcmmKt6lF3pSSktKKZ2s5CI4A1uPxQyQbOXSVw4gqpxqHvZVIEnY1kg7c50Otk-MrOJc-zxs4-y6zaFPb6Uhtvf5WrmoNPeEovMD3UvlgiNMnoQ8f9zIfxySXmJ7YmeqVQKpv-jZuzYiPE_82FhpRy44c_aYvxVeT",
+            "width": 3024
+         },
+         {
+            "height": 3024,
+            "html_attributions": [
+               "<a href=\"https://maps.google.com/maps/contrib/113489648816167326204\">Rajan Chakradhar</a>"
+            ],
+            "photo_reference": "AVzFdbmXha6eYnoekHz_8J-CqvfvCcrwHClZwyWHfJFwr51pl9sZUjIXUEZ1-xQ_QzvgeXaJLcluN_VpHnLI_8V_MfgyMVSJ4Shp1db6frauL8TgZ8lER3wJBOQTZiYiHUmez8fPFiSXPLiSKoDjQjWRfZop6Ik9upSWpinui5kcslUzcCUYzz0-ohnh",
+            "width": 4032
+         },
+         {
+            "height": 927,
+            "html_attributions": [
+               "<a href=\"https://maps.google.com/maps/contrib/102156852258539427562\">Vijaynath Chaudhary</a>"
+            ],
+            "photo_reference": "AVzFdbk0fTiX2t7LPRNb82iJjtXfBA3_eWQEdqeROoHDiqVxWfY7nmsXZ86OthLdfbsRDMNM82xqLXe2u9AlUJphJVcvrR7-AnTsM6jgN5UJN7cla1hNUxj7illIjX6qjcAGCnFToq6JI7qQePiqm39IzvoLzf1UHot2zjLft5a5Octx06vhujhRyniY",
+            "width": 720
+         },
+         {
+            "height": 6144,
+            "html_attributions": [
+               "<a href=\"https://maps.google.com/maps/contrib/103753313227915507672\">Bishan Gurung</a>"
+            ],
+            "photo_reference": "AVzFdbnuQ5LgRuaB26MAHlkJ3yMzg1nP-k56NJ34D7gOf910onLRIPEEGndWXlWMAjhbzrcAPyuNFwfv4pjCUI-DuGQw1jjyC1KKIDnlzNS3ueYMmrgGBOHEY8yNdoqzEf-uxDYZy32NKI2IUOaFCI9UVOSvWFu-wS0eGMfLl04Xe5u3TW9t2H6psAsP",
+            "width": 8160
+         },
+         {
+            "height": 3000,
+            "html_attributions": [
+               "<a href=\"https://maps.google.com/maps/contrib/102543408112348316351\">Arturo Fermin</a>"
+            ],
+            "photo_reference": "AVzFdbkScsSDkh4n9J07cNNbOZOKc8_pPWqqTCswySUQyXqDR4XXvQMqhR6wEJqoD2S9KWFsKqr52POxLv1X2hETOCra2EgiXcOm_vY002U7JEu0c5D6DhKJwNSgliLQlhq7rhSsdHN3wXbfxG96q1BKo6DKOrHH1G9ZLkmQFm2I-pIq3J7wp2pxgNRr",
+            "width": 4000
+         },
+         {
+            "height": 4160,
+            "html_attributions": [
+               "<a href=\"https://maps.google.com/maps/contrib/109879987910533798479\">K.B. Shikhare</a>"
+            ],
+            "photo_reference": "AVzFdbmAO8Nreo4rsXjcn_Pt7NW-Nlt-0MB2zn1Aqha4b6snACRHFLTUFOoHBq0XB7ecwhXwL0b8twG6Ghk4adZ5zL3fQTUKH41QIAgI-ADfeQAh-vOCBfYi5CR8jtthXpGJamXYuhmOA-qqoDamoCgbSTmALGZvLns_Dil2VkSD8l-0mgYSb2GaUyIL",
+            "width": 3120
+         },
+         {
+            "height": 4000,
+            "html_attributions": [
+               "<a href=\"https://maps.google.com/maps/contrib/108262035116055864119\">Jim Collins</a>"
+            ],
+            "photo_reference": "AVzFdbk3WlCHLjPnTIqGZLbt8Qt2FsePfjdu70r7uw_6ywezIfvQIM2uU4MFDyQwcG9Hue4F-fLzfjPnRnOv2ScffM87l8TzkUtOL4gJEE1RVAqrDJ0Wrl7GZPNYN-scOWeLxlGyI6ObyI7oKv_MAKTirYdEBMpeAQXh8tYGHp3mFOAszyD5F9GRRk2F",
+            "width": 3000
+         },
+         {
+            "height": 3264,
+            "html_attributions": [
+               "<a href=\"https://maps.google.com/maps/contrib/109309948107541068102\">G.K. Ramprasadh</a>"
+            ],
+            "photo_reference": "AVzFdbnRQWx3Vh_IM-QKZhl-1pdZyfznFCWIFy7uQZBTzRpaOIb-F58rGMX3TdgZYLhHMe-fpQeNUSrFVHvPnEbpzKMo3fle27iybwv8ghb1O3iusJXTzhDvKhgFqx_mJu0_eYkf3GUaD0SSgnVhEWuhVTYQWGyiSRSU4PTBUcyizKmQJ7Ts9IlXUPJD",
+            "width": 2448
+         }
+      ],
+      "place_id": "ChIJrciCm40Y6zkR93t5EOS9Ma4",
+      "rating": 4.6,
+      "reference": "ChIJrciCm40Y6zkR93t5EOS9Ma4",
+      "reviews": [
+         {
+            "author_name": "Bilingual Nature",
+            "author_url": "https://www.google.com/maps/contrib/107135042852305086536/reviews",
+            "language": "en",
+            "original_language": "en",
+            "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUAOAly-ZNPzqrCjGrYRqRrGQSgQ3JlOL0mJkWxdl63Hn_i_lRj=s128-c0x00000000-cc-rp-mo-ba4",
+            "rating": 5,
+            "relative_time_description": "a month ago",
+            "text": "A very lovely and lively place in this over crowded city. This place has its own history dating back from years ago. And Been visited by countless people over the time. Such a great view can be seen of the valley which is extremely beautiful 😍. This place is filled with monkeys and surrounded by countless trees. Thus one can breathe fresh air in this city.",
+            "time": 1736661453,
+            "translated": false
+         },
+         {
+            "author_name": "Chris Rodriguez",
+            "author_url": "https://www.google.com/maps/contrib/110992260007183154315/reviews",
+            "language": "en",
+            "original_language": "en",
+            "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXBwhMcZhi7RMxWhSvVzatmm71UxY0IqJlMXgNfSR6-0Bxs7f4=s128-c0x00000000-cc-rp-mo-ba6",
+            "rating": 5,
+            "relative_time_description": "in the last week",
+            "text": "Unbelievable place, but watch out for the monkeys!!!\nThis temple was one of the highlights of my Kathmandu trip! The temple itself is very beautiful and offers incredible views of the city.\n\nIf you enter from the front it is about 300 steps to get to the top and it is actually quite brutal! It is great if you want to workout, but if you got a lot more planned for the day I suggest you take a taxi up to the back side of the temple!\n\nThere you will only have to climb up about 20 steps then I recommend walking down the set of 300!\n\nThere are also many souvenir shops and many people saying that they are “guides”. Just keep in mind the souvenirs and guides both charge ridiculous prices.",
+            "time": 1739968845,
+            "translated": false
+         },
+         {
+            "author_name": "bluedimitris",
+            "author_url": "https://www.google.com/maps/contrib/104572966587268465661/reviews",
+            "language": "en",
+            "original_language": "en",
+            "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUt4IVMIFJRJKfEDKznuqxT_wPnxQ5ENieCdPxUQYChfpQtqitl=s128-c0x00000000-cc-rp-mo-ba5",
+            "rating": 5,
+            "relative_time_description": "3 weeks ago",
+            "text": "A nice Buddhist monument worth visiting in Kathmandu. Surrounding by mischievous monkeys (and dogs), and offering magnificent panoramic views of the city! Very recommended.",
+            "time": 1738087202,
+            "translated": false
+         },
+         {
+            "author_name": "Joey Wickham",
+            "author_url": "https://www.google.com/maps/contrib/106117298629672826272/reviews",
+            "language": "en",
+            "original_language": "en",
+            "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU0MiBjOJTEqUBU_Uu4VCQlrXB1WOnY07Vby8vuN4iSPk5GcsI=s128-c0x00000000-cc-rp-mo-ba3",
+            "rating": 4,
+            "relative_time_description": "a month ago",
+            "text": "Some absolutely beautiful sites overlooking Kathmandu. Highly recommend doing at least once while in Kathmandu.\n\nThere’s also some beautiful art at the top worth looking at.\n\nBeware of monkeys. It’s called the monkey temple for a reason.",
+            "time": 1736428067,
+            "translated": false
+         },
+         {
+            "author_name": "Ianhung Lee",
+            "author_url": "https://www.google.com/maps/contrib/100691512535478333926/reviews",
+            "language": "en",
+            "original_language": "en",
+            "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUvjDB8iEq2PQCV0ZyrTnTENbLapGls7hixieq-Ri-_cdg-vXPs=s128-c0x00000000-cc-rp-mo-ba5",
+            "rating": 5,
+            "relative_time_description": "3 months ago",
+            "text": "It is one of the best places around Kathmandu Valley to have a day visit and offer a stunning view of the valley. The compound is smaller than other famous places and can get pretty crowded. Walk clockwise and spin the praying wheel.\nMonkeys are ferocious there, but they won't do things to you if you leave them alone. A few souvenir shops around the temple some offers cheaper stuffs compared to the central Thamel",
+            "time": 1731892524,
+            "translated": false
+         }
+      ],
+      "types": [
+         "tourist_attraction",
+         "place_of_worship",
+         "point_of_interest",
+         "establishment"
+      ],
+      "url": "https://maps.google.com/?cid=12552022423684873207",
+      "user_ratings_total": 18376,
+      "utc_offset": 345,
+      "vicinity": "P77R+X52, BHAGANPAU"
+   },
+   "status": "OK"
+}

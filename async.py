@@ -1,70 +1,35 @@
 import google.generativeai as genai
 import asyncio
-from key import googleKey
 import time
+from key import googleKey  # Ensure this exists
 
 genai.configure(api_key=googleKey)
 
+# Function to generate response (must run in a thread)
 async def check(num):
     model = genai.GenerativeModel("gemini-1.5-flash")
-    prompt = f"What's this number: {num}. Answer in: 'Number is: <number>.'"
+    prompt = f"Hey, what's up? how you doing??? What's this number: {num}?"
 
     print(f"Sending request for number: {num}")
-    response = await model.generate_content_async(prompt)
     
-    print(f"Gemini responded for number: {num}")
-    return response.candidates[0].content
-
-async def main():
-    numbers = [1, 2, 3, 4, 5, 6, 7]
-
-    responses = await asyncio.gather(*[check(num) for num in numbers])
-
-    for response in responses:
-        for i in response:
-            print(i, end='', flush=True)
-            time.sleep(0.02)
-
-asyncio.run(main())
-
-
-
-
-
-
-
-'''
-
-from google import genai
-#import google.generativeai as genai
-from key import googleKey
-import time
-import asyncio
-
-
-async def check(num):
-    client = genai.Client(api_key=googleKey)
-    prompt = f"What's this number: {num}. Answer in: 'Number is: <number>.'"
-    print(f"Sending request for num: {num}")
-    response = await client.models.generate_content(
-        model="gemini-2.0-flash",
-        contents=prompt
-    )
+    # Run the synchronous API in a separate thread
+    response = await asyncio.to_thread(model.generate_content, prompt)
+    
     print(f"Gemini responded for number: {num}")
     return response.text
 
-
+# Main async function
 async def main():
-    numbers = [1,2,3,4,5,6,7]
+    numbers = [1, 2, 3, 4, 5, 6, 7]
+    
+    # Run requests in parallel
     responses = await asyncio.gather(*[check(num) for num in numbers])
-
+    
+    # Print results with animated effect
     for response in responses:
-        for i in response:
-            print(i, end="", flush=True)
+        for char in response:
+            print(char, end="", flush=True)
             time.sleep(0.02)
 
-
+# Run the async event loop
 asyncio.run(main())
-
-
-'''

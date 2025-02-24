@@ -11,7 +11,8 @@
          "point_of_interest",
          "establishment"
       ],
-      "description": null
+      "description": "Kathmandu",
+      "photo_count": 10
    },
    {
       "placeNo": 2,
@@ -26,7 +27,8 @@
          "point_of_interest",
          "establishment"
       ],
-      "description": null
+      "description": "",
+      "photo_count": 10
    },
    {
       "placeNo": 3,
@@ -40,7 +42,8 @@
          "point_of_interest",
          "establishment"
       ],
-      "description": null
+      "description": "J8H2+VV6, Karyabinayak",
+      "photo_count": 10
    },
    {
       "placeNo": 4,
@@ -54,7 +57,8 @@
          "point_of_interest",
          "establishment"
       ],
-      "description": null
+      "description": "Ward 11, Budhanilkantha",
+      "photo_count": 10
    },
    {
       "placeNo": 5,
@@ -69,7 +73,8 @@
          "point_of_interest",
          "establishment"
       ],
-      "description": null
+      "description": "Sanga, \u0938\u0941\u0930\u094d\u092f\u0935\u093f\u0928\u093e\u092f\u0915",
+      "photo_count": 10
    },
    {
       "placeNo": 6,
@@ -82,21 +87,23 @@
          "point_of_interest",
          "establishment"
       ],
-      "description": null
+      "description": "Handigaun Marg, Kathmandu",
+      "photo_count": 10
    },
    {
       "placeNo": 7,
       "place_id": "ChIJrciCm40Y6zkR93t5EOS9Ma4",
       "address": "P77R+X52, BHAGANPAU",
       "name": "Swoyambhu Mahachaitya",
-      "ratings": 18376,
+      "ratings": 18377,
       "types": [
          "tourist_attraction",
          "place_of_worship",
          "point_of_interest",
          "establishment"
       ],
-      "description": null
+      "description": "P77R+X52, BHAGANPAU",
+      "photo_count": 10
    },
    {
       "placeNo": 8,
@@ -109,7 +116,8 @@
          "point_of_interest",
          "establishment"
       ],
-      "description": null
+      "description": "Kamal Pokhari Street, Kathmandu",
+      "photo_count": 10
    },
    {
       "placeNo": 9,
@@ -123,7 +131,8 @@
          "point_of_interest",
          "establishment"
       ],
-      "description": null
+      "description": "\u0905\u0930\u0928\u093f\u0915\u094b \u0930\u093e\u091c\u092e\u093e\u0930\u094d\u0917 Bhaktapur, Araniko Highway Bhaktapur, Suryabinayak",
+      "photo_count": 10
    },
    {
       "placeNo": 10,
@@ -136,6 +145,7 @@
          "point_of_interest",
          "establishment"
       ],
-      "description": null
+      "description": "M8RF+WF2, Madan Bhandari Road, Kathmandu",
+      "photo_count": 10
    }
 ]

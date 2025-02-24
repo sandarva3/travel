@@ -10,9 +10,7 @@
          "lodging",
          "point_of_interest",
          "establishment"
-      ],
-      "description": "Kathmandu",
-      "photo_count": 10
+      ]
    },
    {
       "placeNo": 2,
@@ -26,9 +24,7 @@
          "place_of_worship",
          "point_of_interest",
          "establishment"
-      ],
-      "description": "",
-      "photo_count": 10
+      ]
    },
    {
       "placeNo": 3,
@@ -41,9 +37,7 @@
          "place_of_worship",
          "point_of_interest",
          "establishment"
-      ],
-      "description": "J8H2+VV6, Karyabinayak",
-      "photo_count": 10
+      ]
    },
    {
       "placeNo": 4,
@@ -56,28 +50,10 @@
          "place_of_worship",
          "point_of_interest",
          "establishment"
-      ],
-      "description": "Ward 11, Budhanilkantha",
-      "photo_count": 10
+      ]
    },
    {
       "placeNo": 5,
-      "place_id": "ChIJi___P3UP6zkRtGAZ1TNjBqc",
-      "address": "Sanga, \u0938\u0941\u0930\u094d\u092f\u0935\u093f\u0928\u093e\u092f\u0915",
-      "name": "Kailashnath Mahadev Statue",
-      "ratings": 2071,
-      "types": [
-         "hindu_temple",
-         "tourist_attraction",
-         "place_of_worship",
-         "point_of_interest",
-         "establishment"
-      ],
-      "description": "Sanga, \u0938\u0941\u0930\u094d\u092f\u0935\u093f\u0928\u093e\u092f\u0915",
-      "photo_count": 10
-   },
-   {
-      "placeNo": 6,
       "place_id": "ChIJDZDTYm0Z6zkRjHsQdLKntJQ",
       "address": "Handigaun Marg, Kathmandu",
       "name": "Handigaun",
@@ -86,27 +62,23 @@
          "tourist_attraction",
          "point_of_interest",
          "establishment"
-      ],
-      "description": "Handigaun Marg, Kathmandu",
-      "photo_count": 10
+      ]
    },
    {
-      "placeNo": 7,
+      "placeNo": 6,
       "place_id": "ChIJrciCm40Y6zkR93t5EOS9Ma4",
       "address": "P77R+X52, BHAGANPAU",
       "name": "Swoyambhu Mahachaitya",
-      "ratings": 18377,
+      "ratings": 18376,
       "types": [
          "tourist_attraction",
          "place_of_worship",
          "point_of_interest",
          "establishment"
-      ],
-      "description": "P77R+X52, BHAGANPAU",
-      "photo_count": 10
+      ]
    },
    {
-      "placeNo": 8,
+      "placeNo": 7,
       "place_id": "ChIJtz-p6AgZ6zkRPaBTRygyUjI",
       "address": "Kamal Pokhari Street, Kathmandu",
       "name": "Russian House",
@@ -115,27 +87,24 @@
          "tourist_attraction",
          "point_of_interest",
          "establishment"
-      ],
-      "description": "Kamal Pokhari Street, Kathmandu",
-      "photo_count": 10
+      ]
+   },
+   {
+      "placeNo": 8,
+      "place_id": "ChIJi___P3UP6zkRtGAZ1TNjBqc",
+      "address": "Sanga, सुर्यविनायक",
+      "name": "Kailashnath Mahadev Statue",
+      "ratings": 2071,
+      "types": [
+         "hindu_temple",
+         "tourist_attraction",
+         "place_of_worship",
+         "point_of_interest",
+         "establishment"
+      ]
    },
    {
       "placeNo": 9,
-      "place_id": "ChIJcy5iv5AP6zkRdS-eLyrmnTE",
-      "address": "\u0905\u0930\u0928\u093f\u0915\u094b \u0930\u093e\u091c\u092e\u093e\u0930\u094d\u0917 Bhaktapur, Araniko Highway Bhaktapur, Suryabinayak",
-      "name": "Kathmandu Fun Valley",
-      "ratings": 792,
-      "types": [
-         "tourist_attraction",
-         "amusement_park",
-         "point_of_interest",
-         "establishment"
-      ],
-      "description": "\u0905\u0930\u0928\u093f\u0915\u094b \u0930\u093e\u091c\u092e\u093e\u0930\u094d\u0917 Bhaktapur, Araniko Highway Bhaktapur, Suryabinayak",
-      "photo_count": 10
-   },
-   {
-      "placeNo": 10,
       "place_id": "ChIJY937crAZ6zkR45QAr1tReKs",
       "address": "M8RF+WF2, Madan Bhandari Road, Kathmandu",
       "name": "Nepal Art Council",
@@ -144,8 +113,6 @@
          "tourist_attraction",
          "point_of_interest",
          "establishment"
-      ],
-      "description": "M8RF+WF2, Madan Bhandari Road, Kathmandu",
-      "photo_count": 10
+      ]
    }
 ]

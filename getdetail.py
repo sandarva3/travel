@@ -2,6 +2,8 @@ import requests
 import json
 from key import mapKey
 
+
+
 def get_place_details(place_id):
     """
     Fetches detailed information about a place using the Google Places API

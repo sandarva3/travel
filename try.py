@@ -7,13 +7,13 @@ import time
 
 
 def get_nearby_places(latitude, longitude):
-    radius = 100000
+    radius = 20000
     place_type = "tourist_attraction"
     url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={latitude},{longitude}&radius={radius}&type={place_type}&key={mapKey}"
     
     try:
         print("Sending request to map")
-        response = requests.get(url, timeout=(5, 10))  # Added timeout to prevent long delays
+        response = requests.get(url, timeout=10)  # Added timeout to prevent long delays
         response.raise_for_status()  # Raises HTTPError for bad responses (4xx or 5xx)
         print("Map sent response.")
         # Parse the JSON response
@@ -32,7 +32,6 @@ def get_nearby_places(latitude, longitude):
                 "name":place.get("name"),
                 "ratings": place.get("user_ratings_total", 0),
                 "types": place.get("types"),
-                "description": place.get("vicinity")
             }
             places_detail.append(place_detail)
             num += 1
@@ -60,8 +59,8 @@ longitude = user_data["longitude"]
 places = get_nearby_places(latitude, longitude)
 
 if places:
-        with open("filtered_places.json", "w") as file:
-            json.dump(places, file, indent=3)
+        with open("filtered_places.json", "w", encoding="utf-8") as file:
+            json.dump(places, file, indent=3, ensure_ascii=False)
         print("written to a file.")
 else:
     print("No places found or there was an error.")

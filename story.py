@@ -63,7 +63,6 @@ def get_chunks():
 
     words = story.split()
 
-    print("THE STORY HAS BEEN PRINTED.")
     length = len(words)
     chunks = [words[i:i+200] for i in range(0,length,200)]
     #for i in range(2):

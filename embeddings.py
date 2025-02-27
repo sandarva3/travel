@@ -1,28 +1,27 @@
-from google import generativeai as genai
-from key import googleKey, credentialPath
+from key import googleKey, credentialPath, projectid
 from story import get_chunks
 from google.cloud import aiplatform
+#from google.cloud.aiplatform import TextEmbeddingModel
 
 
-aiplatform.init(credentials_path=credentialPath)
-genai.configure(api_key=googleKey)
+project = projectid
+location = "us-central1"
+#aiplatform.init(project=project, location=location, credentials_path=credentialPath)
+#aiplatform.init(project=project, location=location, credentials_path=credentialPath)
 
 def get_embedding(text):
     print("sending request..")
-    result = genai.embed_content(
-        model="models/text-embedding-005",
-        content=text,
-        task_type="RETRIEVAL_DOCUMENT",
-        title="Driver's License",
-        output_dimensionality=768,
-    )
+    model = aiplatform.TextEmbeddingModel.from_pretrained("text-embedding-005")
+    embeddings = model.get_embeddings([text], task_type="RETRIEVAL_DOCUMENT")
     print("got response.")
-    return result["embedding"]
+    return embeddings[0].values
 
-models = genai.list_models()  # Lowercase "list"
-print(models)
 
-chunk1 = get_chunks()[0]
-embed1 = get_embedding(chunk1)
-print("embed1:")
-print(embed1)
+
+# chunk1 = get_chunks()[0]
+# embed1 = get_embedding(chunk1)
+# print("embed1:")
+# print(embed1)
+
+print("MODEL:")
+print(dir(aiplatform    ))

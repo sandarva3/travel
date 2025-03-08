@@ -16,9 +16,9 @@ model = TextEmbeddingModel.from_pretrained("text-embedding-005")
 # text input
 #text = "This is a sample text to embed.This is a sample text to embed.This is a sample text to embedThis is a sample text to embed. """
 
-def get_embeddings(text):
+async def get_embeddings(text):
     try:
-        embeddings = model.get_embeddings([text])[0].values
+        embeddings = await model.get_embeddings([text])[0].values
         return embeddings
     except Exception as e:
         print(f"Error: {e}")

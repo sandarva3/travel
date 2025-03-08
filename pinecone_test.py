@@ -1,43 +1,58 @@
 from pinecone import Pinecone, ServerlessSpec
 from key import pineconeKey
 from embeddings import get_embeddings
+from story import get_chunks
+import asyncio
 
-text1 = """
-Hey Mister tambourine man, play a song for me, I'm not sleepy and there ain't no place I'm going to.
-Hey Mr. tambourine man, play a song for me, in the jingle jangle morning, i'll come follwing you.
-Take me for a magic in upon your swirlin's ship, all my senses have been stripped, and my hands can't feel the grip, and my toes too numb to step,
-Wait only for my boots hills to be wanderin.
-I'm ready to go anywhere I'm ready for to fade, unto my own parade, cast your dancing spell my way, i promise to go under it.
-Hey mr tambourine man, play a song for me, i'm not sleepy and there ain't no place i'm going to.
-hey mr tambourine man, play a song for me, in the jingle jangle morning, i'll come followin you.
-"""
 pc = Pinecone(api_key=pineconeKey)
-
-embeddings = get_embeddings(text=text1)
-
 environment = "us-east-1-aws"
-index_list = pc.list_indexes()
-
+#index_list = pc.list_indexes()
 index_name = "story-index"
-
 index = pc.Index(index_name)
+#vector_id = "text1"  #setting a unique vector id for this vector in vectorDB
 
-vector_id = "text1"  #setting a unique vector id for this vector in vectorDB
+#embeddings = get_embeddings(text=text1)
 
-def insert_embeddings(embeddings, metaData, vectorId):
+
+async def insert_embeddings(embeddings, metaData, vectorId):
     try:
-        index.upsert(
+        await index.upsert(
             vectors=[
                 {
-                    'id':vector_id,
+                    'id':vectorId,
                     'values':embeddings,
-                    'metadata':{'about': metaData}
+#                    'metadata':{'about': metaData}
+                     'metadata':metaData,
                 }
             ]
         )
-        print("Inserted Successfully")
     except Exception as e:
         print(f"An error occured during insertion: {e}")
 
+async def get_chunk_embeddings():
+    chunks = get_chunks()
+    count = 0
+    all_embeddings = []
+    for chunk in chunks:
+        print(f"Requested embeddings for chunk {count}")
+        embeddings = get_embeddings(text=chunk)
+        count += 1
+        all_embeddings.append(embeddings)
+    all_embeddings1 = await asyncio.gather(*all_embeddings)
+#    all_embeddings = await asyncio.gather(*[get_embeddings(chunk) for chunk in chunks])
+    return all_embeddings1
 
-insert_embeddings(embeddings=embeddings, metaData="hey mr tambourine man.", vectorId=vector_id)
+async def store_chunk_embeddings():
+    all_embeddings = await get_chunk_embeddings()
+    count = 1
+    tasks = []
+    for embeddings in all_embeddings:
+        task = insert_embeddings(embeddings=embeddings, metaData=f'chunk{count}', vectorId=f'chunk{count}')
+        print(f"Inserted embeddings for chunk {count}")
+        count += 1
+        tasks.append(task)
+    await asyncio.gather(*tasks)
+    print("DONE for all chunks.")
+
+
+asyncio.run(store_chunk_embeddings())

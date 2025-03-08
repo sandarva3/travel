@@ -7,18 +7,18 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = vertex_ai_service_key_path
 
 
 PROJECT_ID = projectid
-LOCATION = "us-central1"       # Common region
+LOCATION = "us-central1"   # Common region
 vertexai.init(project=PROJECT_ID, location=LOCATION)
 
 # Loading the model
 model = TextEmbeddingModel.from_pretrained("text-embedding-005")
 
 # text input
-text = "This is a sample text to embed.This is a sample text to embed.This is a sample text to embedThis is a sample text to embed. """
+#text = "This is a sample text to embed.This is a sample text to embed.This is a sample text to embedThis is a sample text to embed. """
 
-try:
-    embeddings = model.get_embeddings([text])[0].values
-    print(f"Embedding length: {len(embeddings)}")
-    print(f"First few values: {embeddings[:5]}")
-except Exception as e:
-    print(f"Error: {e}")
+def get_embeddings(text):
+    try:
+        embeddings = model.get_embeddings([text])[0].values
+        return embeddings
+    except Exception as e:
+        print(f"Error: {e}")

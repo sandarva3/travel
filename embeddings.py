@@ -1,27 +1,24 @@
-from key import googleKey, credentialPath, projectid
-from story import get_chunks
-from google.cloud import aiplatform
-#from google.cloud.aiplatform import TextEmbeddingModel
+import os
+from vertexai.language_models import TextEmbeddingModel
+import vertexai
+from key import projectid, vertex_ai_service_key_path
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = vertex_ai_service_key_path
 
 
-project = projectid
-location = "us-central1"
-#aiplatform.init(project=project, location=location, credentials_path=credentialPath)
-#aiplatform.init(project=project, location=location, credentials_path=credentialPath)
+PROJECT_ID = projectid
+LOCATION = "us-central1"       # Common region
+vertexai.init(project=PROJECT_ID, location=LOCATION)
 
-def get_embedding(text):
-    print("sending request..")
-    model = aiplatform.TextEmbeddingModel.from_pretrained("text-embedding-005")
-    embeddings = model.get_embeddings([text], task_type="RETRIEVAL_DOCUMENT")
-    print("got response.")
-    return embeddings[0].values
+# Loading the model
+model = TextEmbeddingModel.from_pretrained("text-embedding-005")
 
+# text input
+text = "This is a sample text to embed.This is a sample text to embed.This is a sample text to embedThis is a sample text to embed. """
 
-
-# chunk1 = get_chunks()[0]
-# embed1 = get_embedding(chunk1)
-# print("embed1:")
-# print(embed1)
-
-print("MODEL:")
-print(dir(aiplatform    ))
+try:
+    embeddings = model.get_embeddings([text])[0].values
+    print(f"Embedding length: {len(embeddings)}")
+    print(f"First few values: {embeddings[:5]}")
+except Exception as e:
+    print(f"Error: {e}")

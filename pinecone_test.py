@@ -14,15 +14,14 @@ index = pc.Index(index_name)
 #embeddings = get_embeddings(text=text1)
 
 
-async def insert_embeddings(embeddings, metaData, vectorId):
+def insert_embeddings(embeddings, metaData, vectorId):
     try:
-        await index.upsert(
+        index.upsert(
             vectors=[
                 {
                     'id':vectorId,
                     'values':embeddings,
-#                    'metadata':{'about': metaData}
-                     'metadata':metaData,
+                     'metadata':{'about': metaData},
                 }
             ]
         )
@@ -31,17 +30,17 @@ async def insert_embeddings(embeddings, metaData, vectorId):
 
 async def get_chunk_embeddings():
     chunks = get_chunks()
-    count = 0
-    all_embeddings = []
+    count = 1
+    all_embeddings = await asyncio.gather(*[get_embeddings(chunk) for chunk in chunks])
+    return all_embeddings
+'''
     for chunk in chunks:
+        all_embeddings.append(get_embeddings(text=chunk))
         print(f"Requested embeddings for chunk {count}")
-        embeddings = get_embeddings(text=chunk)
         count += 1
-        all_embeddings.append(embeddings)
     all_embeddings1 = await asyncio.gather(*all_embeddings)
-#    all_embeddings = await asyncio.gather(*[get_embeddings(chunk) for chunk in chunks])
-    return all_embeddings1
-
+'''
+'''
 async def store_chunk_embeddings():
     all_embeddings = await get_chunk_embeddings()
     count = 1
@@ -52,6 +51,21 @@ async def store_chunk_embeddings():
         count += 1
         tasks.append(task)
     await asyncio.gather(*tasks)
+    print("DONE for all chunks.")
+'''
+
+async def store_chunk_embeddings():
+    all_embeddings = await get_chunk_embeddings()
+    count = 1
+    tasks = []
+
+    for embeddings in all_embeddings:
+        task = asyncio.to_thread(insert_embeddings, embeddings, f'chunk{count}', f'chunk{count}')
+        print(f"Inserted embeddings for chunk {count}")
+        count += 1
+        tasks.append(task)
+
+    await asyncio.gather(*tasks)  # ✅ Runs insertions concurrently
     print("DONE for all chunks.")
 
 

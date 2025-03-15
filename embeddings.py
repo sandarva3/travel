@@ -2,6 +2,7 @@ import os
 from vertexai.language_models import TextEmbeddingModel
 import vertexai
 from key import projectid, vertex_ai_service_key_path
+import asyncio
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = vertex_ai_service_key_path
 
@@ -18,7 +19,8 @@ model = TextEmbeddingModel.from_pretrained("text-embedding-005")
 
 async def get_embeddings(text):
     try:
-        embeddings = await model.get_embeddings([text])[0].values
+        embeddings = await asyncio.to_thread(lambda: model.get_embeddings([text])[0].values)
         return embeddings
     except Exception as e:
         print(f"Error: {e}")
+        return None

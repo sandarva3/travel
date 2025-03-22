@@ -65,7 +65,7 @@ async def store_chunk_embeddings():
         count += 1
         tasks.append(task)
 
-    await asyncio.gather(*tasks)  # ✅ Runs insertions concurrently
+    await asyncio.gather(*tasks)
     print("DONE for all chunks.")
 
 

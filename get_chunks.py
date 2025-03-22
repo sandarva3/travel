@@ -3,6 +3,8 @@ from key import pineconeKey
 from embeddings import get_embeddings
 from story import get_chunks
 import asyncio
+import time
+from gemini11 import send_gemini
 
 
 
@@ -22,6 +24,14 @@ top_chunks = [chunks for chunks in response["matches"]]
 
 print("Best matching chunk: ")
 print(top_chunks)
-best_chunk = top_chunks[0]
-print("The best chunk is:")
-print(best_chunk)
+
+print("sending question to gemini.")
+
+response = send_gemini(top_chunks, query)
+print("THE REPONSE FROM GEMINI: ")
+if response:
+    for i in response:
+        print(i, end="", flush=True)
+        time.sleep(0.01)
+else:
+    print("NO response from gemini")

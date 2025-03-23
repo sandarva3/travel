@@ -4,18 +4,19 @@ import asyncio
 
 
 async def get_details(places):
-    prompt = lambda place: f"""Search about this place and tell around 150 words summary about it. Place = {place} 
-EXTREMELY IMPORTANT: ONLY TELL SUMMARY, NOTHING ELSE."""
+    prompt = lambda place: f"""Search about this place and tell 100 words summary about it, in single paragraph.. Place = {place} 
+EXTREMELY IMPORTANT: ONLY TELL SUMMARY, NOTHING ELSE, and also tell if it's 'mainstream' tourist spot or not, like 'mainstream':true/false. 
+MORE EXTREMELY IMPORTANT: check mainstream thing carefully, and sonly ay true to places which are really mainstream."""
     count = 1
-    summaries = []
+    tasks = []
     for place in places:
 #        summary = await asyncio.to_thread(send_to_gemini, prompt(place)) #this way function waits at each iteration, making it sequential.
         task = asyncio.to_thread(send_to_gemini, prompt(place)) #here we create coroutines, which executes parallely
         print(f"getting place {count} summary.")
         count += 1
-        summaries.append(task) # here we append coroutines to list.
+        tasks.append(task) # here we append coroutines to list.
     
-    await asyncio.gather(*summaries)  # we wait until all coroutines resolves. and gather() expects coroutines, any other datatype will cause it to fail.
+    summaries = await asyncio.gather(*tasks)  # we wait until all coroutines resolves. and gather() expects coroutines, any other datatype will cause it to fail.
     print("DONE for all places.")
     return summaries
 
@@ -31,8 +32,8 @@ def run_get_details():
         "address": "P9V7+3X7 Ward 11, Budhanilkantha 44600, Nepal"
     },
     {
-        "name": "Kailashnath Mahadev Statue",
-        "address": "Sanga, सुर्यविनायक 44800, Nepal"
+        "name": "Pasupatinath Temple",
+        "address": "Chabahil, Nepal"
     },
     {
         "name": "Handigaun",
@@ -45,7 +46,7 @@ def run_get_details():
     try:
         places_summaries = asyncio.run(get_details(places=places))
         print("Got places Summaries")
-        inp = input("Print places summaries?: y for yes")
+        inp = input("Print places summaries?: y for yes: ")
         if inp=="y":
             count = 1
             for place_summary in places_summaries:

@@ -9,7 +9,8 @@ def send_gemini(chunks, question):
     genai.configure(api_key=googleKey)
 
     prompt = f"""CONTEXT CHUNKS: {{      {chunks}        }}.
-  The question: {{    {question}  }}. EXTREMELY IMPORTANT: USE CHUNKS FOR CONTEXT AND ONLY ANSWER THE GIVEN QUESTION, DON'T ANY OTHER EXTRA THING, ONLY ANSWER."""
+  The question: {{    {question}  }}. EXTREMELY IMPORTANT: USE CHUNKS FOR CONTEXT AND ANSWER THE GIVEN QUESTION PROPERLY BY DESCRIBING IN PARAGRAPH(not points). 
+  DON'T SAY ANY OTHER THING, JUST ANSWER QUESTION."""
 
     try:
         model = genai.GenerativeModel("gemini-2.0-flash")

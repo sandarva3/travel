@@ -1,6 +1,6 @@
 import google.generativeai as genai
 from key import googleKey
-import time
+#import time
 
 
 def send_gemini(chunks, question):

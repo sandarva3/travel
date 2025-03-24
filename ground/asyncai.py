@@ -1,12 +1,13 @@
 #send list of places to an ai and get response asynchronously.
 from gemini1 import send_to_gemini
 import asyncio
+#from description import places_list
 
 
 async def get_details(places):
-    prompt = lambda place: f"""Search about this place and tell 100 words summary about it, in single paragraph.. Place = {place} 
-EXTREMELY IMPORTANT: ONLY TELL SUMMARY, NOTHING ELSE, and also tell if it's 'mainstream' tourist spot or not, like 'mainstream':true/false. 
-MORE EXTREMELY IMPORTANT: check mainstream thing carefully, and sonly ay true to places which are really mainstream."""
+    prompt = lambda place: f"""Search about this place and tell 150 words summary about it, in single paragraph.. Place = {place} 
+EXTREMELY IMPORTANT: ONLY TELL SUMMARY(WITH PLACE NAME AS TITLE), NOTHING ELSE, and also tell if it's 'mainstream' tourist spot or not, like 'mainstream':true/false. 
+MORE EXTREMELY IMPORTANT: check mainstream thing carefully."""
     count = 1
     tasks = []
     for place in places:

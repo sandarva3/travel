@@ -1,3 +1,9 @@
+# Ignore all compiled Python files and cache directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore API keys and sensitive files
 key.py
 ground/conv_history.txt
-__pycache__/key.cpython-312.pyc

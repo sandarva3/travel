@@ -10,7 +10,7 @@ client = genai.Client(api_key=googleKey)
 # Load your JSON file
 #with open('output.json', 'rb') as f:
 #    json_data = f.read()
-def talk(prompt):
+def talk_gemini(prompt):
     response = client.models.generate_content(
         model="gemini-1.5-flash",
         contents=[
@@ -21,67 +21,56 @@ def talk(prompt):
             prompt
         ]
     )
-    print("THE REPONSE FROM GEMINI: ")
-    response = response.text
-    if response:
-        for i in response:
-            print(i, end="", flush=True)
-            time.sleep(0.01)
-    else:
-        print("NO response from gemini")
+    return response.text
 
+
+def print_response(response):
+    print("Gemini: ", end="")
+    for i in response:
+        print(i, end="", flush=True)
+        time.sleep(0.01)
+
+def save_conv(conv):
+    with open("conv_history.json", 'w', encoding="utf-8") as file:
+        file.write(conv)
+
+past_conv = {}
+json_string = ""
+conv_string = ""
 def chat():
+    global json_string
+    count = 1
     while True:
         inp = input("You: ")
         if inp == 0:
+            print("ENDING CONVERSATION...")
             break
-        talk("""Past Conversation: {You: Hey?
-THE REPONSE FROM GEMINI: 
-Hey there! How can I help you today?
-You: How you doing?    
-THE REPONSE FROM GEMINI: 
-I'm doing well, thank you for asking!  How are you?
-You: fine.
-THE REPONSE FROM GEMINI: 
-Okay.  Is there anything I can help you with?
-You: i'm from lalitpur, nepal.
-THE REPONSE FROM GEMINI: 
-That's great! Lalitpur is a beautiful city.  Is there anything specific you'd like to talk about regarding Lalitpur, Nepal?  Perhaps you have a question, or you'd like to share something about your experiences there?
-You: where i am from?
-}. New user prompt:{tell me where am I from?} RULE: don't say mention anything to user of past convesation, use past conversation for context and just answer to user.""")
+        prompt = f"""You are an AI assistant. Answer user queries accurately and intelligently.  
+Use the following past conversation only for relevant context—do not mention or reference it in your response.  
+
+PAST CONVERSATION: {json.dumps(past_conv, indent=2)}  
+
+USER PROMPT: {inp}  
+
+RULES:  
+- If the past conversation contains relevant context, use it to improve your answer.  
+- If no relevant context exists, respond as if this is a new question.  
+- NEVER mention past conversations, context usage, or lack of information.  
+- Your response should be clear, logical, and direct. Avoid unnecessary filler.  
+"""
+  
+
+        response = talk_gemini(prompt=prompt)
+        print_response(response=response)
+        past_conv[f'{count}.me'] = inp
+        past_conv[f'{count}.you'] = response
+        json_string = json.dumps(past_conv, indent=2, ensure_ascii=False)
+        save_conv(json_string)
+        count += 1
+
 
 chat()
 
 '''
-link1 = "https://roomapp.pythonanywhere.com/media/lanmedia/output.json"
-link2 = "https://roomapp.pythonanywhere.com/media/lanmedia/dbms_lab6.txt"
-
-def Whatsup(prompt):
-    genai.configure(api_key=googleKey)
-
-    try:
-        model = genai.GenerativeModel("gemini-2.0-flash")
-        print("Generating response from Gemini...")
-        response = model.generate_content(prompt)
-        return response.text
-    except Exception as e:
-        print(f"Error generating response: {str(e)}")
-        return "Error generating response"
-
-prompt = f"Analyze this JSON data, and text data. LINKS: link1 = {link1}, link2 = {link2} . Tell me what it's about. Also: Give me the names of places there of json data as well. \
-keep in mind only name, nothing else. Like name1: 'name of place 1, name2:'name of place2' etc. Also after doing that, tell me, how did you \
-got both datas? as a file or directly embedded in prompt?? or did you accessed it from URL yourself? If You accessed it from url, tell me how you did it as well \
-What if I want to send data 5x that amount of size? can you still process it if I provide you the link?? \
-As when you process like this through a link, how do you process it? like a file?? or prompt??"
-
-response = Whatsup(prompt)
-
-if response:
-    print(f"RESPONSE FROM GEMINI")
-    for i in response:
-        print(i, end="", flush=True)
-        time.sleep(0.05)
-else:
-    print("NO RESPONSE FROM GEMINI")
-
+ How much of a request can I make to you through an API call. I'm making a software and I want to make you a parallel request on different topic, the problem is requesting you one by one for each topic would be very time consuming. can i make parallel request to you? i can. and i have. but it's through threading in python. like i used .to_thread() method of asyncio in python. but the problem is: when i made 22 parallel request to you at once, simulataneously, you were only able to answer for only 20 of them. is there limit for that? for eg, i might might 60 parallel request to you at once simultenously, how can I handle that?
 '''

@@ -7,3 +7,6 @@ __pycache__/
 
 key.py
 ground/conv_history.txt
+
+
+db.sqlite3

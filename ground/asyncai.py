@@ -2,8 +2,9 @@
 import asyncio
 from gemini1 import send_to_gemini
 from description import places_list
+import json
 
-SEMAPHORE_LIMIT = 5
+SEMAPHORE_LIMIT = 3
 
 
 async def fetch_place_summary(semaphore, place):
@@ -15,9 +16,9 @@ frequently visited by national/international tourists, commonly featured in trav
 If the place regularly attracts many visitors and is a staple in popular travel itineraries, it is mainstream (true). If it is lesser-known, niche, or 
 primarily visited by locals or enthusiasts, it is non-mainstream (false).
 
-Provide output in this format:
-  place: Place Name,
-  summary: <150-word summary>,
+Provide output 'exactly' in this format:
+  <150-word summary>.
+
   mainstream: true/false
 """
         print(f"Getting summary for: {place}")
@@ -25,12 +26,39 @@ Provide output in this format:
 
 
 async def get_details(places):
+    count = 0
     """Fetch details of all places with controlled concurrency."""
     semaphore = asyncio.Semaphore(SEMAPHORE_LIMIT)
     tasks = [fetch_place_summary(semaphore, place) for place in places]
+    # tasks = []
+    # for place in places:
+    #     count += 1
+    #     task = fetch_place_summary(semaphore, place)
+    #     tasks.append(task)
+    #     if count == 5:
+    #         asyncio.sleep(2)
+    #     elif count == 10:
+    #         asyncio.sleep(2)
+    #     elif count == 15:
+    #         asyncio.sleep(2)
+    #     elif count == 20:
+    #         asyncio.sleep(20)
     summaries = await asyncio.gather(*tasks)
     print("DONE for all places.")
     return summaries
+
+
+def save_summary(places_summaries):
+    count = 0
+    full_summary_list = []
+    for place in places_list:
+        place_summary = places_summaries[count]
+        place["summary"] = place_summary
+        count += 1
+    print("attached summary to each places")
+    with open("descriptions.json", "w") as file:
+        json.dump(places_list, file, indent=3, ensure_ascii=False)
+    print("written the new list to a file.")
 
 
 def run_get_details():
@@ -45,6 +73,7 @@ def run_get_details():
                 print(f"Place {count} summary:\n{summary}")
         else:
             print("BYE")
+        save_summary(places_summaries=places_summaries)
     except Exception as e:
         print(f"Got error: {e}")
 

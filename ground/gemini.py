@@ -29,15 +29,20 @@ def print_response(response):
         print(i, end="", flush=True)
         time.sleep(0.01)
 
-def save_conv(conv):
-    with open("conv_history.txt", 'w', encoding="utf-8") as file:
-        file.write(conv)
 
-conv_string = ""
-chat_string = ""
+def get_conv_history():
+    with open("conv_history.txt", "r") as file:
+        file_data = file.read()
+    return file_data
+        
+
+def save_conv(chat):
+    with open("conv_history.txt", 'a', encoding="utf-8") as file:
+        file.write(chat)
+
+
 def chat():
-    global chat_string
-    global conv_string
+    chat_string = ""
     count = 1
     while True:
         inp = input("You: ")
@@ -47,7 +52,7 @@ def chat():
         prompt = f"""You are an AI assistant. Answer user queries accurately and intelligently.  
 Use the following past conversation only for relevant context—do not mention or reference it in your response.  
 
-PAST CONVERSATION: {{   {conv_string}  }}
+PAST CONVERSATION: {{   {get_conv_history()}  }}
 
 USER PROMPT: {{   {inp}   }} 
 
@@ -61,10 +66,9 @@ RULES:
 
         response = talk_gemini(prompt=prompt)
         print_response(response=response)
-        chat_string = f"""User: {inp}
-Assistant: {response}"""
-        conv_string = conv_string + chat_string
-        save_conv(conv_string)
+        chat_string = f"""-User: {inp}
+-Assistant: {response}"""
+        save_conv(chat_string)
         count += 1
 
 

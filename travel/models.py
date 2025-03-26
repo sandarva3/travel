@@ -15,6 +15,7 @@ class CustomUser(AbstractUser):
 
 class Place(models.Model):
     name = models.CharField(max_length=70)
+    place_id = models.CharField(max_length=27)
     full_address = models.CharField(max_length=300)
     location = models.PointField(srid=4326)
     summary = models.TextField()

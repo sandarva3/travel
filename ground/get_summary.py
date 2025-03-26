@@ -1,10 +1,10 @@
 
 import asyncio
 from gemini1 import send_to_gemini
-from description import places_list
+from filtered_places import filtered_places
 import json
 
-SEMAPHORE_LIMIT = 3
+SEMAPHORE_LIMIT = 5
 
 
 async def fetch_place_summary(semaphore, place):
@@ -26,10 +26,10 @@ Provide output 'exactly' in this format:
 
 
 async def get_details(places):
-    count = 0
     """Fetch details of all places with controlled concurrency."""
     semaphore = asyncio.Semaphore(SEMAPHORE_LIMIT)
     tasks = [fetch_place_summary(semaphore, place) for place in places]
+#    count = 0
     # tasks = []
     # for place in places:
     #     count += 1
@@ -51,13 +51,13 @@ async def get_details(places):
 def save_summary(places_summaries):
     count = 0
     full_summary_list = []
-    for place in places_list:
+    for place in filtered_places:
         place_summary = places_summaries[count]
         place["summary"] = place_summary
         count += 1
     print("attached summary to each places")
     with open("descriptions.json", "w") as file:
-        json.dump(places_list, file, indent=3, ensure_ascii=False)
+        json.dump(filtered_places, file, indent=3, ensure_ascii=False)
     print("written the new list to a file.")
 
 
@@ -65,7 +65,7 @@ def run_get_details():
     """Run async function inside synchronous execution"""
     print("Running...")
     try:
-        places_summaries = asyncio.run(get_details(places_list))
+        places_summaries = asyncio.run(get_details(filtered_places))
         print("Got places summaries.")
 
         if input("Print places summaries? (y for yes): ").strip().lower() == "y":

@@ -3,26 +3,26 @@ from key import mapKey
 import json
 import time
 import asyncio
+import aiohttp
 
 
 
-
-async def get_place_address(place_id):
-    details_url = f"https://maps.googleapis.com/maps/api/place/details/json?place_id={place_id}&fields=formatted_address,adr_address,name,address_components&key={mapKey}"
+async def get_place_address(session, place_id):
+    address_url = f"https://maps.googleapis.com/maps/api/place/details/json?place_id={place_id}&fields=formatted_address,adr_address,name,address_components&key={mapKey}"
     try:
         print("Sending request for address.")
-        response = await requests.get(details_url, timeout=15)
-        response.raise_for_status()
-        print("Got details of place.")
-        details = response.json()
-        full_address = details.get("result", {}).get("formatted_address", "Address Not Found")
-        return  full_address
-#        components = details.get("result", {}).get("address_components", [])
+        async with session.get(address_url, timeout=15) as response:
+            response.raise_for_status()
+            print("Got address of place.")
+            data = await response.json()
+            full_address = data.get("result", {}).get("formatted_address", "Address Not Found")
+            return full_address
+#        components = data.get("result", {}).get("address_components", [])
 #        print(f"The full address is: {full_address}")
 #        print(f"Address components: {json.dumps(components, indent=3)}")
     except Exception as e:
         print(f"ERROR OCCURRED: {e}")
-
+        return None
 
 
 def get_nearby_places(latitude, longitude):
@@ -51,26 +51,28 @@ async def filter_places(place_list):
         places_id = []
         tasks = []
         print("Getting each place's relevant details.")
-        for place in place_list:
-            if place.get("user_ratings_total", 0) < 250:
-                 continue
-            place_id = place.get('place_id')
-            task = get_place_address(place_id)
-            tasks.append(task)
-            place_detail = {
-                 'place_no': count,
-                 'place_id': place_id,
-                 'name': place.get('name'),
-                 'latitude': place['geometry']['location']['lat'],
-                 'longitude': place['geometry']['location']['lng']
-            }
-            places_detail.append(place_detail)
-            count += 1
-        print("Collecting full address of each place..")
-        full_addresses = await asyncio.gather(*tasks)
+        async with aiohttp.ClientSession() as session:
+            for place in place_list:
+                if place.get("user_ratings_total", 0) < 250:
+                     continue
+                place_id = place.get('place_id')
+                task = get_place_address(session, place_id)
+                tasks.append(task)
+                place_detail = {
+                     'place_no': count,
+                     'place_id': place_id,
+                     'name': place.get('name'),
+                     'latitude': place['geometry']['location']['lat'],
+                     'longitude': place['geometry']['location']['lng']
+                }
+                places_detail.append(place_detail)
+                count += 1
+            print("Collecting full address of each place..")
+            full_addresses = await asyncio.gather(*tasks)
 
         for index,address in enumerate(full_addresses):
-            places_detail[index]['address'] = address
+            if address:
+                places_detail[index]['address'] = address
         print("Done")
         print(f"Total places after filter: {count}")
         return places_detail    

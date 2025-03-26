@@ -2,7 +2,26 @@ import requests
 from key import mapKey
 import json
 import time
+import asyncio
 
+
+
+
+async def get_place_address(place_id):
+    details_url = f"https://maps.googleapis.com/maps/api/place/details/json?place_id={place_id}&fields=formatted_address,adr_address,name,address_components&key={mapKey}"
+    try:
+        print("Sending request for address.")
+        response = await requests.get(details_url, timeout=15)
+        response.raise_for_status()
+        print("Got details of place.")
+        details = response.json()
+        full_address = details.get("result", {}).get("formatted_address", "Address Not Found")
+        return  full_address
+#        components = details.get("result", {}).get("address_components", [])
+#        print(f"The full address is: {full_address}")
+#        print(f"Address components: {json.dumps(components, indent=3)}")
+    except Exception as e:
+        print(f"ERROR OCCURRED: {e}")
 
 
 
@@ -10,7 +29,6 @@ def get_nearby_places(latitude, longitude):
     radius = 20000
     place_type = "tourist_attraction"
     url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={latitude},{longitude}&radius={radius}&type={place_type}&key={mapKey}"
-    
     try:
         print("Sending request to map")
         response = requests.get(url, timeout=10)
@@ -18,38 +36,48 @@ def get_nearby_places(latitude, longitude):
         print("Map sent response.")
         # Parse the JSON response
         places = response.json()
+        filtered_places_detail = asyncio.run(filter_places(places["results"]))
+        return filtered_places_detail
+    except requests.exceptions.RequestException as e:
+        print(f"Request failed: {e}")
+        return None
+
+
+
+async def filter_places(place_list):
+    try:
         count = 1
         places_detail = []
+        places_id = []
+        tasks = []
         print("Getting each place's relevant details.")
-
-        for place in places["results"]:
+        for place in place_list:
             if place.get("user_ratings_total", 0) < 250:
                  continue
-            # place_detail = {
-            #     "placeNo": count,
-            #     "place_id": place.get("place_id"),
-            #     "address": place.get("vicinity"),
-            #     "name":place.get("name"),
-            #     "ratings": place.get("user_ratings_total", 0),
-            #     "types": place.get("types"),
-            # }
+            place_id = place.get('place_id')
+            task = get_place_address(place_id)
+            tasks.append(task)
             place_detail = {
                  'place_no': count,
-                 'place_id': place.get('place_id'),
-                 'address': place.get('vicinity'),
+                 'place_id': place_id,
                  'name': place.get('name'),
                  'latitude': place['geometry']['location']['lat'],
                  'longitude': place['geometry']['location']['lng']
             }
             places_detail.append(place_detail)
             count += 1
+        print("Collecting full address of each place..")
+        full_addresses = await asyncio.gather(*tasks)
+
+        for index,address in enumerate(full_addresses):
+            places_detail[index]['address'] = address
         print("Done")
         print(f"Total places after filter: {count}")
-        return places_detail
-    
-    except requests.exceptions.RequestException as e:
-        print(f"Request failed: {e}")
+        return places_detail    
+    except Exception as e:
+        print(f"ERROR OCCURED: {e}")
         return None
+
 
 
 def get_place(user_data):
@@ -65,6 +93,7 @@ def get_place(user_data):
         print("No places found or there was an error.")
 
 
+
 # Example: balkumari, lalitpur, Nepal
 user_data = {
     "latitude": 27.6714861952194,
@@ -76,33 +105,29 @@ user_data = {
 }
 
 
-def get_place_details(place_id):
-    details_url = f"https://maps.googleapis.com/maps/api/place/details/json?place_id={place_id}&fields=formatted_address,adr_address,name,address_components&key={mapKey}"
 
-    try:
-        print("Sending request for details.")
-        response = requests.get(details_url, timeout=15)
-        response.raise_for_status()
-        print("Got details of place.")
+get_place(user_data)
 
-        details = response.json()
-        full_address = details.get("result", {}).get("formatted_address", "Address Not Found")
-        components = details.get("result", {}).get("address_components", [])
 
-        
-        print(f"The full address is: {full_address}")
-        print(f"Address components: {json.dumps(components, indent=3)}")
 
-    except Exception as e:
-        print(f"ERROR OCCURRED: {e}")
 
-get_place_details("ChIJsciVgCoJ6zkRsjUON7SWYKw")
+
+
+
+
+
+
+
+
+
 
 
 
 
 '''
-def reverse_geocode(lat, lng):
+def reverse_geocode():
+    lat = 27.7188945
+    lng = 85.31946839999999
     geo_url = f"https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lng}&language=en&key={mapKey}"
     
     try:
@@ -119,4 +144,6 @@ def reverse_geocode(lat, lng):
     except Exception as e:
         print(f"ERROR: {e}")
         return "Address Not Found"
+
+reverse_geocode()'
 '''

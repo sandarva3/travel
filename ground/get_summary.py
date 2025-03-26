@@ -4,13 +4,13 @@ from gemini1 import send_to_gemini
 from filtered_places import filtered_places
 import json
 
-SEMAPHORE_LIMIT = 5
+SEMAPHORE_LIMIT = 3
 
 
-async def fetch_place_summary(semaphore, place):
+async def fetch_place_summary(semaphore, place_name, place_address):
     """Fetch summary for a place while controlling concurrency."""
     async with semaphore:
-        prompt = f"""Generate a 150-word summary about the place(in a single paragraph) {place}, covering its location, historical or cultural significance, key attractions, 
+        prompt = f"""Generate a 150-word summary about the place(in a single paragraph): {place_name}, {place_address}, covering its location, historical or cultural significance, key attractions, 
 and any unique features. Then, determine if the place is a mainstream tourist destination. A mainstream tourist destination is defined as a place that is well-known, 
 frequently visited by national/international tourists, commonly featured in travel guides, and ranked among top destinations of that country on travel websites. 
 If the place regularly attracts many visitors and is a staple in popular travel itineraries, it is mainstream (true). If it is lesser-known, niche, or 
@@ -21,14 +21,14 @@ Provide output 'exactly' in this format:
 
   mainstream: true/false
 """
-        print(f"Getting summary for: {place}")
+        print(f"Getting summary for: {place_name}")
         return await asyncio.to_thread(send_to_gemini, prompt)
 
 
 async def get_details(places):
     """Fetch details of all places with controlled concurrency."""
     semaphore = asyncio.Semaphore(SEMAPHORE_LIMIT)
-    tasks = [fetch_place_summary(semaphore, place) for place in places]
+    tasks = [fetch_place_summary(semaphore, place['name'], place['address']) for place in places]
 #    count = 0
     # tasks = []
     # for place in places:
@@ -49,16 +49,14 @@ async def get_details(places):
 
 
 def save_summary(places_summaries):
-    count = 0
     full_summary_list = []
-    for place in filtered_places:
-        place_summary = places_summaries[count]
-        place["summary"] = place_summary
-        count += 1
+    for index,filtered_place in enumerate(filtered_places):
+        place_summary = places_summaries[index]
+        filtered_place["summary"] = place_summary
     print("attached summary to each places")
-    with open("descriptions.json", "w") as file:
+    with open("filtered_places.json", "w") as file:
         json.dump(filtered_places, file, indent=3, ensure_ascii=False)
-    print("written the new list to a file.")
+    print("saved the the filtered_places file alogn with summary.")
 
 
 def run_get_details():
@@ -67,13 +65,12 @@ def run_get_details():
     try:
         places_summaries = asyncio.run(get_details(filtered_places))
         print("Got places summaries.")
-
         if input("Print places summaries? (y for yes): ").strip().lower() == "y":
             for count, summary in enumerate(places_summaries, 1):
                 print(f"Place {count} summary:\n{summary}")
         else:
             print("BYE")
-        save_summary(places_summaries=places_summaries)
+        save_summary(places_summaries)
     except Exception as e:
         print(f"Got error: {e}")
 

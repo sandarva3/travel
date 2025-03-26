@@ -1,20 +1,19 @@
-
 import asyncio
 from gemini1 import send_to_gemini
-from filtered_places import filtered_places
 import json
-
+with open("filtered_places.json", "r", encoding="utf-8") as file:
+    filtered_places = json.load(file)
+    print("Converted filtered_places to python dict.")
 SEMAPHORE_LIMIT = 3
+
 
 
 async def fetch_place_summary(semaphore, place_name, place_address):
     """Fetch summary for a place while controlling concurrency."""
     async with semaphore:
-        prompt = f"""Generate a 150-word summary about the place(in a single paragraph): {place_name}, {place_address}, covering its location, historical or cultural significance, key attractions, 
-and any unique features. Then, determine if the place is a mainstream tourist destination. A mainstream tourist destination is defined as a place that is well-known, 
-frequently visited by national/international tourists, commonly featured in travel guides, and ranked among top destinations of that country on travel websites. 
-If the place regularly attracts many visitors and is a staple in popular travel itineraries, it is mainstream (true). If it is lesser-known, niche, or 
-primarily visited by locals or enthusiasts, it is non-mainstream (false).
+        prompt = f"""Generate a 150-word summary about the place(in a single paragraph). Search about this place in this 'exact' address: {place_name}, {place_address}. 
+Cover its location, historical or cultural significance, key attractions, and any unique features. Then, determine if the place is a mainstream tourist 
+destination or not. A place is only mainstream:true, if it's a very popular "tourist spot" and attracts "big number of national and internation tourists".
 
 Provide output 'exactly' in this format:
   <150-word summary>.
@@ -23,6 +22,7 @@ Provide output 'exactly' in this format:
 """
         print(f"Getting summary for: {place_name}")
         return await asyncio.to_thread(send_to_gemini, prompt)
+
 
 
 async def get_details(places):
@@ -48,6 +48,7 @@ async def get_details(places):
     return summaries
 
 
+
 def save_summary(places_summaries):
     full_summary_list = []
     for index,filtered_place in enumerate(filtered_places):
@@ -57,6 +58,7 @@ def save_summary(places_summaries):
     with open("filtered_places.json", "w") as file:
         json.dump(filtered_places, file, indent=3, ensure_ascii=False)
     print("saved the the filtered_places file alogn with summary.")
+
 
 
 def run_get_details():
@@ -73,6 +75,7 @@ def run_get_details():
         save_summary(places_summaries)
     except Exception as e:
         print(f"Got error: {e}")
+
 
 
 run_get_details()

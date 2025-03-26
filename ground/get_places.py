@@ -25,6 +25,7 @@ async def get_place_address(session, place_id):
         return None
 
 
+
 def get_nearby_places(latitude, longitude):
     radius = 20000
     place_type = "tourist_attraction"
@@ -147,5 +148,5 @@ def reverse_geocode():
         print(f"ERROR: {e}")
         return "Address Not Found"
 
-reverse_geocode()'
+reverse_geocode()
 '''

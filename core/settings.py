@@ -33,7 +33,6 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'travel',
     'rest_framework',
-    'django.contrib.gis',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -79,7 +78,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'travel',
         'USER': 'sandarva',
         'PASSWORD': 'sandarva3',

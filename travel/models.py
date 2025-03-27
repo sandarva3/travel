@@ -1,4 +1,4 @@
-from django.contrib.gis.db import models
+from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 
@@ -17,12 +17,13 @@ class Place(models.Model):
     name = models.CharField(max_length=70)
     place_id = models.CharField(max_length=27, default="fakeId")
     full_address = models.CharField(max_length=300)
-    location = models.PointField(srid=4326)
+    coordinates = models.JSONField(default=dict)
     summary = models.TextField()
+    mainstream = models.BooleanField(default=False)
 
     class Meta:
         indexes = [
-            models.Index(fields=['location'], name='location_gist_idx'),  # Spatial index
+            models.Index(fields=['place_id'], name='place_id_idx'),
         ]
 
     def __str__(self):

@@ -15,10 +15,10 @@ async def fetch_place_summary(semaphore, place_name, place_address):
 Cover its location, historical or cultural significance, key attractions, and any unique features. Then, determine if the place is a mainstream tourist 
 destination or not. A place is only mainstream:true, if it's a very popular "tourist spot" and attracts "big number of national and internation tourists".
 
-Provide output 'exactly' in this format:
-  <150-word summary>.
+-EXTREMELY IMPORTANT: Provide output 'exactly' in this format:
+mainstream_tourist_spot: true/false.
 
-  mainstream: true/false
+<150-word summary>.
 """
         print(f"Getting summary for: {place_name}")
         return await asyncio.to_thread(send_to_gemini, prompt)
@@ -53,7 +53,13 @@ def save_summary(places_summaries):
     full_summary_list = []
     for index,filtered_place in enumerate(filtered_places):
         place_summary = places_summaries[index]
+        mainstream_line = place_summary.split("\n")[0]
+        if "true" in mainstream_line:
+            mainstream = True
+        else:
+            mainstream = False
         filtered_place["summary"] = place_summary
+        filtered_place["mainstream"] = mainstream
     print("attached summary to each places")
     with open("filtered_places.json", "w") as file:
         json.dump(filtered_places, file, indent=3, ensure_ascii=False)

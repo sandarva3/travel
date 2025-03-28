@@ -26,8 +26,13 @@ async def get_place_address(session, place_id):
 
 
 
+
+'''
+Google map sends total 60 places details in response. But in a single page only 20 places are found.
+So, for other places we need to go to next page through next_page_token.
+'''
 def get_nearby_places(latitude, longitude):
-    radius = 20000
+    radius = 50000
     place_type = "tourist_attraction"
     url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={latitude},{longitude}&radius={radius}&type={place_type}&language=en&key={mapKey}"
     try:
@@ -63,8 +68,8 @@ async def filter_places(place_list):
                      'place_no': count,
                      'place_id': place_id,
                      'name': place.get('name'),
-                     'latitude': place['geometry']['location']['lat'],
-                     'longitude': place['geometry']['location']['lng']
+                     'lat': place['geometry']['location']['lat'],
+                     'lng': place['geometry']['location']['lng']
                 }
                 places_detail.append(place_detail)
                 count += 1
@@ -96,10 +101,10 @@ def get_place(user_data):
 
 
 
-# Example: balkumari, lalitpur, Nepal
+# Example: Swoyambunath temple
 user_data = {
-    "latitude": 27.6714861952194,
-    "longitude": 85.33868465233498,
+    "latitude": 27.7148996,
+    "longitude": 85.29039569999999,
     "accuracy": 5,
     "altitude": 1350,
     "timestamp": "2024-02-20T10:45:00Z",

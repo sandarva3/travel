@@ -1,10 +1,10 @@
 import asyncio
-from gemini1 import send_to_gemini
+from ground.send_to_gemini import send_to_gemini
 import json
-with open("filtered_places.json", "r", encoding="utf-8") as file:
-    filtered_places = json.load(file)
-    print("Converted filtered_places to python dict.")
-SEMAPHORE_LIMIT = 3
+#with open("filtered_places.json", "r", encoding="utf-8") as file:
+#    filtered_places = json.load(file)
+#    print("Converted filtered_places to python dict.")
+#SEMAPHORE_LIMIT = 3
 
 
 
@@ -20,7 +20,6 @@ mainstream_tourist_spot: true/false.
 
 <150-word summary>.
 """
-        print(f"Getting summary for: {place_name}")
         return await asyncio.to_thread(send_to_gemini, prompt)
 
 
@@ -74,4 +73,4 @@ def run_get_details():
 
 
 
-run_get_details()
+#run_get_details()

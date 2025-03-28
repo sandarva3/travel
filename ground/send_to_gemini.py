@@ -1,5 +1,5 @@
 import google.generativeai as genai
-from key import googleKey
+from .key import googleKey
 #import time
 
 def send_to_gemini(prompt):

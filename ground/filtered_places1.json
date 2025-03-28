@@ -1,0 +1,90 @@
+[
+   {
+      "place_no": 1,
+      "place_id": "ChIJw3uqaBsZ6zkRjS-DDyXqWyk",
+      "name": "Hotel Shanker - Palatial Heritage Kathmandu",
+      "lat": 27.7188945,
+      "lng": 85.31946839999999,
+      "full_address": "Lazimpat, Kathmandu 44600, Nepal"
+   },
+   {
+      "place_no": 2,
+      "place_id": "ChIJsciVgCoJ6zkRsjUON7SWYKw",
+      "name": "Dhaneshwor Mahadev Temple",
+      "lat": 27.6181534,
+      "lng": 85.5225348,
+      "full_address": "45209, Nepal"
+   },
+   {
+      "place_no": 3,
+      "place_id": "ChIJbW5nvLwX6zkRWMXF4DBLu3E",
+      "name": "Bungadyo/Rato Machhendranath Temple",
+      "lat": 27.6296562,
+      "lng": 85.3021253,
+      "full_address": "J8H2+VV6, Karyabinayak 44700, Nepal"
+   },
+   {
+      "place_no": 4,
+      "place_id": "ChIJkTIYyfob6zkRS61ZD-CX16A",
+      "name": "Kopan Monastery",
+      "lat": 27.7426594,
+      "lng": 85.3649135,
+      "full_address": "P9V7+3X7 Ward 11, Budhanilkantha 44600, Nepal"
+   },
+   {
+      "place_no": 5,
+      "place_id": "ChIJx6qtVgoZ6zkRRPaCPt25aww",
+      "name": "Gyaneshwor Community Park",
+      "lat": 27.708264,
+      "lng": 85.3314999,
+      "full_address": "P85J+8H5, ज्ञानेश्वर मार्ग, Kathmandu 44600, Nepal"
+   },
+   {
+      "place_no": 6,
+      "place_id": "ChIJi___P3UP6zkRtGAZ1TNjBqc",
+      "name": "Kailashnath Mahadev Statue",
+      "lat": 27.6460946,
+      "lng": 85.4741963,
+      "full_address": "Sanga, सुर्यविनायक 44800, Nepal"
+   },
+   {
+      "place_no": 7,
+      "place_id": "ChIJDZDTYm0Z6zkRjHsQdLKntJQ",
+      "name": "Handigaun",
+      "lat": 27.716585,
+      "lng": 85.3357285,
+      "full_address": "Handigaun Marg, Kathmandu 44600, Nepal"
+   },
+   {
+      "place_no": 8,
+      "place_id": "ChIJrciCm40Y6zkR93t5EOS9Ma4",
+      "name": "Swoyambhu Mahachaitya",
+      "lat": 27.7148996,
+      "lng": 85.29039569999999,
+      "full_address": "P77R+X52, BHAGANPAU 44600, Nepal"
+   },
+   {
+      "place_no": 9,
+      "place_id": "ChIJtz-p6AgZ6zkRPaBTRygyUjI",
+      "name": "Russian House",
+      "lat": 27.7095833,
+      "lng": 85.3259132,
+      "full_address": "Kamal Pokhari St, Kathmandu 44600, Nepal"
+   },
+   {
+      "place_no": 10,
+      "place_id": "ChIJcy5iv5AP6zkRdS-eLyrmnTE",
+      "name": "Kathmandu Fun Valley",
+      "lat": 27.6467707,
+      "lng": 85.4670261,
+      "full_address": "अरनिको राजमार्ग Bhaktapur, Araniko Highway Bhaktapur, Suryabinayak 44805, Nepal"
+   },
+   {
+      "place_no": 11,
+      "place_id": "ChIJY937crAZ6zkR45QAr1tReKs",
+      "name": "Nepal Art Council",
+      "lat": 27.6922589,
+      "lng": 85.3236319,
+      "full_address": "M8RF+WF2, Madan Bhandari Road, Kathmandu 44600, Nepal"
+   }
+]

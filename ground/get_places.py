@@ -33,6 +33,7 @@ So, for other places we need to go to next page through next_page_token.
 '''
 def get_nearby_places(latitude, longitude):
     radius = 50000
+    all_places = []
     place_type = "tourist_attraction"
     url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={latitude},{longitude}&radius={radius}&type={place_type}&language=en&key={mapKey}"
     try:
@@ -41,18 +42,30 @@ def get_nearby_places(latitude, longitude):
         response.raise_for_status()
         print("Map sent response.")
         # Parse the JSON response
-        places = response.json()
-        filtered_places_detail = asyncio.run(filter_places(places["results"]))
+        data = response.json()
+        all_places.extend(data.get("results", []))
+
+        while "next_page_token" in data:
+            next_page_token = data["next_page_token"]
+            next_url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?pagetoken={next_page_token}&key={mapKey}"
+            time.sleep(2)  # Delay to ensure token is valid
+            print("Fetching next page...")
+            response = requests.get(next_url, timeout=10)
+            response.raise_for_status()
+            data = response.json()
+            all_places.extend(data.get("results", []))
+
+        filtered_places_detail = asyncio.run(filter_places(all_places))
         return filtered_places_detail
     except requests.exceptions.RequestException as e:
-        print(f"Request failed: {e}")
+        print(f"ERROR OCCURED IN get_places.get_nearby_places(). Request failed: {e}")
         return None
 
 
 
 async def filter_places(place_list):
     try:
-        count = 1
+        count = 0
         places_detail = []
         places_id = []
         tasks = []
@@ -64,6 +77,7 @@ async def filter_places(place_list):
                 place_id = place.get('place_id')
                 task = get_place_address(session, place_id)
                 tasks.append(task)
+                count += 1
                 place_detail = {
                      'place_no': count,
                      'place_id': place_id,
@@ -72,7 +86,6 @@ async def filter_places(place_list):
                      'lng': place['geometry']['location']['lng']
                 }
                 places_detail.append(place_detail)
-                count += 1
             print("Collecting full address of each place..")
             full_addresses = await asyncio.gather(*tasks)
 

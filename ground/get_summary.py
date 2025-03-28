@@ -18,6 +18,7 @@ destination or not. A place is only mainstream:true, if it's a very popular "tou
 -EXTREMELY IMPORTANT: Provide output 'exactly' in this format:
 mainstream_tourist_spot: true/false.
 
+<place name>
 <150-word summary>.
 """
         return await asyncio.to_thread(send_to_gemini, prompt)

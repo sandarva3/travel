@@ -128,6 +128,7 @@ def run_get_summaries():
     sums = asyncio.run(get_summaries(filtered_places))
     if sums:
         print("Cool summaries is found.")
+        print("\n".join(f"  - {s}\n\n\n\n\n" for s in sums))
         print(f"Length of sums: {len(sums)}")
     else:
         print("error occured while finding sums")

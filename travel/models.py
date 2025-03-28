@@ -13,6 +13,7 @@ class CustomUser(AbstractUser):
         return self.username #Calling str() method of super().
 
 
+
 class Place(models.Model):
     name = models.CharField(max_length=70)
     place_id = models.CharField(max_length=27, default="fakeId")

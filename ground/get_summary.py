@@ -8,10 +8,10 @@ SEMAPHORE_LIMIT = 3
 
 
 
-async def fetch_place_summary(semaphore, place_name, place_address):
+async def fetch_place_summary(semaphore, place_name, place_full_address):
     """Fetch summary for a place while controlling concurrency."""
     async with semaphore:
-        prompt = f"""Generate a 150-word summary about the place(in a single paragraph). Search about this place in this 'exact' address: {place_name}, {place_address}. 
+        prompt = f"""Generate a 150-word summary about the place(in a single paragraph). Search about this place in this 'exact' address: {place_name}, {place_full_address}. 
 Cover its location, historical or cultural significance, key attractions, and any unique features. Then, determine if the place is a mainstream tourist 
 destination or not. A place is only mainstream:true, if it's a very popular "tourist spot" and attracts "big number of national and internation tourists".
 
@@ -25,24 +25,14 @@ mainstream_tourist_spot: true/false.
 
 
 
+
+
+
+
 async def get_details(places):
     """Fetch details of all places with controlled concurrency."""
     semaphore = asyncio.Semaphore(SEMAPHORE_LIMIT)
-    tasks = [fetch_place_summary(semaphore, place['name'], place['address']) for place in places]
-#    count = 0
-    # tasks = []
-    # for place in places:
-    #     count += 1
-    #     task = fetch_place_summary(semaphore, place)
-    #     tasks.append(task)
-    #     if count == 5:
-    #         asyncio.sleep(2)
-    #     elif count == 10:
-    #         asyncio.sleep(2)
-    #     elif count == 15:
-    #         asyncio.sleep(2)
-    #     elif count == 20:
-    #         asyncio.sleep(20)
+    tasks = [fetch_place_summary(semaphore, place['name'], place['full_address']) for place in places]
     summaries = await asyncio.gather(*tasks)
     print("DONE for all places.")
     return summaries

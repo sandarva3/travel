@@ -5,7 +5,7 @@
       "name": "Hotel Shanker - Palatial Heritage Kathmandu",
       "latitude": 27.7188945,
       "longitude": 85.31946839999999,
-      "address": "Lazimpat, Kathmandu 44600, Nepal",
+      "full_address": "Lazimpat, Kathmandu 44600, Nepal",
       "summary": "mainstream_tourist_spot: false\n\nHotel Shanker, located in Lazimpat, Kathmandu, is a palatial heritage hotel steeped in history. Housed in a former palace belonging to the Rana dynasty, it offers a glimpse into Nepal's aristocratic past. The hotel's architectural features reflect its regal origins, showcasing intricate woodwork and spacious courtyards. Its location provides convenient access to cultural attractions like Durbar Square and Thamel, while offering a tranquil escape from the city's bustle. Key features include beautifully maintained gardens, a serene pool, and traditionally decorated rooms. While popular among discerning travelers seeking a refined and culturally rich experience, it isn't considered a mainstream tourist destination that draws large crowds.\n",
       "mainstream": false
    },
@@ -15,7 +15,7 @@
       "name": "Dhaneshwor Mahadev Temple",
       "latitude": 27.6181534,
       "longitude": 85.5225348,
-      "address": "45209, Nepal",
+      "full_address": "45209, Nepal",
       "summary": "mainstream_tourist_spot: false\n\nDhaneshwor Mahadev Temple, located in the 45209 region of Nepal, is a significant Hindu shrine dedicated to Lord Shiva. Nestled amidst a serene environment, it holds cultural importance for local communities. The temple is known for its intricate architecture and the peaceful ambiance it provides to devotees and visitors. Key attractions include the main Shiva lingam, smaller shrines dedicated to other deities, and the surrounding natural beauty. The temple also hosts various religious festivals throughout the year, drawing a considerable number of local pilgrims. It offers a glimpse into the religious practices and cultural heritage of the region, though it remains largely undiscovered by mainstream international tourism.\n",
       "mainstream": false
    },
@@ -25,7 +25,7 @@
       "name": "Bungadyo/Rato Machhendranath Temple",
       "latitude": 27.6296562,
       "longitude": 85.3021253,
-      "address": "J8H2+VV6, Karyabinayak 44700, Nepal",
+      "full_address": "J8H2+VV6, Karyabinayak 44700, Nepal",
       "summary": "mainstream_tourist_spot: false\n\nThe Rato Machhendranath Temple, located in Karyabinayak, Nepal, specifically at coordinates J8H2+VV6, Bungadyo, is a significant religious site revered by both Hindus and Buddhists. Dedicated to the deity Rato Machhendranath, considered a form of Avalokiteśvara, the temple's cultural importance is deeply rooted in the centuries-old chariot procession held annually. While the temple itself is a simple structure, the elaborate chariot festival, where the deity's image is paraded through the streets, is the main attraction. The serene atmosphere and the strong sense of local tradition make it a unique place of worship. Though a culturally important site, it is not heavily marketed as a prime tourist destination and draws more pilgrims and culturally curious visitors rather than mainstream tourists.\n",
       "mainstream": false
    },
@@ -35,7 +35,7 @@
       "name": "Kopan Monastery",
       "latitude": 27.7426594,
       "longitude": 85.3649135,
-      "address": "P9V7+3X7 Ward 11, Budhanilkantha 44600, Nepal",
+      "full_address": "P9V7+3X7 Ward 11, Budhanilkantha 44600, Nepal",
       "summary": "mainstream_tourist_spot: false.\n\nKopan Monastery, nestled in the hills of Budhanilkantha, Nepal, is a Tibetan Buddhist monastery of the Gelug school. Founded in 1969 by Lama Yeshe and Lama Zopa Rinpoche, it serves as a spiritual center, offering courses on Tibetan Buddhism to both monks and international visitors. The monastery's buildings are adorned with intricate murals and statues, reflecting Tibetan art and culture. Key attractions include the main gompa (assembly hall), various stupas, and the beautifully landscaped gardens. Kopan is particularly known for its intensive meditation retreats and philosophical teachings, attracting students seeking deeper understanding of Buddhist principles. Its serene atmosphere and focus on spiritual learning, rather than mass tourism, make it a unique and relatively secluded destination.\n",
       "mainstream": false
    },
@@ -45,7 +45,7 @@
       "name": "Handigaun",
       "latitude": 27.716585,
       "longitude": 85.3357285,
-      "address": "Handigaun Marg, Kathmandu 44600, Nepal",
+      "full_address": "Handigaun Marg, Kathmandu 44600, Nepal",
       "summary": "mainstream_tourist_spot: false\n\nHandigaun, located along Handigaun Marg in Kathmandu, Nepal, is a historically and culturally significant area known for its ancient temples and traditional Newari architecture. Situated slightly north of the city center, it offers a glimpse into Kathmandu's rich heritage away from the bustling tourist hotspots. Key attractions include the Narayan Temple, notable for its intricate wood carvings and pagoda style, and the Bhairav Temple, known for its powerful deity representation. The area retains a strong local identity, characterized by narrow lanes, traditional houses, and community life. It's a place where visitors can experience a more authentic side of Kathmandu, observing traditional crafts and religious practices.\n",
       "mainstream": false
    },
@@ -55,7 +55,7 @@
       "name": "Swoyambhu Mahachaitya",
       "latitude": 27.7148996,
       "longitude": 85.29039569999999,
-      "address": "P77R+X52, BHAGANPAU 44600, Nepal",
+      "full_address": "P77R+X52, BHAGANPAU 44600, Nepal",
       "summary": "mainstream_tourist_spot: true\n\nSwoyambhu Mahachaitya, located on a hill in the Kathmandu Valley, Nepal, is a significant ancient religious complex. Also known as the Monkey Temple, it holds immense historical and cultural importance for both Buddhists and Hindus. Its origins trace back to the 5th century, making it one of the oldest religious sites in Nepal. The stupa, with its iconic painted eyes of Buddha, is the focal point, surrounded by shrines, temples, statues, and monasteries. Visitors can enjoy panoramic views of Kathmandu, interact with the resident monkeys, and explore the various religious artifacts and architectural marvels. The vibrant prayer flags and the spiritual atmosphere add to its unique charm.\n",
       "mainstream": true
    },
@@ -65,7 +65,7 @@
       "name": "Russian House",
       "latitude": 27.7095833,
       "longitude": 85.3259132,
-      "address": "Kamal Pokhari St, Kathmandu 44600, Nepal",
+      "full_address": "Kamal Pokhari St, Kathmandu 44600, Nepal",
       "summary": "mainstream_tourist_spot: false.\n\nThe Russian House, located on Kamal Pokhari Street in Kathmandu, Nepal, serves as the cultural center of the Russian Federation in Nepal. Situated near the Kamal Pokhari lake, it promotes Russian language, arts, and culture through various events, exhibitions, and educational programs. Historically, such cultural centers played a role in fostering international relations during the Cold War, though its current significance is primarily in cultural exchange and education. While it offers a glimpse into Russian culture through its activities, it is not a major tourist attraction in the traditional sense, lacking iconic landmarks or widespread tourist appeal. Its unique feature lies in offering Russian language classes and cultural immersion experiences.\n",
       "mainstream": false
    },
@@ -75,7 +75,7 @@
       "name": "Kailashnath Mahadev Statue",
       "latitude": 27.6460946,
       "longitude": 85.4741963,
-      "address": "Sanga, सुर्यविनायक 44800, Nepal",
+      "full_address": "Sanga, सुर्यविनायक 44800, Nepal",
       "summary": "mainstream_tourist_spot: false\n\nThe Kailashnath Mahadev Statue, located in Sanga, Suryabinayak, Nepal, is a towering depiction of the Hindu deity Shiva. Completed in 2010, it's one of the tallest Shiva statues in the world, standing at 143 feet. The statue holds immense cultural and religious significance for Hindus, serving as a pilgrimage site and a symbol of faith. Visitors are drawn to the statue's sheer scale and the surrounding panoramic views of the Kathmandu Valley. The complex also includes other smaller temples and prayer areas. While a significant landmark, it hasn't yet reached the level of a mainstream tourist destination drawing massive international crowds, remaining primarily a site for local devotees and Nepali visitors.\n",
       "mainstream": false
    },
@@ -85,7 +85,7 @@
       "name": "Nepal Art Council",
       "latitude": 27.6922589,
       "longitude": 85.3236319,
-      "address": "M8RF+WF2, Madan Bhandari Road, Kathmandu 44600, Nepal",
+      "full_address": "M8RF+WF2, Madan Bhandari Road, Kathmandu 44600, Nepal",
       "summary": "mainstream_tourist_spot: false\n\nThe Nepal Art Council, located on Madan Bhandari Road in Kathmandu, serves as a vital hub for promoting Nepali art and culture. Positioned within the vibrant Kathmandu Valley, it provides a platform for both established and emerging artists to showcase their work. Historically, the Council has played a significant role in shaping the Nepali art scene by organizing exhibitions, workshops, and cultural events. Key attractions include its galleries displaying diverse art forms, ranging from traditional paintings to contemporary sculptures. Unique features include its dedication to preserving and promoting Nepali artistic heritage, making it a cultural landmark. While important to art enthusiasts, it is not a mainstream tourist destination attracting large numbers of international tourists.\n",
       "mainstream": false
    }

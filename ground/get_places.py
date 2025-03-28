@@ -8,12 +8,12 @@ import aiohttp
 
 
 async def get_place_address(session, place_id):
-    address_url = f"https://maps.googleapis.com/maps/api/place/details/json?place_id={place_id}&fields=formatted_address,adr_address,name,address_components&key={mapKey}"
+    address_url = f"https://maps.googleapis.com/maps/api/place/details/json?place_id={place_id}&fields=formatted_address,name&language=en&key={mapKey}"
     try:
-        print("Sending request for address.")
+        print("Sending request for full address.")
         async with session.get(address_url, timeout=15) as response:
             response.raise_for_status()
-            print("Got address of place.")
+            print("Got full address of place.")
             data = await response.json()
             full_address = data.get("result", {}).get("formatted_address", "Address Not Found")
             return full_address
@@ -29,7 +29,7 @@ async def get_place_address(session, place_id):
 def get_nearby_places(latitude, longitude):
     radius = 20000
     place_type = "tourist_attraction"
-    url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={latitude},{longitude}&radius={radius}&type={place_type}&key={mapKey}"
+    url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={latitude},{longitude}&radius={radius}&type={place_type}&language=en&key={mapKey}"
     try:
         print("Sending request to map")
         response = requests.get(url, timeout=10)
@@ -71,9 +71,8 @@ async def filter_places(place_list):
             print("Collecting full address of each place..")
             full_addresses = await asyncio.gather(*tasks)
 
-        for index,address in enumerate(full_addresses):
-            if address:
-                places_detail[index]['address'] = address
+        for index,full_address in enumerate(full_addresses):
+            places_detail[index]['full_address'] = full_address
         print("Done")
         print(f"Total places after filter: {count}")
         return places_detail    
@@ -89,7 +88,7 @@ def get_place(user_data):
     longitude = user_data["longitude"]
     places = get_nearby_places(latitude, longitude)
     if places:
-            with open("filtered_places.json", "w", encoding="utf-8") as file:
+            with open("filtered_places1.json", "w", encoding="utf-8") as file:
                 json.dump(places, file, indent=3, ensure_ascii=False)
             print("written to a file.")
     else:
@@ -110,43 +109,3 @@ user_data = {
 
 
 get_place(user_data)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-'''
-def reverse_geocode():
-    lat = 27.7188945
-    lng = 85.31946839999999
-    geo_url = f"https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lng}&language=en&key={mapKey}"
-    
-    try:
-        print("Sending reverse geocode request...")
-        response = requests.get(geo_url, timeout=15)
-        response.raise_for_status()
-        data = response.json()
-
-        if data.get("results"):
-            print("FULL ADDRESS: ")
-            print(data["results"][0]["formatted_address"]) # Return the best match
-        return "Address Not Found"
-
-    except Exception as e:
-        print(f"ERROR: {e}")
-        return "Address Not Found"
-
-reverse_geocode()
-'''

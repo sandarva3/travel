@@ -91,7 +91,7 @@ then combine db_summaries and i_summaries, let it be called a total_summaries li
 then return that total_summaries list, which contains summary of every place in a list.
 '''
 async def get_summaries(places):
-    SEMAPHORE_LIMIT = 3
+    SEMAPHORE_LIMIT = 2
     semaphore = asyncio.Semaphore(SEMAPHORE_LIMIT)
 
     tasks = []

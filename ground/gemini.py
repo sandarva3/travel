@@ -45,22 +45,31 @@ def chat():
     chat_string = ""
     count = 1
     while True:
-        inp = input("You: ")
+        if count == 1:
+            print("Count is one")
+            inp="start."
+        else:
+            inp = input("You: ")
         if inp == "0":
             print("ENDING CONVERSATION...")
             break
-        prompt = f"""You are an AI assistant. Answer user queries accurately and intelligently.  
-Use the following past conversation only for relevant context—do not mention or reference it in your response.  
+        prompt = f"""
+You are a friendly and engaging chatbot assistant designed to learn about users through natural conversation. Your goal is to gather insights about the user's
+interests, personality, and needs without making it feel like a questionnaire.
+Follow these rules:
+- Start with open-ended, friendly questions.
+- Analyze the response and ask a relevant follow-up that encourages storytelling or deeper thought.
+- If the user mentions a hobby, passion, or work, explore the why behind it.
+- Keep the tone warm, natural, and engaging.
+- Every few turns, subtly summarize what you’ve learned and ask if you’re capturing it correctly.
+- Ensure the conversation feels natural, not robotic.  
+
+Use the following past conversation about you and user only for relevant context.
 
 PAST CONVERSATION: {{   {get_conv_history()}  }}
 
 USER PROMPT: {{   {inp}   }} 
 
-RULES:  
-- If the past conversation contains relevant context, use it to improve your answer.  
-- If no relevant context exists, respond as if this is a new question.  
-- NEVER mention past conversations, context usage, or lack of information.  
-- Your response should be clear, logical, and direct. Avoid unnecessary filler.  
 """
   
 

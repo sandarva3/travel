@@ -7,8 +7,9 @@ __pycache__/
 
 key.py
 ground/conv_history.txt
-
+ground/conv_history2.txt
 
 db.sqlite3
-
 todo
+
+ground2/dummy_user.py

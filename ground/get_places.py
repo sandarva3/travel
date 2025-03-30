@@ -48,7 +48,7 @@ def get_nearby_places(latitude, longitude):
         while "next_page_token" in data:
             next_page_token = data["next_page_token"]
             next_url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?pagetoken={next_page_token}&key={mapKey}"
-            time.sleep(2)  # Delay to ensure token is valid
+            time.sleep(3)  # Delay to ensure token is valid
             print("Fetching next page...")
             response = requests.get(next_url, timeout=10)
             response.raise_for_status()
@@ -72,7 +72,7 @@ async def filter_places(place_list):
         print("Getting each place's relevant details.")
         async with aiohttp.ClientSession() as session:
             for place in place_list:
-                if place.get("user_ratings_total", 0) < 250:
+                if place.get("user_ratings_total", 0) < 400:
                      continue
                 place_id = place.get('place_id')
                 task = get_place_address(session, place_id)
@@ -116,8 +116,8 @@ def get_place(user_data):
 
 # Example: Swoyambunath temple
 user_data = {
-    "latitude": 27.7148996,
-    "longitude": 85.29039569999999,
+    "latitude":  34.052235,
+    "longitude": -118.243683,
     "accuracy": 5,
     "altitude": 1350,
     "timestamp": "2024-02-20T10:45:00Z",

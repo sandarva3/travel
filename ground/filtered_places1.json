@@ -1,218 +1,458 @@
 [
    {
       "place_no": 1,
-      "place_id": "ChIJw3uqaBsZ6zkRjS-DDyXqWyk",
-      "name": "Hotel Shanker - Palatial Heritage Kathmandu",
-      "lat": 27.7188945,
-      "lng": 85.31946839999999,
-      "full_address": "Lazimpat, Kathmandu 44600, Nepal"
+      "place_id": "ChIJlWtAnNgw3YARNP74lzYz21U",
+      "name": "The Queen Mary",
+      "lat": 33.7526356,
+      "lng": -118.1903235,
+      "full_address": "1126 Queens Hwy, Long Beach, CA 90802, USA"
    },
    {
       "place_no": 2,
-      "place_id": "ChIJsciVgCoJ6zkRsjUON7SWYKw",
-      "name": "Dhaneshwor Mahadev Temple",
-      "lat": 27.6181534,
-      "lng": 85.5225348,
-      "full_address": "45209, Nepal"
+      "place_id": "ChIJzzgyJU--woARcZqceSdQ3dM",
+      "name": "Universal Studios Hollywood",
+      "lat": 34.1370713,
+      "lng": -118.3533061,
+      "full_address": "100 Universal City Plaza, Universal City, CA 91608, USA"
    },
    {
       "place_no": 3,
-      "place_id": "ChIJbW5nvLwX6zkRWMXF4DBLu3E",
-      "name": "Bungadyo/Rato Machhendranath Temple",
-      "lat": 27.6296562,
-      "lng": 85.3021253,
-      "full_address": "J8H2+VV6, Karyabinayak 44700, Nepal"
+      "place_id": "ChIJsXqcyjy5woARNz6sOh0ZmwA",
+      "name": "Los Angeles County Museum of Art",
+      "lat": 34.0639323,
+      "lng": -118.3592293,
+      "full_address": "5905 Wilshire Blvd, Los Angeles, CA 90036, USA"
    },
    {
       "place_no": 4,
-      "place_id": "ChIJkTIYyfob6zkRS61ZD-CX16A",
-      "name": "Kopan Monastery",
-      "lat": 27.7426594,
-      "lng": 85.3649135,
-      "full_address": "P9V7+3X7 Ward 11, Budhanilkantha 44600, Nepal"
+      "place_id": "ChIJRUJ9pJjAwoARhqQ6EhQynzs",
+      "name": "The Greek Theatre",
+      "lat": 34.1195315,
+      "lng": -118.2962896,
+      "full_address": "2700 N Vermont Ave, Los Angeles, CA 90027, USA"
    },
    {
       "place_no": 5,
-      "place_id": "ChIJi___P3UP6zkRtGAZ1TNjBqc",
-      "name": "Kailashnath Mahadev Statue",
-      "lat": 27.6460946,
-      "lng": 85.4741963,
-      "full_address": "Sanga, सुर्यविनायक 44800, Nepal"
+      "place_id": "ChIJfVpQRQq_woARQ5hwJsast6s",
+      "name": "Hollywood Sign",
+      "lat": 34.1341151,
+      "lng": -118.3215482,
+      "full_address": "Los Angeles, CA 90068, USA"
    },
    {
       "place_no": 6,
-      "place_id": "ChIJDZDTYm0Z6zkRjHsQdLKntJQ",
-      "name": "Handigaun",
-      "lat": 27.716585,
-      "lng": 85.3357285,
-      "full_address": "Handigaun Marg, Kathmandu 44600, Nepal"
+      "place_id": "ChIJywjU6WG_woAR3NrWwrEH_3M",
+      "name": "Griffith Observatory",
+      "lat": 34.1184341,
+      "lng": -118.3003935,
+      "full_address": "2800 E Observatory Rd, Los Angeles, CA 90027, USA"
    },
    {
       "place_no": 7,
-      "place_id": "ChIJrciCm40Y6zkR93t5EOS9Ma4",
-      "name": "Swoyambhu Mahachaitya",
-      "lat": 27.7148996,
-      "lng": 85.29039569999999,
-      "full_address": "P77R+X52, BHAGANPAU 44600, Nepal"
+      "place_id": "ChIJ21yHTgjIwoARcrUbrsffOB4",
+      "name": "California Science Center",
+      "lat": 34.015564,
+      "lng": -118.286117,
+      "full_address": "700 Exposition Park Dr, Los Angeles, CA 90037, USA"
    },
    {
       "place_no": 8,
-      "place_id": "ChIJtz-p6AgZ6zkRPaBTRygyUjI",
-      "name": "Russian House",
-      "lat": 27.7095833,
-      "lng": 85.3259132,
-      "full_address": "Kamal Pokhari St, Kathmandu 44600, Nepal"
+      "place_id": "ChIJbzYnQte8woARJaqqFVpKeNo",
+      "name": "The Getty",
+      "lat": 34.0773438,
+      "lng": -118.4732648,
+      "full_address": "1200 Getty Center Dr, Los Angeles, CA 90049, USA"
    },
    {
       "place_no": 9,
-      "place_id": "ChIJcy5iv5AP6zkRdS-eLyrmnTE",
-      "name": "Kathmandu Fun Valley",
-      "lat": 27.6467707,
-      "lng": 85.4670261,
-      "full_address": "अरनिको राजमार्ग Bhaktapur, Araniko Highway Bhaktapur, Suryabinayak 44805, Nepal"
+      "place_id": "ChIJxxS7wyO_woARdqtZOw0d8PU",
+      "name": "Dolby Theatre",
+      "lat": 34.1026919,
+      "lng": -118.3404156,
+      "full_address": "6801 Hollywood Blvd, Hollywood, CA 90028, USA"
    },
    {
       "place_no": 10,
-      "place_id": "ChIJY937crAZ6zkR45QAr1tReKs",
-      "name": "Nepal Art Council",
-      "lat": 27.6922589,
-      "lng": 85.3236319,
-      "full_address": "M8RF+WF2, Madan Bhandari Road, Kathmandu 44600, Nepal"
+      "place_id": "ChIJ0xG7n03GwoARsDH_OyyMcrM",
+      "name": "Walt Disney Concert Hall",
+      "lat": 34.0553454,
+      "lng": -118.249845,
+      "full_address": "111 S Grand Ave, Los Angeles, CA 90012, USA"
    },
    {
       "place_no": 11,
-      "place_id": "ChIJpUfhGVYY6zkRSRfU0WG-41s",
-      "name": "Hanuman Dhoka",
-      "lat": 27.7043676,
-      "lng": 85.30735229999999,
-      "full_address": "Hanuman Dhoka Sadak, Kathmandu 44600, Nepal"
+      "place_id": "ChIJMwknwRu_woAR_eI2OM9ib2o",
+      "name": "Hollywood Bowl",
+      "lat": 34.112224,
+      "lng": -118.3391279,
+      "full_address": "2301 Highland Ave, Los Angeles, CA 90068, USA"
    },
    {
       "place_no": 12,
-      "place_id": "ChIJi-BViAIZ6zkRaq6h8vq9K_U",
-      "name": "Garden of Dreams",
-      "lat": 27.7141261,
-      "lng": 85.3145041,
-      "full_address": "P877+MR2, Tridevi Sadak, Kathmandu 44600, Nepal"
+      "place_id": "ChIJo3h_9V8p3YARVTAekE45jq4",
+      "name": "Knott's Berry Farm",
+      "lat": 33.8443038,
+      "lng": -118.0002265,
+      "full_address": "8039 Beach Blvd, Buena Park, CA 90620, USA"
    },
    {
       "place_no": 13,
-      "place_id": "ChIJKd5mzt4Y6zkREbZLpC0hJFY",
-      "name": "Hotel Royal Kathmandu",
-      "lat": 27.7335127,
-      "lng": 85.3103671,
-      "full_address": "Mitranagar 26, Kathmandu 44600, Nepal"
+      "place_id": "ChIJtXzMMjAx3YARll7hgkff2pY",
+      "name": "Aquarium of the Pacific",
+      "lat": 33.7619735,
+      "lng": -118.1969738,
+      "full_address": "100 Aquarium Way, Long Beach, CA 90802, USA"
    },
    {
       "place_no": 14,
-      "place_id": "ChIJw10uEqkZ6zkRdbidV_QksT4",
-      "name": "Kathmandu Fun Park",
-      "lat": 27.701377,
-      "lng": 85.32039809999999,
-      "full_address": "Pradarshani Marg, Kathmandu 44600, Nepal"
+      "place_id": "ChIJkRS5KKTDwoARL78qHMf9T0w",
+      "name": "Rose Bowl Stadium",
+      "lat": 34.1613284,
+      "lng": -118.1676462,
+      "full_address": "1001 Rose Bowl Dr, Pasadena, CA 91103, USA"
    },
    {
       "place_no": 15,
-      "place_id": "ChIJR6uG6dgb6zkReO3NxkEGOc4",
-      "name": "Casino Pride Nepal",
-      "lat": 27.722607,
-      "lng": 85.35647,
-      "full_address": "Taragaon Boudha Box 19784, Taragaon 44601, Nepal, Kathmandu 44601, Nepal"
+      "place_id": "ChIJ_yD1_SK5woARmWLyCit3znQ",
+      "name": "La Brea Tar Pits and Museum",
+      "lat": 34.06388,
+      "lng": -118.356445,
+      "full_address": "5801 Wilshire Blvd, Los Angeles, CA 90036, USA"
    },
    {
       "place_no": 16,
-      "place_id": "ChIJU_FBrxcQ6zkRucxxeMkC8KI",
-      "name": "Pilot Baba Ashram",
-      "lat": 27.6401489,
-      "lng": 85.42265909999999,
-      "full_address": "JCRF+333, Ghyampe Danda Sadak, Anantalingeshwar, Nepal"
+      "place_id": "ChIJ9590IY3AwoARquS6ie60MUc",
+      "name": "Griffith Park",
+      "lat": 34.1365544,
+      "lng": -118.2942,
+      "full_address": "Los Angeles, CA 90027, USA"
    },
    {
       "place_no": 17,
-      "place_id": "ChIJl-NWmh8K6zkRcLz40sc6rLY",
-      "name": "Namobuddha Monastery",
-      "lat": 27.5712337,
-      "lng": 85.5825272,
-      "full_address": "HHCM+F2R, Namobuddha Rd, Simalchaur Syampati 45200, Nepal"
+      "place_id": "ChIJdzBcVka-woARXKXAmSS8NW4",
+      "name": "Universal CityWalk Hollywood",
+      "lat": 34.1361697,
+      "lng": -118.3537322,
+      "full_address": "100 Universal City Plaza, Universal City, CA 91608, USA"
    },
    {
       "place_no": 18,
-      "place_id": "ChIJsS-qDcUZ6zkRMLWXgKN_GW8",
-      "name": "Patan Darbar Square",
-      "lat": 27.6726981,
-      "lng": 85.3253211,
-      "full_address": "Lalitpur 44600, Nepal"
+      "place_id": "ChIJBw1wGumjwoARsKRsr2WJ-eQ",
+      "name": "The Getty Villa",
+      "lat": 34.0458857,
+      "lng": -118.5648608,
+      "full_address": "17985 Pacific Coast Hwy, Pacific Palisades, CA 90272, USA"
    },
    {
       "place_no": 19,
-      "place_id": "ChIJcXj30VcY6zkR_UGmBRA5sMU",
-      "name": "Kathmandu Durbar Square",
-      "lat": 27.7042737,
-      "lng": 85.307463,
-      "full_address": "Kathmandu 44600, Nepal"
+      "place_id": "ChIJgfk0NV7GwoAR4ja9LMYRY0s",
+      "name": "Los Angeles State Historic Park",
+      "lat": 34.0682286,
+      "lng": -118.2318135,
+      "full_address": "1245 N Spring St, Los Angeles, CA 90012, USA"
    },
    {
       "place_no": 20,
-      "place_id": "ChIJMd8y7K8a6zkR_ZuvMec5o90",
-      "name": "Bhaktapur Durbar Square",
-      "lat": 27.67207,
-      "lng": 85.4282951,
-      "full_address": "Durbar square, Bhaktapur 44800, Nepal"
+      "place_id": "ChIJXzARBf3HwoARJyT7uZSV-G4",
+      "name": "Natural History Museum of Los Angeles County",
+      "lat": 34.0171448,
+      "lng": -118.2886635,
+      "full_address": "900 Exposition Blvd, Los Angeles, CA 90007, USA"
    },
    {
       "place_no": 21,
-      "place_id": "ChIJTSyVq94b6zkRgRbJHZMkRT0",
-      "name": "Shechen Monastery",
-      "lat": 27.7237216,
-      "lng": 85.3607531,
-      "full_address": "P9F6+F8J, Tushal-Mahankal Rd, Kathmandu 44600, Nepal"
+      "place_id": "ChIJdVYAVPnGwoAR3wmcg09VlJ4",
+      "name": "Dodger Stadium",
+      "lat": 34.073851,
+      "lng": -118.2399583,
+      "full_address": "1000 Vin Scully Ave, Los Angeles, CA 90012, USA"
    },
    {
       "place_no": 22,
-      "place_id": "ChIJbSMZfDQc6zkRsS9kHIModWQ",
-      "name": "Shivapuri Nagarjun National Park",
-      "lat": 27.8129232,
-      "lng": 85.38593399999999,
-      "full_address": "44600, Nepal"
+      "place_id": "ChIJ240w5yO_woAREXPWsg0GfGQ",
+      "name": "El Capitan Theatre",
+      "lat": 34.10136159999999,
+      "lng": -118.3399391,
+      "full_address": "6838 Hollywood Blvd, Los Angeles, CA 90028, USA"
    },
    {
       "place_no": 23,
-      "place_id": "ChIJpftHp8UZ6zkRWyyTNiwsQgg",
-      "name": "Patan Museum",
-      "lat": 27.6733773,
-      "lng": 85.3253361,
-      "full_address": "M8FG+944, भिन्द्यो क्व - सौग: लँ, Lalitpur 44700, Nepal"
+      "place_id": "ChIJg7DLab6-woARHyVknPRuxJA",
+      "name": "The Comedy Store",
+      "lat": 34.09514699999999,
+      "lng": -118.3738937,
+      "full_address": "8433 W Sunset Blvd, West Hollywood, CA 90069, USA"
    },
    {
       "place_no": 24,
-      "place_id": "ChIJyaee3BUQ6zkREYm-r7QlPMQ",
-      "name": "Ghyampe Danda",
-      "lat": 27.6412309,
-      "lng": 85.4213408,
-      "full_address": "JCRC+FGW, Ghyampe Danda Sadak, Anantalingeshwar 44800, Nepal"
+      "place_id": "ChIJ69uHElG9woARr3iQy_Hmd50",
+      "name": "Skirball Cultural Center",
+      "lat": 34.1249893,
+      "lng": -118.4791719,
+      "full_address": "2701 N Sepulveda Blvd, Los Angeles, CA 90049, USA"
    },
    {
       "place_no": 25,
-      "place_id": "ChIJWZqbLwcZ6zkRCP2eRcXo5hI",
-      "name": "Shree Kamaladi Ganesh Temple",
-      "lat": 27.7077936,
-      "lng": 85.31930729999999,
-      "full_address": "P859+4P7, Kamaladi Marg, Kathmandu 44605, Nepal"
+      "place_id": "ChIJ31rSX67KwoARIj4TWHvU03M",
+      "name": "K1 Speed - Indoor Go Karts, Corporate Event Venue, Team Building Activities",
+      "lat": 33.85748880000001,
+      "lng": -118.2888454,
+      "full_address": "19038 S Vermont Ave, Gardena, CA 90248, USA"
    },
    {
       "place_no": 26,
-      "place_id": "ChIJu_Fi5WAY6zkRg8Hte-uvSxo",
-      "name": "Casino Mahjong",
-      "lat": 27.7007362,
-      "lng": 85.2904477,
-      "full_address": "Soaltee Crown Plaza, Tahachal Marg, Kathmandu 44600, Nepal"
+      "place_id": "ChIJaRbaXjy5woARERNJSyktTog",
+      "name": "Petersen Automotive Museum",
+      "lat": 34.06202399999999,
+      "lng": -118.3613631,
+      "full_address": "6060 Wilshire Blvd, Los Angeles, CA 90036, USA"
    },
    {
       "place_no": 27,
-      "place_id": "ChIJrUqtEFYY6zkRo-kGXHp_wa8",
-      "name": "Nasal Chowk",
-      "lat": 27.7042077,
-      "lng": 85.30744179999999,
-      "full_address": "P834+MXP, Layaku Marg, Kathmandu 44600, Nepal"
+      "place_id": "ChIJm6bVH27CwoARlkQoGj43lCg",
+      "name": "Jet Propulsion Laboratory",
+      "lat": 34.2013081,
+      "lng": -118.1713944,
+      "full_address": "Jet Propulsion Laboratory, 4800 Oak Grove Dr, La Cañada Flintridge, CA 91011, USA"
+   },
+   {
+      "place_no": 28,
+      "place_id": "ChIJXyczhHXX3IARFVUqyhMqiqg",
+      "name": "Honda Center",
+      "lat": 33.8078476,
+      "lng": -117.8764687,
+      "full_address": "2695 E Katella Ave, Anaheim, CA 92806, USA"
+   },
+   {
+      "place_no": 29,
+      "place_id": "ChIJhXTwOsUt3YAR-PA2oskCbLY",
+      "name": "The Gardens Casino",
+      "lat": 33.83232760000001,
+      "lng": -118.0801382,
+      "full_address": "11871 E Carson St, Hawaiian Gardens, CA 90716, USA"
+   },
+   {
+      "place_no": 30,
+      "place_id": "ChIJkZW6A57DwoARxn42TuWiIpI",
+      "name": "Norton Simon Museum",
+      "lat": 34.1463464,
+      "lng": -118.1592625,
+      "full_address": "411 W Colorado Blvd, Pasadena, CA 91105, USA"
+   },
+   {
+      "place_no": 31,
+      "place_id": "ChIJ672nCXHDwoARa0rApG0IIhw",
+      "name": "Old Pasadena",
+      "lat": 34.14604219999999,
+      "lng": -118.1499439,
+      "full_address": "23 E Colorado Blvd Ste 200, Pasadena, CA 91105, USA"
+   },
+   {
+      "place_no": 32,
+      "place_id": "ChIJVwjfzCq_woAR4FjKokeruig",
+      "name": "Pink's Hot Dogs",
+      "lat": 34.0838505,
+      "lng": -118.3442797,
+      "full_address": "709 N La Brea Ave, Los Angeles, CA 90038, USA"
+   },
+   {
+      "place_no": 33,
+      "place_id": "ChIJjSX32OW7woARNBeoBsEWDB4",
+      "name": "Museum of Tolerance",
+      "lat": 34.0536899,
+      "lng": -118.40167,
+      "full_address": "9786 W Pico Blvd, Los Angeles, CA 90035, USA"
+   },
+   {
+      "place_no": 34,
+      "place_id": "ChIJGUKPfOgr3YARQnmZPN5jzKQ",
+      "name": "Medieval Times Dinner & Tournament",
+      "lat": 33.8511795,
+      "lng": -117.997326,
+      "full_address": "7662 Beach Blvd, Buena Park, CA 90620, USA"
+   },
+   {
+      "place_no": 35,
+      "place_id": "ChIJ9WZU-sy-woARnhyvpzXXP18",
+      "name": "Melrose Trading Post",
+      "lat": 34.0833982,
+      "lng": -118.3594799,
+      "full_address": "7850 Melrose Ave, Los Angeles, CA 90046, USA"
+   },
+   {
+      "place_no": 36,
+      "place_id": "ChIJj3vO8n3KwoARpZS220_Vyxg",
+      "name": "Hustler Casino",
+      "lat": 33.8921442,
+      "lng": -118.2923666,
+      "full_address": "1000 W Redondo Beach Blvd, Gardena, CA 90247, USA"
+   },
+   {
+      "place_no": 37,
+      "place_id": "ChIJpQpNmkfGwoARPgqyi4UHWkM",
+      "name": "Japanese American National Museum",
+      "lat": 34.04962390000001,
+      "lng": -118.2385887,
+      "full_address": "100 N Central Ave, Los Angeles, CA 90012, USA"
+   },
+   {
+      "place_no": 38,
+      "place_id": "ChIJI56cmyO_woAR5--6TZV6Z3I",
+      "name": "Hollywood Wax Museum",
+      "lat": 34.1017446,
+      "lng": -118.3381545,
+      "full_address": "6767 Hollywood Blvd, Los Angeles, CA 90028, USA"
+   },
+   {
+      "place_no": 39,
+      "place_id": "ChIJLaqddXikwoAR-lw_8UVHtak",
+      "name": "Will Rogers State Beach",
+      "lat": 34.0350564,
+      "lng": -118.5366589,
+      "full_address": "17000 CA-1, Pacific Palisades, CA 90272, USA"
+   },
+   {
+      "place_no": 40,
+      "place_id": "ChIJBYuC8kvGwoAROxBTjwqfWpU",
+      "name": "Bradbury Building",
+      "lat": 34.05060400000001,
+      "lng": -118.2478573,
+      "full_address": "304 S Broadway, Los Angeles, CA 90013, USA"
+   },
+   {
+      "place_no": 41,
+      "place_id": "ChIJ7U-BHeuzwoARAvYAqFtEc2A",
+      "name": "Manhattan Beach Pier",
+      "lat": 33.8843296,
+      "lng": -118.4121416,
+      "full_address": "2 Manhattan Beach Blvd, Manhattan Beach, CA 90266, USA"
+   },
+   {
+      "place_no": 42,
+      "place_id": "ChIJj3QxTJSkwoARUiP8kFIkNqc",
+      "name": "Annenberg Community Beach House",
+      "lat": 34.0244025,
+      "lng": -118.5133233,
+      "full_address": "415 Pacific Coast Hwy, Santa Monica, CA 90402, USA"
+   },
+   {
+      "place_no": 43,
+      "place_id": "ChIJkUb-yavVwoARU2Pmszd9mfo",
+      "name": "Hsi Lai Temple",
+      "lat": 33.9756882,
+      "lng": -117.9677071,
+      "full_address": "3456 Glenmark Dr, Hacienda Heights, CA 91745, USA"
+   },
+   {
+      "place_no": 44,
+      "place_id": "ChIJt1e0FxUx3YARuD1jX5F2MOw",
+      "name": "Museum of Latin American Art (MOLAA)",
+      "lat": 33.7744763,
+      "lng": -118.1798478,
+      "full_address": "628 Alamitos Ave, Long Beach, CA 90802, USA"
+   },
+   {
+      "place_no": 45,
+      "place_id": "ChIJdx8P927DwoARjvYi0q5WAx8",
+      "name": "Pasadena City Hall",
+      "lat": 34.14759859999999,
+      "lng": -118.1438373,
+      "full_address": "100 Garfield Ave, Pasadena, CA 91101, USA"
+   },
+   {
+      "place_no": 46,
+      "place_id": "ChIJN604VGOXwoARrjrG0Xv1LDE",
+      "name": "The Japanese Garden",
+      "lat": 34.1829524,
+      "lng": -118.4809759,
+      "full_address": "6100 Woodley Ave, Lake Balboa, CA 91406, USA"
+   },
+   {
+      "place_no": 47,
+      "place_id": "ChIJm6deTdekwoARTY_RzhoRms0",
+      "name": "Santa Monica Pier",
+      "lat": 34.0082821,
+      "lng": -118.4987585,
+      "full_address": "200 Santa Monica Pier, Santa Monica, CA 90401, USA"
+   },
+   {
+      "place_no": 48,
+      "place_id": "ChIJx9y0KwfqwoAR5-sWU6kp8iA",
+      "name": "Descanso Gardens",
+      "lat": 34.2009509,
+      "lng": -118.2118943,
+      "full_address": "1418 Descanso Dr, La Cañada Flintridge, CA 91011, USA"
+   },
+   {
+      "place_no": 49,
+      "place_id": "ChIJQ0LBQ6DDwoARCnmqzVfpLRQ",
+      "name": "The Gamble House",
+      "lat": 34.1516513,
+      "lng": -118.1609624,
+      "full_address": "4 Westmoreland Pl, Pasadena, CA 91103, USA"
+   },
+   {
+      "place_no": 50,
+      "place_id": "ChIJdZbSPDg23YAR6yR-akC2g4E",
+      "name": "Battleship USS Iowa Museum",
+      "lat": 33.7422615,
+      "lng": -118.2772823,
+      "full_address": "250 S Harbor Blvd, San Pedro, CA 90731, USA"
+   },
+   {
+      "place_no": 51,
+      "place_id": "ChIJtT_PUiAvw4ARAOeghl4RCxo",
+      "name": "Raging Waters Los Angeles",
+      "lat": 34.07941400000001,
+      "lng": -117.811467,
+      "full_address": "111 Raging Waters Dr, San Dimas, CA 91773, USA"
+   },
+   {
+      "place_no": 52,
+      "place_id": "ChIJXci-9SQx3YARELY9vukCvLk",
+      "name": "Shoreline Village",
+      "lat": 33.7606184,
+      "lng": -118.1903112,
+      "full_address": "429 Shoreline Village Drive, Long Beach, CA 90802, USA"
+   },
+   {
+      "place_no": 53,
+      "place_id": "ChIJOxUO5sI33YARcEAaUsmzICQ",
+      "name": "Cabrillo Marine Aquarium",
+      "lat": 33.71098840000001,
+      "lng": -118.2852845,
+      "full_address": "3720 Stephen M White Dr, San Pedro, CA 90731, USA"
+   },
+   {
+      "place_no": 54,
+      "place_id": "ChIJodIfJFrGwoARLdxWbyjLv8g",
+      "name": "Chinatown Central Plaza",
+      "lat": 34.065226,
+      "lng": -118.237499,
+      "full_address": "943 N Broadway, Los Angeles, CA 90012, USA"
+   },
+   {
+      "place_no": 55,
+      "place_id": "ChIJHbA-iJzX3IARembDUOvijy0",
+      "name": "Angel Stadium",
+      "lat": 33.7998135,
+      "lng": -117.8824162,
+      "full_address": "2000 E Gene Autry Way, Anaheim, CA 92806, USA"
+   },
+   {
+      "place_no": 56,
+      "place_id": "ChIJk1R_FwO_woARGMOiMiXmMwU",
+      "name": "Jerome C. Daniel Overlook above the Hollywood Bowl",
+      "lat": 34.1163029,
+      "lng": -118.3427735,
+      "full_address": "7036 Mulholland Dr, Los Angeles, CA 90068, USA"
+   },
+   {
+      "place_no": 57,
+      "place_id": "ChIJiXJav6K6woARGPmX6Bsp55Y",
+      "name": "Venice Canal Historic District",
+      "lat": 33.9833582,
+      "lng": -118.4675949,
+      "full_address": "Venice, CA 90292, USA"
    }
 ]

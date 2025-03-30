@@ -51,7 +51,7 @@ def save_new_place(pid, pname, pfaddress, pcoordinates, psummary, pmainstream):
         Place.objects.create(place_id=pid, name=pname, full_address=pfaddress, coordinates=pcoordinates, summary=psummary, mainstream=pmainstream)
         print(f"new place saved. name: {pname}, place_id: {pid}")
     except Exception as e:
-        print(f"ERROR OCCURED: {e}")
+        print(f"In utils.save_new_place(). ERROR OCCURED: {e}")
 
 
 
@@ -76,7 +76,7 @@ async def find_summary(semaphore, pid, pname, pfaddress, pcoordinates):
         await asyncio.to_thread(save_new_place, pid, pname, pfaddress, pcoordinates, psummary, pmainstream)
         return psummary
     except Exception as e:
-        print(f"ERROR OCCURED: {e}")
+        print(f"In utils.find_summary(). ERROR OCCURED: {e}")
 
 
 
@@ -119,6 +119,7 @@ async def get_summaries(places):
         return total_summaries
     except Exception as e:
         print(f"ERROR OCCURED: {e}")
+
 
 
 def run_get_summaries():

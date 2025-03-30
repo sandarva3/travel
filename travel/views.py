@@ -3,9 +3,10 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .serializers import UserSerializer
-from .utils import run_get_summaries
 from django.http import JsonResponse
-
+from .utils import run_get_summaries
+from .utils2 import get_all_places
+import json
 
 class UserRegistration_view(APIView):
     def post(self, request):
@@ -26,3 +27,15 @@ def get_summaries_view(request):
         return JsonResponse({"msg": "Summaries processed successfully."}, status=200)
     except Exception as e:
         return JsonResponse({"error": str(e)}, status=500)
+    
+
+
+def get_all_places_view(request):
+    try:
+        all_places = get_all_places()
+        length = len(all_places)
+        print(f"length: {length}")
+        return JsonResponse(all_places, safe=False, status=200)
+    except Exception as e:
+        return JsonResponse({"error": str(e)}, status=500)
+

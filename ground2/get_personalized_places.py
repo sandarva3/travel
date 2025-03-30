@@ -1,5 +1,5 @@
 from google import genai
-from key import googleKey
+from .key import googleKey
 
 
 client = genai.Client(api_key=googleKey)

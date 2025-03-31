@@ -34,6 +34,7 @@ def write_filtered_places(filtered_places):
 
 
 
+
 '''
 purpose: find the summary of given place from dB.
 '''
@@ -60,7 +61,7 @@ def save_new_place(pid, pname, pfaddress, pcoordinates, psummary, pmainstream):
         Place.objects.create(place_id=pid, name=pname, full_address=pfaddress, coordinates=pcoordinates, summary=psummary, mainstream=pmainstream)
         print(f"new place saved. name: {pname}, place_id: {pid}")
     except Exception as e:
-        print(f"In utils.save_new_place() ERROR OCCURED: {e}")
+        print(f"In travel/utils.save_new_place() ERROR OCCURED: {e}")
 
 
 
@@ -87,7 +88,7 @@ async def find_summary(semaphore, pid, pname, pfaddress, pcoordinates):
         await asyncio.to_thread(save_new_place, pid, pname, pfaddress, pcoordinates, psummary, pmainstream)
         return psummary
     except Exception as e:
-        print(f"In utils.find_summary() ERROR OCCURED: {e}")
+        print(f"In travel/utils.find_summary() ERROR OCCURED: {e}")
 
 
 
@@ -124,7 +125,7 @@ async def get_summaries(places):
         total_summaries = db_summaries + i_summaries
         return total_summaries
     except Exception as e:
-        print(f"In utils.get_summaries() ERROR OCCURED: {e}")
+        print(f"In travel/utils.get_summaries() ERROR OCCURED: {e}")
 
 
 
@@ -140,4 +141,4 @@ def run_get_summaries():
         print("\n".join(f"  - {s}\n\n\n\n\n" for s in sums))
         print(f"Length of sums: {len(sums)}")
     else:
-        print("In utils.run_get_summaries() error occured while finding sums")
+        print("In travel/utils.run_get_summaries() error occured while finding sums")

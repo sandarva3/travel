@@ -7,6 +7,8 @@ import aiohttp
 
 
 
+
+
 async def get_place_address(session, place_id):
     address_url = f"https://maps.googleapis.com/maps/api/place/details/json?place_id={place_id}&fields=formatted_address,name&language=en&key={mapKey}"
     try:
@@ -23,6 +25,7 @@ async def get_place_address(session, place_id):
     except Exception as e:
         print(f"ERROR OCCURRED: {e}")
         return None
+
 
 
 
@@ -63,6 +66,8 @@ def get_nearby_places(latitude, longitude):
 
 
 
+
+
 async def filter_places(place_list):
     try:
         count = 0
@@ -100,6 +105,8 @@ async def filter_places(place_list):
 
 
 
+
+
 def get_place(user_data):
     # Extract only required data
     latitude = user_data["latitude"]
@@ -111,6 +118,8 @@ def get_place(user_data):
             print("written to a file.")
     else:
         print("No places found or there was an error.")
+
+
 
 
 

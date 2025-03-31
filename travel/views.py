@@ -4,8 +4,9 @@ from rest_framework.response import Response
 from rest_framework import status
 from .serializers import UserSerializer
 from django.http import JsonResponse
-from .utils import run_get_summaries
-from .utils2 import run_get_places_recommendation
+from .utils2 import run_get_summaries
+from .utils3 import run_get_places_recommendation
+from travel.utils1 import get_nearby_filtered_places
 import json
 
 
@@ -37,4 +38,27 @@ def get_places_recommendation_view(request):
         personalized_places = run_get_places_recommendation()
         return JsonResponse({"Best places for you":personalized_places}, safe=False, status=200)
     except Exception as e:
+        return JsonResponse({"error": str(e)}, status=500)
+
+
+
+
+
+def get_best_nearby_places_to_visit_view(request):
+    try:
+        # Example: Swoyambunath temple
+        user_data = {
+        "latitude": 27.7148996,
+        "longitude": 85.29039569999999,
+        "accuracy": 5,
+        "altitude": 1350,
+        "timestamp": "2024-02-20T10:45:00Z",
+        "provider": "gps"
+        }
+        filtered_places = get_nearby_filtered_places(user_data)
+        run_get_summaries(filtered_places)
+        personalized_places = run_get_places_recommendation()
+        return JsonResponse({"Best places for you":personalized_places}, safe=False, status=200)
+    except Exception as e:
+        print(f"In travel/views.get_best_nearby_places_to_visit() ERROR OCCURED: {e}")
         return JsonResponse({"error": str(e)}, status=500)

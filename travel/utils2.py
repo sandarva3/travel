@@ -1,124 +1,117 @@
-from ground2.dummy_user import user_preferences5
 from .models import Place
-import requests
 import json
-from ground2.get_personalized_places import ask_gemini_places_recommendation
 import asyncio
-
-user_preferences = user_preferences5
-
-
+from ground.get_summary import fetch_place_summary
+from travel.utils1 import get_nearby_filtered_places
 
 
 
-def get_pname_from_db(pid):
+
+
+'''
+purpose: find the summary of given place from dB.
+'''
+def get_summary(place_id, pname):
     try:
-        return Place.objects.get(place_id=pid).name
-    except Exception as e:
-        print(f"In travel/utils2.get_pname_from_db(), for pid: {pid} .  ERROR OCCURED: {e}")
-        return None
+        place = Place.objects.get(place_id=place_id)
+        if place:
+            print(f"Summary for place {pname} exists in DB. ID: {place_id}")
+            return place.summary
+        else:
+            return None
+    except:
+        pass
 
 
 
 
 
-async def process_ai_response(ai_response):
+'''
+purpose: save the given details about places into db.
+'''
+def save_new_place(pid, pname, pfaddress, pcoordinates, psummary, pmainstream):
     try:
-        ai_recommended_id_list = ai_response.split(',')
-        print(f"ai_recommended_places = {ai_recommended_id_list}")
-        ai_recommended_pname_list = []
-        for pid in ai_recommended_id_list:
-            pname = await asyncio.to_thread(get_pname_from_db, pid)
-            ai_recommended_pname_list.append(pname)
-        print("The best places for this user are: ")
-        for name in ai_recommended_pname_list:
-            print(f"- {name}")
-        return ai_recommended_pname_list
+        Place.objects.create(place_id=pid, name=pname, full_address=pfaddress, coordinates=pcoordinates, summary=psummary, mainstream=pmainstream)
+        print(f"new place saved. name: {pname}, place_id: {pid}")
     except Exception as e:
-        print(f"In travel/utils2.process_ai_response() ERROR OCCURED: {e}")
+        print(f"In travel/utils.save_new_place() ERROR OCCURED: {e}")
 
 
 
 
 
-def get_ai_response_for_places_recommendation(user_details, places_list):
-    prompt = f"""
-You have two things: User_details, and Places_list. Analyze and understand both of them. From there only return a id of place/s which user most likely might prefer, be concise on this.
-EXTREMELY IMPORTANT: Return place_id only with comma separating each of them.
-
-User_details: {user_details}
-
-
-Places_list: {places_list}
-"""
+'''
+- send async ai request with semaphore to find summary of given place.
+- after getting ai response: 
+        - extract 'mainstream'.
+        - save to db.        
+    along with given details of place, save place to db asynchronously.
+return the place summary
+'''
+async def find_summary(semaphore, pid, pname, pfaddress, pcoordinates):
+    print(f"Getting summary for place: {pname}. PID: {pid}")
     try:
-        print("Asking gemini...")
-        response = ask_gemini_places_recommendation(prompt).strip()
-        print("Gemini sent response.")
-        return response
+        psummary = await fetch_place_summary(semaphore, pname, pfaddress)
+        print("Got summary from ai.")
+        mainstream_line = psummary.split("\n")[0]
+        if "true" in mainstream_line:
+            pmainstream = True
+        else:
+            pmainstream = False
+        await asyncio.to_thread(save_new_place, pid, pname, pfaddress, pcoordinates, psummary, pmainstream)
+        return psummary
     except Exception as e:
-        print(f"In travel/utils2.get_ai_response_for_places_recommendation() ERROR OCCURED: {e}")
+        print(f"In travel/utils.find_summary() ERROR OCCURED: {e}")
 
 
 
 
 
-def get_all_saved_places():
-    all_places_list = []
-    all_places = Place.objects.all()
-    for index,place in enumerate(all_places, start=1):
-        place_dict= {}
-#        place_dict["place_no"] = index
-#        place_dict["place_name"] = place.name
-        place_dict["place_id"] = place.place_id
-        place_dict["summary"] = place.summary
-        all_places_list.append(place_dict)
-        if index == 50:
-            break
-    return all_places_list
+'''
+purpose: get summaries of each places in list.
+'''
+async def get_summaries(places):
+    SEMAPHORE_LIMIT = 3
+    semaphore = asyncio.Semaphore(SEMAPHORE_LIMIT)
 
+    tasks = []
+    total_summaries = []
+    db_summaries = []
+    i_summaries = []
 
-
-
-
-async def get_places_recommendation():
     try:
-        tasks = []
-        best_pnames = []
-        saved_places_list = await asyncio.to_thread(get_all_saved_places)
-        saved_places_list_length = len(saved_places_list)
-        saved_places_sublists = [saved_places_list[i:i+10] for i in range(0, saved_places_list_length, 10)]
-
-        user_preferences_json = json.dumps(user_preferences, indent=3)
-
-        for index,sublist in enumerate(saved_places_sublists):
-            print(f"Getting ai response for sublist {index}")
-            sublist_json = json.dumps(sublist, indent=3)
-            task = asyncio.to_thread(get_ai_response_for_places_recommendation, user_preferences_json, sublist_json)
-            tasks.append(task)
-        ai_recommendations = await asyncio.gather(*tasks)
-        print("Gathered ai_recommendations.")
-
-        tasks.clear()
-        for index,recommendation in enumerate(ai_recommendations):
-            print(f"Processing ai response of sublist {index}")
-            task = process_ai_response(recommendation)
-            tasks.append(task)
-        best_pnames = await asyncio.gather(*tasks)
-        print("Gathered best_pnames.")
-        print("best_pnames:")
-        print(best_pnames)
-        return best_pnames
+        for index,place in enumerate(places):
+            pid = place['place_id']
+            pname = place['name']
+            db_summary = await asyncio.to_thread(get_summary, pid, pname)
+            if db_summary:
+                print("Place is found in db.")
+                db_summaries.append(db_summary)
+            else:
+                print(f"Place({pid}) not found in db. Sending ai request..")
+                pfaddress = place['full_address']
+                pcoordinates = {'lng':place['lng'], 'lat':place['lat']}
+                print(f"find_summary for place {index}")
+                task = find_summary(semaphore, pid, pname, pfaddress, pcoordinates)
+                tasks.append(task)
+        i_summaries = await asyncio.gather(*tasks)
+        total_summaries = db_summaries + i_summaries
+        return total_summaries
     except Exception as e:
-        print(f"In ground2/get_saved_places.get_places_recommendation() ERROR OCCURED: {e}")
+        print(f"In travel/utils.get_summaries() ERROR OCCURED: {e}")
 
 
 
 
 
-def run_get_places_recommendation():
+def run_get_summaries(filtered_places):
     try:
-        best_pnames = asyncio.run(get_places_recommendation())
-        return best_pnames
+        sums = asyncio.run(get_summaries(filtered_places))
+        if sums:
+            print("Cool summaries is found.")
+            print("\n".join(f"- {s}\n\n\n\n\n" for s in sums))
+            print(f"Length of sums: {len(sums)}")
+        else:
+            print("In travel/utils.run_get_summaries() NO ERROR OCCURED but 'sums' returned None")
     except Exception as e:
-        print(f"In travel/utils2.run_get_places_recommendation() ERROR OCCURED: {e}")
+        print(f"In travel/utils.run_get_summaries() ERROR OCCURED: {e}")

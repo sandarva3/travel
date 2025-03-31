@@ -34,7 +34,6 @@ def get_summaries_view(request):
 def get_places_recommendation_view(request):
     try:
         personalized_places = main_fn_for_places_recommendation()
-#        print(personalized_places)
-        return JsonResponse(personalized_places, safe=False, status=200)
+        return JsonResponse({"Best places for you":personalized_places}, safe=False, status=200)
     except Exception as e:
         return JsonResponse({"error": str(e)}, status=500)

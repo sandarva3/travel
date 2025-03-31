@@ -1,17 +1,23 @@
-from ground2.dummy_user import user_preferences
+from ground2.dummy_user import user_preferences4
 from .models import Place
 import requests
 import json
 from ground2.get_personalized_places import ask_gemini_places_recommendation
 
 
+user_preferences = user_preferences4
+
+
+def get_pname_from_db(pid):
+    return Place.objects.get(place_id=pid).name
+
 
 
 
 def get_ai_response_for_places_recommendation(user_details, places_list):
     prompt = f"""
-You have two things: User_details, and Places_list. Analyze and understand both of them. From there only return a id of place/s which user might prefer.
-EXTREMELY IMPORTANT: Return place_id only with comma for each.
+You have two things: User_details, and Places_list. Analyze and understand both of them. From there only return a id of place/s which user most likely might prefer, be concise on this.
+EXTREMELY IMPORTANT: Return place_id only with comma separating each of them.
 
 User_details: {user_details}
 
@@ -61,14 +67,16 @@ def main_fn_for_places_recommendation():
         saved_places_list2_json = json.dumps(saved_places_list2[0], indent=3)
         ai_recommendations = get_ai_response_for_places_recommendation(user_preferences_json, saved_places_list2_json)
         print("AI recommendation")
-        print(ai_recommendations)
-        print(f"Raw AI Response: {repr(ai_recommendations)}")  # Shows hidden chars
-        print(type(ai_recommendations))
-        try:
-            dict1 = json.loads(ai_recommendations)
-            print("Successfully parsed AI response!")
-        except json.JSONDecodeError as e:
-            print(f"JSON Decode Error: {e}")
-        return "COOL"
+        print(f"ai_recommendations: {ai_recommendations}")
+        ai_recommended_id_list = ai_recommendations.split(',')
+        print(f"ai_recommended_places = {ai_recommended_id_list}")
+        ai_recommended_pname_list = []
+        for pid in ai_recommended_id_list:
+            pname = get_pname_from_db(pid)
+            ai_recommended_pname_list.append(pname)
+        print("The best places for this user are: ")
+        for name in ai_recommended_pname_list:
+            print(f"- {name}")
+        return ai_recommended_pname_list
     except Exception as e:
         print(f"In ground2/get_saved_places.main_fn_for_places_recommendation() ERROR OCCURED: {e}")

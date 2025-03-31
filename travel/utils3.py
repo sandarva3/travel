@@ -2,14 +2,14 @@
 
 import requests
 import json
-from ground2.get_personalized_places import ask_gemini
+from ground2.get_personalized_places import ask_gemini_places_recommendation
 from ground2.dummy_user import user_preferences
 
 
 
 
 
-def get_ai_response(user_details, places_list):
+def get_ai_response_for_places_recommendation(user_details, places_list):
     prompt = f"""
 You have two things: User_details, and Places_list. Analyze and understand both of them. From there 'only' return a place/s which user might prefer.
 EXTREMELY IMPORTANT: Return place_id only, Provide your response in full json only.like: 
@@ -24,7 +24,7 @@ places_list: {places_list}
 """
     try:
         print("Asking gemini...")
-        response = ask_gemini(prompt)
+        response = ask_gemini_places_recommendation(prompt)
         print("Gemini sent response.")
         return response
     except Exception as e:
@@ -32,7 +32,7 @@ places_list: {places_list}
 
 
 
-def start():
+def main_fn_for_places_recommendation():
     first_ten_places = []
     second_ten_places = []
     third_ten_places = []
@@ -53,6 +53,6 @@ def start():
             fifth_ten_places.append(place)
     full_places_list = first_ten_places + second_ten_places + third_ten_places + fourth_ten_places + fifth_ten_places
 
-    ai_response = get_ai_response(user_preferences, json.dumps(first_ten_places, indent=3))
+    ai_response = get_ai_response_for_places_recommendation(user_preferences, json.dumps(first_ten_places, indent=3))
     
     return ai_response

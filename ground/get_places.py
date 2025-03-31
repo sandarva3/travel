@@ -72,7 +72,7 @@ async def filter_places(place_list):
         print("Getting each place's relevant details.")
         async with aiohttp.ClientSession() as session:
             for place in place_list:
-                if place.get("user_ratings_total", 0) < 400:
+                if place.get("user_ratings_total", 0) < 300:
                      continue
                 place_id = place.get('place_id')
                 task = get_place_address(session, place_id)
@@ -106,7 +106,7 @@ def get_place(user_data):
     longitude = user_data["longitude"]
     places = get_nearby_places(latitude, longitude)
     if places:
-            with open("filtered_places1.json", "w", encoding="utf-8") as file:
+            with open("output_files/filtered_places1.json", "w", encoding="utf-8") as file:
                 json.dump(places, file, indent=3, ensure_ascii=False)
             print("written to a file.")
     else:
@@ -116,8 +116,8 @@ def get_place(user_data):
 
 # Example: Swoyambunath temple
 user_data = {
-    "latitude":  34.052235,
-    "longitude": -118.243683,
+    "latitude": 27.7148996,
+    "longitude": 85.29039569999999,
     "accuracy": 5,
     "altitude": 1350,
     "timestamp": "2024-02-20T10:45:00Z",

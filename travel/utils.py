@@ -8,6 +8,8 @@ from ground.get_summary import fetch_place_summary
 
 
 
+
+
 '''
 -purpose: to enter all filtered places into db
 print writings filetered places.
@@ -31,6 +33,10 @@ def write_filtered_places(filtered_places):
 
 
 
+
+'''
+purpose: find the summary of given place from dB.
+'''
 def get_summary(place_id, pname):
     try:
         place = Place.objects.get(place_id=place_id)
@@ -39,19 +45,24 @@ def get_summary(place_id, pname):
             return place.summary
         else:
             return None
-    except Exception as e:
-        print(f"ERROR OCCURED in get_summary()")
+    except:
+        pass
+
+
+
 
 
 '''
-extract details and save that place to db.
+purpose: save the given details about places into db.
 '''
 def save_new_place(pid, pname, pfaddress, pcoordinates, psummary, pmainstream):
     try:
         Place.objects.create(place_id=pid, name=pname, full_address=pfaddress, coordinates=pcoordinates, summary=psummary, mainstream=pmainstream)
         print(f"new place saved. name: {pname}, place_id: {pid}")
     except Exception as e:
-        print(f"In utils.save_new_place(). ERROR OCCURED: {e}")
+        print(f"In utils.save_new_place() ERROR OCCURED: {e}")
+
+
 
 
 
@@ -67,7 +78,7 @@ async def find_summary(semaphore, pid, pname, pfaddress, pcoordinates):
     print(f"Getting summary for place: {pname}. PID: {pid}")
     try:
         psummary = await fetch_place_summary(semaphore, pname, pfaddress)
-        print("Got summary.")
+        print("Got summary from ai.")
         mainstream_line = psummary.split("\n")[0]
         if "true" in mainstream_line:
             pmainstream = True
@@ -76,22 +87,17 @@ async def find_summary(semaphore, pid, pname, pfaddress, pcoordinates):
         await asyncio.to_thread(save_new_place, pid, pname, pfaddress, pcoordinates, psummary, pmainstream)
         return psummary
     except Exception as e:
-        print(f"In utils.find_summary(). ERROR OCCURED: {e}")
+        print(f"In utils.find_summary() ERROR OCCURED: {e}")
+
+
 
 
 
 '''
 purpose: get summaries of each places in list.
-...
-wait until all tasks are resolved and i_summaries have summary for new places.
-after getting summary for new places, save that into db.(do this async if you can)
-    to save it into db: extract place required details.
-    instead of doing everything here, create another async function to save into db.
-then combine db_summaries and i_summaries, let it be called a total_summaries list
-then return that total_summaries list, which contains summary of every place in a list.
 '''
 async def get_summaries(places):
-    SEMAPHORE_LIMIT = 2
+    SEMAPHORE_LIMIT = 5
     semaphore = asyncio.Semaphore(SEMAPHORE_LIMIT)
 
     tasks = []
@@ -108,7 +114,7 @@ async def get_summaries(places):
                 print("Place is found in db.")
                 db_summaries.append(db_summary)
             else:
-                print("Place is not found in db.")
+                print(f"Place({pid}) not found in db. Sending ai request..")
                 pfaddress = place['full_address']
                 pcoordinates = {'lng':place['lng'], 'lat':place['lat']}
                 print(f"find_summary for place {index}")
@@ -118,12 +124,14 @@ async def get_summaries(places):
         total_summaries = db_summaries + i_summaries
         return total_summaries
     except Exception as e:
-        print(f"ERROR OCCURED: {e}")
+        print(f"In utils.get_summaries() ERROR OCCURED: {e}")
+
+
 
 
 
 def run_get_summaries():
-    with open("ground/filtered_places1.json", "r", encoding="utf-8") as file:
+    with open("ground/output_files/filtered_places1.json", "r", encoding="utf-8") as file:
         filtered_places = json.load(file)
     print("Converted json file to dict object.")
     sums = asyncio.run(get_summaries(filtered_places))
@@ -132,4 +140,4 @@ def run_get_summaries():
         print("\n".join(f"  - {s}\n\n\n\n\n" for s in sums))
         print(f"Length of sums: {len(sums)}")
     else:
-        print("error occured while finding sums")
+        print("In utils.run_get_summaries() error occured while finding sums")

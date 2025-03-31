@@ -6,8 +6,8 @@ __pycache__/
 
 
 ground/key.py
-ground/conv_history.txt
-ground/conv_history2.txt
+ground/output_files/conv_history.txt
+ground/output_files/conv_history2.txt
 
 db.sqlite3
 todo

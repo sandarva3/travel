@@ -51,7 +51,7 @@ def save_summary(places_summaries):
         filtered_place["summary"] = place_summary
         filtered_place["mainstream"] = mainstream
     print("attached summary to each places")
-    with open("filtered_places.json", "w") as file:
+    with open("output_files/filtered_places.json", "w") as file:
         json.dump(filtered_places, file, indent=3, ensure_ascii=False)
     print("saved the the filtered_places file alogn with summary.")
 

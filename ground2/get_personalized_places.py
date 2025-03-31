@@ -3,7 +3,7 @@ from .key import googleKey
 
 
 client = genai.Client(api_key=googleKey)
-def ask_gemini(prompt):
+def ask_gemini_places_recommendation(prompt):
     response = client.models.generate_content(
         model="gemini-2.0-flash",
         contents=[

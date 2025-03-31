@@ -31,13 +31,13 @@ def print_response(response):
 
 
 def get_conv_history():
-    with open("conv_history.txt", "r") as file:
+    with open("coutput_files/onv_history.txt", "r") as file:
         file_data = file.read()
     return file_data
         
 
 def save_conv(chat):
-    with open("conv_history.txt", 'a', encoding="utf-8") as file:
+    with open("output_files/conv_history.txt", 'a', encoding="utf-8") as file:
         file.write(chat)
 
 

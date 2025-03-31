@@ -6,7 +6,7 @@ from .serializers import UserSerializer
 from django.http import JsonResponse
 from .utils import run_get_summaries
 from .utils2 import get_all_places
-from .utils3 import start
+from .utils3 import main_fn_for_places_recommendation
 import json
 
 class UserRegistration_view(APIView):
@@ -42,9 +42,9 @@ def get_all_places_view(request):
 
 
 
-def get_personalized_places_view(request):
+def get_places_recommendation_view(request):
     try:
-        personalized_places = start()
+        personalized_places = main_fn_for_places_recommendation
         print(personalized_places)
         return JsonResponse(personalized_places, safe=False, status=200)
     except Exception as e:

@@ -1,20 +1,23 @@
-from ground2.dummy_user import user_preferences4
+from ground2.dummy_user import user_preferences5
 from .models import Place
 import requests
 import json
 from ground2.get_personalized_places import ask_gemini_places_recommendation
 import asyncio
 
+user_preferences = user_preferences5
 
-user_preferences = user_preferences4
+
+
 
 
 def get_pname_from_db(pid):
     try:
         return Place.objects.get(place_id=pid).name
     except Exception as e:
-        print(f"In travel/utils2.get_pname_from_db() ERROR OCCURED: {e}")
+        print(f"In travel/utils2.get_pname_from_db(), for pid: {pid} .  ERROR OCCURED: {e}")
         return None
+
 
 
 
@@ -37,7 +40,8 @@ async def process_ai_response(ai_response):
 
 
 
-async def get_ai_response_for_places_recommendation(user_details, places_list):
+
+def get_ai_response_for_places_recommendation(user_details, places_list):
     prompt = f"""
 You have two things: User_details, and Places_list. Analyze and understand both of them. From there only return a id of place/s which user most likely might prefer, be concise on this.
 EXTREMELY IMPORTANT: Return place_id only with comma separating each of them.
@@ -49,7 +53,7 @@ Places_list: {places_list}
 """
     try:
         print("Asking gemini...")
-        response = await ask_gemini_places_recommendation(prompt).strip()
+        response = ask_gemini_places_recommendation(prompt).strip()
         print("Gemini sent response.")
         return response
     except Exception as e:
@@ -90,7 +94,7 @@ async def get_places_recommendation():
         for index,sublist in enumerate(saved_places_sublists):
             print(f"Getting ai response for sublist {index}")
             sublist_json = json.dumps(sublist, indent=3)
-            task = get_ai_response_for_places_recommendation(user_preferences_json, sublist_json)
+            task = asyncio.to_thread(get_ai_response_for_places_recommendation, user_preferences_json, sublist_json)
             tasks.append(task)
         ai_recommendations = await asyncio.gather(*tasks)
         print("Gathered ai_recommendations.")
@@ -109,8 +113,12 @@ async def get_places_recommendation():
         print(f"In ground2/get_saved_places.get_places_recommendation() ERROR OCCURED: {e}")
 
 
+
+
+
 def run_get_places_recommendation():
     try:
         best_pnames = asyncio.run(get_places_recommendation())
+        return best_pnames
     except Exception as e:
         print(f"In travel/utils2.run_get_places_recommendation() ERROR OCCURED: {e}")

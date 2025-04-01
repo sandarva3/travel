@@ -35,7 +35,7 @@ Google map sends total 60 places details in response. But in a single page only 
 So, for other places we need to go to next page through next_page_token.
 '''
 def get_nearby_places(latitude, longitude):
-    radius = 50000
+    radius = 20000
     all_places = []
     place_type = "tourist_attraction"
     url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={latitude},{longitude}&radius={radius}&type={place_type}&language=en&key={mapKey}"
@@ -106,10 +106,8 @@ async def filter_places(place_list):
 
 
 
-def get_nearby_filtered_places(user_data):
+def get_nearby_filtered_places(longitude, latitude):
     try:
-        latitude = user_data["latitude"]
-        longitude = user_data["longitude"]
         places = get_nearby_places(latitude, longitude)
         if places:
                 return places

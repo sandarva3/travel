@@ -1,11 +1,11 @@
-from ground2.dummy_user import user_preferences1
+from ground2.dummy_user import user_preferences4
 from .models import Place
 import requests
 import json
 from ground2.get_personalized_places import ask_gemini_places_recommendation
 import asyncio
 
-user_preferences = user_preferences1
+user_preferences = user_preferences4
 
 
 
@@ -15,7 +15,7 @@ def get_pname_from_db(pid):
     try:
         return Place.objects.get(place_id=pid).name
     except Exception as e:
-        print(f"In travel/utils2.get_pname_from_db(), for pid: {pid} .  ERROR OCCURED: {e}")
+        print(f"In travel/utils3.get_pname_from_db(), for pid: {pid} .  ERROR OCCURED: {e}")
         return None
 
 
@@ -33,13 +33,13 @@ async def process_ai_response(ai_response):
                 pname = await asyncio.to_thread(get_pname_from_db, pid)
                 ai_recommended_pname_list.append(pname)
             else:
-                print("In travel/utils2.process_ai_response() NO ERROR but wrong pid by AI.")
+                print("In travel/utils3.process_ai_response() NO ERROR but wrong pid by AI.")
         print("The best places for this user are: ")
         for name in ai_recommended_pname_list:
             print(f"- {name}")
         return ai_recommended_pname_list
     except Exception as e:
-        print(f"In travel/utils2.process_ai_response() ERROR OCCURED: {e}")
+        print(f"In travel/utils3.process_ai_response() ERROR OCCURED: {e}")
 
 
 
@@ -63,40 +63,35 @@ Places_list: {places_list}
         print("Gemini sent response.")
         return response
     except Exception as e:
-        print(f"In travel/utils2.get_ai_response_for_places_recommendation() ERROR OCCURED: {e}")
+        print(f"In travel/utils3.get_ai_response_for_places_recommendation() ERROR OCCURED: {e}")
 
 
 
 
 
-def get_all_saved_places():
+def retrieve_filtered_places_summary_from_db(filtered_pIDs):
     try: 
-        all_places_list = []
-        all_places = Place.objects.all()
-        for index,place in enumerate(all_places, start=1):
-            place_dict= {}
-            place_dict["place_id"] = place.place_id
-            place_dict["summary"] = place.summary
-            all_places_list.append(place_dict)
-        return all_places_list
+        return list(
+            Place.objects.filter(place_id__in=filtered_pIDs).values("place_id", "summary")
+        )
     except Exception as e:
-        print(f"In travel/utils2.get_all_saved_places() ERROR OCCURED: {e}")
+        print(f"In travel/utils3.retrieve_filtered_places_summary_from_db() ERROR OCCURED: {e}")
 
 
 
 
 
-async def get_places_recommendation():
+async def get_places_recommendation(filtered_pIDs):
     try:
         tasks = []
         best_pnames = []
-        saved_places_list = await asyncio.to_thread(get_all_saved_places)
-        saved_places_list_length = len(saved_places_list)
-        saved_places_sublists = [saved_places_list[i:i+10] for i in range(0, saved_places_list_length, 10)]
+        filtered_pSums = await asyncio.to_thread(retrieve_filtered_places_summary_from_db, filtered_pIDs)
+        filtered_pSums_len = len(filtered_pSums)
+        filtered_pSums = [filtered_pSums[i:i+10] for i in range(0, filtered_pSums_len, 10)]
 
         user_preferences_json = json.dumps(user_preferences, indent=3)
 
-        for index,sublist in enumerate(saved_places_sublists):
+        for index,sublist in enumerate(filtered_pSums):
             print(f"Getting ai response for sublist {index}")
             sublist_json = json.dumps(sublist, indent=3)
             task = asyncio.to_thread(get_ai_response_for_places_recommendation, user_preferences_json, sublist_json)
@@ -115,15 +110,30 @@ async def get_places_recommendation():
         print(best_pnames)
         return best_pnames
     except Exception as e:
-        print(f"In ground2/get_saved_places.get_places_recommendation() ERROR OCCURED: {e}")
+        print(f"In travel/utils3.get_places_recommendation() ERROR OCCURED: {e}")
 
 
 
 
 
-def run_get_places_recommendation():
+def extract_places_id(filtered_places):
     try:
-        best_pnames = asyncio.run(get_places_recommendation())
+        ids_list = []
+        for place in filtered_places:
+            pid = place['place_id']
+            ids_list.append(pid)
+        print("Extracted ID of all places.")
+        return ids_list
+    except Exception as e:
+        print(f"In travel/util3.extract_places_id() ERROR OCCURED: {e}")
+
+
+
+
+def run_get_places_recommendation(filtered_places):
+    filtered_pIDs = extract_places_id(filtered_places)
+    try:
+        best_pnames = asyncio.run(get_places_recommendation(filtered_pIDs))
         return best_pnames
     except Exception as e:
-        print(f"In travel/utils2.run_get_places_recommendation() ERROR OCCURED: {e}")
+        print(f"In travel/utils3.run_get_places_recommendation() ERROR OCCURED: {e}")

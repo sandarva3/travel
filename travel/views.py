@@ -52,7 +52,7 @@ def get_best_nearby_places_to_visit_view(request):
             latitude = data.get("lat")
             filtered_places = get_nearby_filtered_places(longitude, latitude)
             run_get_summaries(filtered_places)
-            personalized_places = run_get_places_recommendation()
+            personalized_places = run_get_places_recommendation(filtered_places)
             return JsonResponse({"Best places for you":personalized_places}, safe=False, status=200)
     except Exception as e:
         print(f"In travel/views.get_best_nearby_places_to_visit() ERROR OCCURED: {e}")

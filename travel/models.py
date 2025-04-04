@@ -16,16 +16,16 @@ class CustomUser(AbstractUser):
 
 class Place(models.Model):
     name = models.CharField(max_length=70)
-    place_id = models.CharField(max_length=27, default="fakeId")
+    place_id = models.CharField(max_length=27, default="fakeId", db_index=True)
     full_address = models.CharField(max_length=300)
     coordinates = models.JSONField(default=dict)
     summary = models.TextField()
     mainstream = models.BooleanField(default=False)
 
-    class Meta:
-        indexes = [
-            models.Index(fields=['place_id'], name='place_id_idx'),
-        ]
+#    class Meta:
+#        indexes = [
+#            models.Index(fields=['place_id'], name='place_id_idx'),
+#        ]
 
     def __str__(self):
         return self.name
